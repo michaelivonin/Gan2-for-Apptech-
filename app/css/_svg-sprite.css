@@ -1,0 +1,56 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../img/svg-sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 2.6em 8.5em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../img/svg-sprite.png");
+}
+
+
+
+  .icon.button__icon-bell:before {
+      background-position: -0.2em -0.2em;
+      width: 1.7em;
+      height: 2em;
+  }
+
+
+
+
+  .icon.button__icon-cart:before {
+      background-position: -0.2em -2.6em;
+      width: 2.2em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.button__icon-heart:before {
+      background-position: -0.2em -4.7em;
+      width: 2.1em;
+      height: 1.9em;
+  }
+
+
+
+
+  .icon.entrance__icon-user:before {
+      background-position: -0.2em -7em;
+      width: 1.3em;
+      height: 1.3em;
+  }
+
+
+
+
+

@@ -1,3 +1,19 @@
+%btn-default
+  background: none
+  border: none
+  outline: none
+  padding: 0
+
+  @extend %btn-animation
+
+%btn-animation
+  &:active
+    position: relative
+    top: 2px
+
+.navbar-collapse
+  padding: 0
+
 .header
   background: $white
   width: 100%
@@ -5,7 +21,7 @@
 
   &__logo
     margin-top: 10px
-    margin-right: 413px
+    margin-right: 390px
 
   .logo
     height: inherit
@@ -14,6 +30,8 @@
     line-height: inherit
     display: flex
     align-items: center
+
+
 
     &__icon
       width: 43px
@@ -33,6 +51,7 @@
     display: inline-flex
     align-items: center
     justify-content: center
+    float: left
     width: 221px
     height: 35px
     border: 1px solid $blue
@@ -44,32 +63,151 @@
     margin-top: 17px
     margin-right: 25px
 
+    &:hover
+      cursor: pointer
+      color: $grey4
+      border-color: $white2
+
+    @extend %btn-animation
+
+
   &__info
     margin-top: 22px
+    margin-right: 20px
 
   .info
     display: inline-block
     float: left
 
-    &__icon
-      margin-right: 6px
+    &__icon-phone
+      margin-right: 4px
       color: $grey3
       font-size: 0.96rem
-      position: relative
-      top: -1px
 
     &__number
       display: inline-block
-      font-size: 1.125rem
-      //color: $grey9
+      font-size: 1rem
+      color: $grey4
       font-weight: 500
-      margin-bottom: 8px
-      letter-spacing: 0.5px
+      margin-bottom: 6px
+      letter-spacing: 0.62px
 
     &__text
       font-size: 0.563rem
-      color: $grey2
+      color: $grey3
       text-transform: uppercase
       text-align: center
-      letter-spacing: 1.67px
-      margin-left: 25px
+      letter-spacing: 0.9px
+      margin-left: 21px
+
+  &__bell
+    //display: none
+
+  .bell
+    @extend .cart
+    border-right: none !important
+
+    .button
+      @extend .cart__button
+
+      &__number
+        top: 16px
+        right: 14px
+
+      &:active
+        .button__number
+          top: -0.57rem
+          right: -0.71rem
+
+  .cart
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 73px
+    height: 71px
+    float: left
+    border-left: 1px solid $white2
+    border-right: 1px solid $white2
+    position: relative
+
+    &__button
+      @extend %btn-default
+
+      &:hover
+        opacity: 0.7
+
+    .button
+      &__number
+        width: 19px
+        height: 19px
+        background: $yellow
+        border-radius: 50%
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        color: $white
+        font-size: 0.75rem
+        font-weight: 700
+        position: absolute
+        top: 15px
+        right: 13px
+
+      &:active
+        .button__number
+          top: -0.67rem
+          right: -0.7rem
+
+
+  .heart
+    @extend .cart
+    border-left: none
+
+    .button
+      @extend .cart__button
+
+      &__number
+        top: 16px
+        right: 14px
+
+      &:active
+        .button__number
+          top: -0.57rem
+          right: -0.71rem
+
+  .entrance
+    width: 160px
+    height: 71px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    border-right: 1px solid $white2
+
+    &:hover
+      .entrance__icon-user
+        opacity: 0.5
+
+    &__icon-user
+      width: 27px
+      height: 27px
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      border: 2px solid $black
+      border-radius: 50%
+      margin-right: 10px
+
+    .button
+      @extend %btn-default
+
+      &__text
+        font-size: 1rem
+        color: $grey4
+        margin-right: 8px
+
+      &__icon-down
+        font-size: 0.81rem
+        position: relative
+        top: -1px
+
+      &:hover
+        opacity: 0.7

@@ -12,20 +12,31 @@
       span.logo__text ГАН
     .collapse.navbar-collapse#menu
       a.header__link Предложить недвижимость
-      .header__info.info
-        i.fa.fa-phone.info__icon(aria-hidden='true')
+      .header__info.info.visible-lg
+        i.fa.fa-phone.info__icon-phone(aria-hidden='true')
         p.info__number 8&nbsp;800&nbsp;900&nbsp;77&nbsp;77
         p.info__text 24/7. Бесплатно по РФ
       // /.header__info
+      .header__bell.bell
+        button.bell__button.button(type='button')
+          span.icon.button__icon-bell
+          p.button__number 7
+      // /.header__bell
       .header__cart.cart
-        span.cart__icon
+        button.cart__button.button(type='button')
+          span.icon.button__icon-cart
+          p.button__number 7
+      // /.header__cart
       .header__heart.heart
-        span.heart__icon
+        button.heart__button.button(type='button')
+          span.icon.button__icon-heart
+          p.button__number 1
+      // /.header__heart
       form.header__entrance.entrance(action='#')
-        i.fa.fa-user-circle-o.entrance__icon(aria-hidden='true')
+        span.icon.entrance__icon-user
         button.entrance__button.button(type='button')
           span.button__text Войти
-          i.fa.fa-chevron-down.button__icon(aria-hidden='true')
+          i.fa.fa-chevron-down.button__icon-down(aria-hidden='true')
       // /.header__entrance
     // /.navbar-collapse
   // /.container
