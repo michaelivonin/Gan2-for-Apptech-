@@ -1,0 +1,109 @@
+// Fonts
+@font-face
+  font-family: "Roboto"
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype")
+  font-style: normal
+  font-weight: 300
+
+@font-face
+  font-family: "Roboto"
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype")
+  font-style: normal
+  font-weight: 400
+
+@font-face
+  font-family: "Roboto"
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype")
+  font-style: normal
+  font-weight: 500
+
+@font-face
+  font-family: "Roboto"
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype")
+  font-style: normal
+  font-weight: 700
+
+@font-face
+  font-family: "ALSRubl"
+  src: url("../fonts/ALSRubl/rouble.ttf") format("truetype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: "ProximaNova"
+  src: url("../fonts/ProximaNova/Proxima Nova Bold.otf") format("opentype")
+  font-style: normal
+  font-weight: 700
+
+
+
+// Colors
+$white: rgb(255, 255, 255)
+$grey: rgb(137, 137, 137)
+$grey2: rgb(50, 50, 50)
+$grey3: rgb(148, 148, 148)
+$blue: rgb(3, 163, 240)
+//
+  $preMediumWhite: rgb(249, 249, 249)
+  $mediumWhite: rgb(240, 245, 247)
+  $darkWhite: rgb(235, 235, 235)
+  $superDarkWhite: rgb(225, 225, 225)
+  $fromWhiteToGrey: rgb(206, 208, 218)
+  $grey: rgb(194, 194, 194)
+  $grey2: rgb(161, 161, 161)
+  $grey3: rgb(143, 141, 141)
+  $grey4: rgb(105, 105, 105)
+  $grey5: rgb(102, 102, 102)
+  $grey6: rgb(85, 85, 85)
+  $grey7: rgb(63, 63, 63)
+  $grey8: rgb(50, 50, 50)
+  $grey9: rgb(44, 44, 44)
+  $black: rgb(0, 0, 0)
+  $black2: rgb(7, 7, 7)
+  $black3: rgb(23, 23, 23)
+  $black4: rgb(31, 26, 23)
+  $black5: rgb(33, 33, 33)
+  $black6: rgb(33, 33, 33)
+  $orange: rgb(255, 120, 0)
+  $mediumOrange: rgb(248, 225, 201)
+  $orange2: rgb(244, 150, 50)
+  $yellow: rgb(255, 200, 22)
+  $blue: rgb(129, 179, 220)
+  $lightBlue: rgb(221, 239, 253)
+  $hoverBlue: #23527c
+
+
+
+// Page
+body
+  font-family: 'Roboto', sans-serif
+
+  * a
+    &:hover
+      text-decoration: none
+    &:focus
+      text-decoration: none
+
+// Include _header.sass
+@import 'blocks/header/header'
+
+// Include _content.sass
+  @import 'blocks/content/content'
+
+// Include _footer.sass
+  @import 'blocks/footer/footer'
+
+
+
+// Include _svg-sprite.css
+  @import '../css/svg-sprite'
+
+
+
+// Include _png-sprite.css
+  @import '../css/png-sprite'
+
+
+
+// Include _media-queries.sass
+@import 'media-queries/media-queries'

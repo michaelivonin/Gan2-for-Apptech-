@@ -1,0 +1,14 @@
+{
+  "name": "gan2",
+  "description": "Second serious project",
+  "main": "main.js",
+  "authors": [
+    "Mike Ivonin <Michael@drummer.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Michael-Ivonin/Gan2",
+  "private": true,
+  "dependencies": {
+    "reset-css": "^2.2.0"
+  }
+}
