@@ -29,7 +29,7 @@
 
 .header__logo
   margin-top: 10px
-  margin-right: 390px
+  margin-right: 396px
 
 .logo
   height: inherit
@@ -59,10 +59,7 @@
   align-items: center
   justify-content: center
   float: left
-  margin-right: 89px
-
-.trip__icon-arrow
-  margin-right: 7px
+  margin-right: 62px
 
 .trip .wrap
   display: inline-flex
@@ -72,7 +69,15 @@
   height: 30px
   border-radius: 50%
   border: 1px solid $yellow
-  margin-right: 7px
+  margin: 0 7px
+
+.trip__text
+  color: $grey4
+  font-size: 0.738rem
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 0.97px
+  margin-top: 3px
 
 .header__link
   display: inline-flex
@@ -133,7 +138,6 @@
 
 .bell
   @extend .cart
-  border-right: none !important
 
 .bell__button
   @extend .cart__button
@@ -142,7 +146,7 @@
     right: -10px !important
 
 .header__cart
-  width: 73px
+  width: 70px
   height: 71px
 
 .cart
@@ -151,7 +155,6 @@
   justify-content: center
   float: left
   border-left: 1px solid $white2
-  border-right: 1px solid $white2
 
 .cart__button
   @extend %btn-default
@@ -194,7 +197,6 @@
 
 .heart
   @extend .cart
-  border-left: none
 
 .heart__button
   @extend .cart__button
@@ -205,7 +207,7 @@
 
 .entrance
   @extend .cart
-  border-left: none
+  border-right: 1px solid $white2
 
   &:hover
     .entrance__icon-user
@@ -237,3 +239,19 @@
 
   &:hover
     opacity: 0.7
+
+.header__second-menu
+  display: none
+  position: fixed
+  top: 0
+
+  .header__trip, .header__cart
+    display: inline-flex
+    height: 60px
+
+  .header__trip
+    margin-right: calc(100vw - 371px)
+    margin-left: 91px
+
+  .trip__text
+    font-size: 0.623rem
