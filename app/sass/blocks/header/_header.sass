@@ -4,12 +4,20 @@
   outline: none
   padding: 0
 
-  @extend %btn-animation
-
 %btn-animation
   &:active
     position: relative
     top: 2px
+    left: 0
+
+    span, i
+      position: relative
+      left: 0
+
+  &:focus
+    span, i
+      position: relative
+      left: 0
 
 .navbar-collapse
   padding: 0
@@ -19,195 +27,213 @@
   width: 100%
   box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19)
 
-  &__logo
-    margin-top: 10px
-    margin-right: 390px
+.header__logo
+  margin-top: 10px
+  margin-right: 390px
 
-  .logo
-    height: inherit
-    padding: 0
-    font-size: inherit
-    line-height: inherit
-    display: flex
-    align-items: center
+.logo
+  height: inherit
+  padding: 0
+  font-size: inherit
+  line-height: inherit
+  display: flex
+  align-items: center
+
+.logo__icon
+  width: 43px
+  height: 43px
+  display: inline-block
+  border-radius: 50%
+  background: $grey
+  margin-right: 15px
+
+.logo__text
+  color: $grey2
+  font-size: 1.793rem
+  font-weight: 700
+  letter-spacing: 6.1px
+
+.header__trip
+  height: 55px
+  display: none
+  align-items: center
+  justify-content: center
+  float: left
+  margin-right: 89px
+
+.trip__icon-arrow
+  margin-right: 7px
+
+.trip .wrap
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  border: 1px solid $yellow
+  margin-right: 7px
+
+.header__link
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  float: left
+  width: 221px
+  height: 35px
+  border: 1px solid $blue
+  border-radius: 16px 16px
+  text-transform: uppercase
+  color: $blue
+  font-size: 0.625rem
+  font-weight: 500
+  margin-top: 17px
+  margin-right: 25px
+
+  &:hover
+    cursor: pointer
+    color: $grey4
+    border-color: $white2
+
+  @extend %btn-animation
 
 
+.header__info
+  margin-top: 22px
+  margin-right: 20px
 
-    &__icon
-      width: 43px
-      height: 43px
-      display: inline-block
-      border-radius: 50%
-      background: $grey
-      margin-right: 15px
+.info
+  display: inline-block
+  float: left
 
-    &__text
-      color: $grey2
-      font-size: 1.793rem
-      font-weight: 700
-      letter-spacing: 6.1px
+.info__icon-phone
+  margin-right: 4px
+  color: $grey3
+  font-size: 0.96rem
 
-  &__link
+.info__number
+  display: inline-block
+  font-size: 1rem
+  color: $grey4
+  font-weight: 500
+  margin-bottom: 6px
+  letter-spacing: 0.62px
+
+.info__text
+  font-size: 0.563rem
+  color: $grey3
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 0.9px
+  margin-left: 21px
+
+.header__bell
+  @extend .header__cart
+  display: none !important
+
+.bell
+  @extend .cart
+  border-right: none !important
+
+.bell__button
+  @extend .cart__button
+
+  .button__number
+    right: -10px !important
+
+.header__cart
+  width: 73px
+  height: 71px
+
+.cart
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  float: left
+  border-left: 1px solid $white2
+  border-right: 1px solid $white2
+
+.cart__button
+  @extend %btn-default
+  position: relative
+
+  &:hover
+    opacity: 0.7
+
+  &:active
+    margin-top: 0.25rem
+
+    .icon
+      position: relative
+      top: 0
+      left: 0
+
+  &:focus
+    .icon
+      position: relative
+      top: 0
+      left: 0
+
+  .button__number
+    width: 19px
+    height: 19px
+    background: $yellow
+    border-radius: 50%
     display: inline-flex
     align-items: center
     justify-content: center
-    float: left
-    width: 221px
-    height: 35px
-    border: 1px solid $blue
-    border-radius: 16px 16px
-    text-transform: uppercase
-    color: $blue
-    font-size: 0.625rem
-    font-weight: 500
-    margin-top: 17px
-    margin-right: 25px
+    color: $white
+    font-size: 0.75rem
+    font-weight: 700
+    position: absolute
+    top: -10px
+    right: -11px
 
-    &:hover
-      cursor: pointer
-      color: $grey4
-      border-color: $white2
+.header__heart
+  @extend .header__cart
 
-    @extend %btn-animation
+.heart
+  @extend .cart
+  border-left: none
 
+.heart__button
+  @extend .cart__button
 
-  &__info
-    margin-top: 22px
-    margin-right: 20px
+.header__entrance
+  @extend .header__cart
+  width: 160px
 
-  .info
-    display: inline-block
-    float: left
+.entrance
+  @extend .cart
+  border-left: none
 
-    &__icon-phone
-      margin-right: 4px
-      color: $grey3
-      font-size: 0.96rem
+  &:hover
+    .entrance__icon-user
+      opacity: 0.5
 
-    &__number
-      display: inline-block
-      font-size: 1rem
-      color: $grey4
-      font-weight: 500
-      margin-bottom: 6px
-      letter-spacing: 0.62px
+.entrance__icon-user
+  width: 27px
+  height: 27px
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  border: 2px solid $black
+  border-radius: 50%
+  margin-right: 10px
 
-    &__text
-      font-size: 0.563rem
-      color: $grey3
-      text-transform: uppercase
-      text-align: center
-      letter-spacing: 0.9px
-      margin-left: 21px
+.entrance__button
+  @extend %btn-default
+  @extend %btn-animation
 
-  &__bell
-    //display: none
+  .button__text
+    font-size: 1rem
+    color: $grey4
+    margin-right: 8px
 
-  .bell
-    @extend .cart
-    border-right: none !important
-
-    .button
-      @extend .cart__button
-
-      &__number
-        top: 16px
-        right: 14px
-
-      &:active
-        .button__number
-          top: -0.57rem
-          right: -0.71rem
-
-  .cart
-    display: inline-flex
-    align-items: center
-    justify-content: center
-    width: 73px
-    height: 71px
-    float: left
-    border-left: 1px solid $white2
-    border-right: 1px solid $white2
+  .button__icon-down
+    font-size: 0.81rem
     position: relative
+    top: -1px
 
-    &__button
-      @extend %btn-default
-
-      &:hover
-        opacity: 0.7
-
-    .button
-      &__number
-        width: 19px
-        height: 19px
-        background: $yellow
-        border-radius: 50%
-        display: inline-flex
-        align-items: center
-        justify-content: center
-        color: $white
-        font-size: 0.75rem
-        font-weight: 700
-        position: absolute
-        top: 15px
-        right: 13px
-
-      &:active
-        .button__number
-          top: -0.67rem
-          right: -0.7rem
-
-
-  .heart
-    @extend .cart
-    border-left: none
-
-    .button
-      @extend .cart__button
-
-      &__number
-        top: 16px
-        right: 14px
-
-      &:active
-        .button__number
-          top: -0.57rem
-          right: -0.71rem
-
-  .entrance
-    width: 160px
-    height: 71px
-    display: inline-flex
-    align-items: center
-    justify-content: center
-    border-right: 1px solid $white2
-
-    &:hover
-      .entrance__icon-user
-        opacity: 0.5
-
-    &__icon-user
-      width: 27px
-      height: 27px
-      display: inline-flex
-      align-items: center
-      justify-content: center
-      border: 2px solid $black
-      border-radius: 50%
-      margin-right: 10px
-
-    .button
-      @extend %btn-default
-
-      &__text
-        font-size: 1rem
-        color: $grey4
-        margin-right: 8px
-
-      &__icon-down
-        font-size: 0.81rem
-        position: relative
-        top: -1px
-
-      &:hover
-        opacity: 0.7
+  &:hover
+    opacity: 0.7

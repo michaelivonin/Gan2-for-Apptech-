@@ -1,0 +1,3 @@
+.sprite { background: url(../img/png-sprite.png) no-repeat top left; width: 13px; display: block; }
+.sprite.trip__icon-arrow { background-position: 0 0; height: 9px; }
+.sprite.trip__icon-suitcase { background-position: 0 -14px; height: 13px; }
