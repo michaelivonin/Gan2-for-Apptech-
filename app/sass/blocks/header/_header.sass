@@ -53,110 +53,20 @@
   font-weight: 700
   letter-spacing: 6.1px
 
-.header__trip
-  height: 55px
-  display: none
-  align-items: center
-  justify-content: center
-  float: left
-  margin-right: 62px
+@import '__trip'
 
-.trip .wrap
-  display: inline-flex
-  align-items: center
-  justify-content: center
-  width: 30px
-  height: 30px
-  border-radius: 50%
-  border: 1px solid $yellow
-  margin: 0 7px
+@import '__link'
 
-.trip__text
-  color: $grey4
-  font-size: 0.738rem
-  font-weight: 700
-  text-transform: uppercase
-  letter-spacing: 0.97px
-  margin-top: 3px
+@import '__info'
 
-.header__link
-  display: inline-flex
-  align-items: center
-  justify-content: center
-  float: left
-  width: 221px
-  height: 35px
-  border: 1px solid $blue
-  border-radius: 16px 16px
-  text-transform: uppercase
-  color: $blue
-  font-size: 0.625rem
-  font-weight: 500
-  margin-top: 17px
-  margin-right: 25px
-
-  &:hover
-    cursor: pointer
-    color: $grey4
-    border-color: $white2
-
-  @extend %btn-animation
-
-
-.header__info
-  margin-top: 22px
-  margin-right: 20px
-
-.info
-  display: inline-block
-  float: left
-
-.info__icon-phone
-  margin-right: 4px
-  color: $grey3
-  font-size: 0.96rem
-
-.info__number
-  display: inline-block
-  font-size: 1rem
-  color: $grey4
-  font-weight: 500
-  margin-bottom: 6px
-  letter-spacing: 0.62px
-
-.info__text
-  font-size: 0.563rem
-  color: $grey3
-  text-transform: uppercase
-  text-align: center
-  letter-spacing: 0.9px
-  margin-left: 21px
-
-.header__bell
-  @extend .header__cart
-  display: none !important
-
-.bell
-  @extend .cart
-
-.bell__button
-  @extend .cart__button
-
-  .button__number
-    right: -10px !important
-
-.header__cart
-  width: 70px
+%item-default
   height: 71px
-
-.cart
-  display: inline-flex
   align-items: center
   justify-content: center
   float: left
   border-left: 1px solid $white2
 
-.cart__button
+%item__button-default
   @extend %btn-default
   position: relative
 
@@ -177,36 +87,50 @@
       top: 0
       left: 0
 
-  .button__number
-    width: 19px
-    height: 19px
-    background: $yellow
-    border-radius: 50%
-    display: inline-flex
-    align-items: center
-    justify-content: center
-    color: $white
-    font-size: 0.75rem
-    font-weight: 700
-    position: absolute
-    top: -10px
-    right: -11px
+%button__number-default
+  width: 19px
+  height: 19px
+  background: $yellow
+  border-radius: 50%
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  color: $white
+  font-size: 0.75rem
+  font-weight: 700
+  position: absolute
+  top: -10px
 
-.header__heart
-  @extend .header__cart
+.bell
+  @extend %item-default
+  display: none
+  width: 70px
+
+.bell__button
+  @extend %item__button-default
+
+  .button__number
+    @extend %button__number-default
+    right: -10px
+
+@import '__cart'
 
 .heart
-  @extend .cart
+  @extend %item-default
+  display: inline-flex
+  width: 70px
 
 .heart__button
-  @extend .cart__button
+  @extend %item__button-default
 
-.header__entrance
-  @extend .header__cart
-  width: 160px
+  .button__number
+    @extend %button__number-default
+    right: -11px
 
 .entrance
-  @extend .cart
+  @extend %item-default
+  display: inline-flex
+  width: 160px
   border-right: 1px solid $white2
 
   &:hover
@@ -245,11 +169,9 @@
   position: fixed
   top: 0
 
-  .header__trip, .header__cart
+  .trip
     display: inline-flex
     height: 60px
-
-  .header__trip
     margin-right: calc(100vw - 371px)
     margin-left: 91px
 

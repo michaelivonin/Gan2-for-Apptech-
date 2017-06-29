@@ -11,52 +11,30 @@
       span.logo__icon
       span.logo__text ГАН
     .collapse.navbar-collapse#menu
-      .header__trip.trip
-        span.sprite.trip__icon-arrow
-        p.wrap
-          span.sprite.trip__icon-suitcase
-        span.trip__text Командировка
-      // /.header__trip
-      a.header__link Предложить недвижимость
-      .header__info.info.visible-lg
-        i.fa.fa-phone.info__icon-phone(aria-hidden='true')
-        p.info__number 8&nbsp;800&nbsp;900&nbsp;77&nbsp;77
-        p.info__text 24/7. Бесплатно по РФ
-      // /.header__info
-      .header__bell.bell
+      include __trip
+      include __link
+      include __info
+      .bell
         button.bell__button.button(type='button')
           span.icon.button__icon-bell
           p.button__number 7
-      // /.header__bell
-      .header__cart.cart
-        button.cart__button.button(type='button')
-          span.icon.button__icon-cart
-          p.button__number 7
-      // /.header__cart
-      .header__heart.heart
+      // /.bell
+      include __cart
+      .heart
         button.heart__button.button(type='button')
           span.icon.button__icon-heart
           p.button__number 1
-      // /.header__heart
-      form.header__entrance.entrance(action='#')
+      // /.heart
+      form.entrance(action='#')
         span.icon.entrance__icon-user
         button.entrance__button.button(type='button')
           span.button__text Войти
           i.fa.fa-chevron-down.button__icon-down(aria-hidden='true')
-      // /.header__entrance
+      // /.entrance
     // /.navbar-collapse
     .header__second-menu.second-menu
-      .header__trip.trip
-        span.sprite.trip__icon-arrow
-        p.wrap
-          span.sprite.trip__icon-suitcase
-        span.trip__text Командировка
-      // /.header__trip
-      .header__cart.cart
-        button.cart__button.button(type='button')
-          span.icon.button__icon-cart
-          p.button__number 7
-      // /.header__cart
+      include __trip
+      include __cart
     // /.header__second-menu
   // /.container
 // /.header

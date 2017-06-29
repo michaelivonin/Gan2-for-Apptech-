@@ -1,0 +1,57 @@
+aside.settings
+  include ../header/__trip
+  hr.settings__line
+  form.search-form
+    .city
+      label.city__text(for='city') Город назначения
+      br
+      input.city__input-text(type='text', placeholder='Омск', id='city', required)
+      button.button-reset(type='button')
+        i.fa.fa-times.button-reset__icon-cross(aria-hidden='true')
+    // /.city
+    .date
+      .occupancy
+        label.occupancy__text(for='occupancy') Заезд
+        br
+        input.occupancy__input-date(type='text', placeholder='05.07.2017', id='occupancy', required)
+        span.icon.occupancy__icon-calendar
+      // /.occupancy
+      .leave
+        label.leave__text(for='leave') Выезд
+        br
+        input.leave__input-date(type='text', placeholder='15.07.2017', id='leave', required)
+        span.icon.leave__icon-calendar
+      // /.leave
+    // /.date
+    .quantity
+      .person
+        label.person__text Гостей
+        br
+        i.fa.fa-male(aria-hidden='true')
+        select.input-number
+          option.input-number__item 1
+          option.input-number__item(selected) 2
+          option.input-number__item 3
+          option.input-number__item 4
+          option.input-number__item 5
+        // /.input-number
+      // /.person
+      .room
+        label.room__text Номеров/Комнат
+        br
+        select.input-number
+          option.input-number__item 1
+          option.input-number__item(selected) 2
+          option.input-number__item 3
+          option.input-number__item 4
+          option.input-number__item 5
+        // /.input-number
+      // /.room
+    // /.quantity
+    input.search-form__checkbox(type='checkbox' id='bed')
+    label.search-form__checkbox-text(for='bed') Отдельные кровати
+    br
+    label.search-form__slider-text(for='price') Цена за 2 суток
+    input.search-form__range-slider(type='range' id='price')
+  // /.search-form
+// /.settings
