@@ -19,46 +19,6 @@
       position: relative
       left: 0
 
-.navbar-collapse
-  padding: 0
-
-.header
-  background: $white
-  width: 100%
-  box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19)
-
-.header__logo
-  margin-top: 10px
-  margin-right: 396px
-
-.logo
-  height: inherit
-  padding: 0
-  font-size: inherit
-  line-height: inherit
-  display: flex
-  align-items: center
-
-.logo__icon
-  width: 43px
-  height: 43px
-  display: inline-block
-  border-radius: 50%
-  background: $grey
-  margin-right: 15px
-
-.logo__text
-  color: $grey2
-  font-size: 1.793rem
-  font-weight: 700
-  letter-spacing: 6.1px
-
-@import '__trip'
-
-@import '__link'
-
-@import '__info'
-
 %item-default
   height: 71px
   align-items: center
@@ -101,79 +61,136 @@
   position: absolute
   top: -10px
 
-.bell
-  @extend %item-default
-  display: none
-  width: 70px
+.navbar-collapse
+  padding: 0
 
-.bell__button
-  @extend %item__button-default
+.header
+  background: $white
+  width: 100%
+  box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19)
 
-  .button__number
-    @extend %button__number-default
-    right: -10px
+  &__logo
+    margin-top: 10px
+    margin-right: 396px
 
-@import '__cart'
+  .logo
+    height: inherit
+    padding: 0
+    font-size: inherit
+    line-height: inherit
+    display: flex
+    align-items: center
 
-.heart
-  @extend %item-default
-  display: inline-flex
-  width: 70px
+    &__icon
+      width: 43px
+      height: 43px
+      display: inline-block
+      border-radius: 50%
+      background: $grey
+      margin-right: 15px
 
-.heart__button
-  @extend %item__button-default
+    &__text
+      color: $grey2
+      font-size: 1.793rem
+      font-weight: 700
+      letter-spacing: 6.1px
 
-  .button__number
-    @extend %button__number-default
-    right: -11px
-
-.entrance
-  @extend %item-default
-  display: inline-flex
-  width: 160px
-  border-right: 1px solid $white2
-
-  &:hover
-    .entrance__icon-user
-      opacity: 0.5
-
-.entrance__icon-user
-  width: 27px
-  height: 27px
-  display: inline-flex
-  align-items: center
-  justify-content: center
-  border: 2px solid $black
-  border-radius: 50%
-  margin-right: 10px
-
-.entrance__button
-  @extend %btn-default
-  @extend %btn-animation
-
-  .button__text
-    font-size: 1rem
-    color: $grey4
-    margin-right: 8px
-
-  .button__icon-down
-    font-size: 0.81rem
-    position: relative
-    top: -1px
-
-  &:hover
-    opacity: 0.7
-
-.header__second-menu
-  display: none
-  position: fixed
-  top: 0
+  @import '__trip'
 
   .trip
-    display: inline-flex
-    height: 60px
-    margin-right: calc(100vw - 371px)
-    margin-left: 91px
+    height: 55px
+    display: none
+    justify-content: center
+    float: left
+    margin-right: 62px
 
-  .trip__text
-    font-size: 0.623rem
+    .wrap
+      width: 30px
+      height: 30px
+      margin: 0 7px
+
+    &__text
+      font-size: 0.738rem
+      letter-spacing: 0.97px
+      margin-top: 3px
+
+  @import '__link'
+
+  @import '__info'
+
+  .bell
+    @extend %item-default
+    display: none
+    width: 70px
+
+    &__button
+      @extend %item__button-default
+
+      .button__number
+        @extend %button__number-default
+        right: -10px
+
+  @import '__cart'
+
+  .heart
+    @extend %item-default
+    display: inline-flex
+    width: 70px
+
+    &__button
+      @extend %item__button-default
+
+      .button__number
+        @extend %button__number-default
+        right: -11px
+
+  .entrance
+    @extend %item-default
+    display: inline-flex
+    width: 160px
+    border-right: 1px solid $white2
+
+    &:hover
+      .entrance__icon-user
+        opacity: 0.5
+
+    &__icon-user
+      width: 27px
+      height: 27px
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      border: 2px solid $black
+      border-radius: 50%
+      margin-right: 10px
+
+    &__button
+      @extend %btn-default
+      @extend %btn-animation
+
+      .button__text
+        font-size: 1rem
+        color: $grey4
+        margin-right: 8px
+
+      .button__icon-down
+        font-size: 0.81rem
+        position: relative
+        top: -1px
+
+      &:hover
+        opacity: 0.7
+
+  .second-menu
+    display: none
+    position: absolute
+    top: 0
+
+    .trip
+      display: inline-flex
+      height: 60px
+      margin-right: calc(100vw - 388px)
+      margin-left: 91px
+
+      &__text
+        font-size: 0.623rem

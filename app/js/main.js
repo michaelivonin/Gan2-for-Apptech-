@@ -4,10 +4,6 @@
 
 'use strict';
 
-$(document).ready(function() {
-  /*$('.header__button').click(function() {
-    if ($(window).width() <= 743) {
-      $('.header__cart, .cart').css({'display': 'inline-flex', 'height': '60px'});
-    }
-  });*/
+$(function() {
+
 });

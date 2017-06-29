@@ -11,7 +11,61 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <!--include ../blocks/header/_header-->
+    <div class="navbar-header header">
+      <div class="container">
+        <button class="navbar-toggle collapsed header__button" type="button" data-toggle="collapse" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <!-- /.header__button--><a class="navbar-brand header__logo logo" href="#"><span class="logo__icon"></span><span class="logo__text">ГАН</span></a>
+        <div class="collapse navbar-collapse" id="menu">
+          <div class="trip"><span class="sprite trip__icon-arrow"></span>
+            <p class="wrap"><span class="sprite trip__icon-suitcase"></span></p><span class="trip__text">Командировка</span>
+          </div>
+          <!-- /.__trip--><a class="link">Предложить недвижимость</a>
+          <div class="info visible-lg"><i class="fa fa-phone info__icon-phone" aria-hidden="true"></i>
+            <p class="info__number">8&nbsp;800&nbsp;900&nbsp;77&nbsp;77</p>
+            <p class="info__text">24/7. Бесплатно по РФ</p>
+          </div>
+          <!-- /.info-->
+          <div class="bell">
+            <button class="bell__button button" type="button"><span class="icon button__icon-bell"></span>
+              <p class="button__number">7</p>
+            </button>
+          </div>
+          <!-- /.bell-->
+          <div class="cart">
+            <button class="cart__button button" type="button"><span class="icon button__icon-cart"></span>
+              <p class="button__number">7</p>
+            </button>
+          </div>
+          <!-- /.cart-->
+          <div class="heart">
+            <button class="heart__button button" type="button"><span class="icon button__icon-heart"></span>
+              <p class="button__number">1</p>
+            </button>
+          </div>
+          <!-- /.heart-->
+          <form class="entrance" action="#"><span class="icon entrance__icon-user"></span>
+            <button class="entrance__button button" type="button"><span class="button__text">Войти</span><i class="fa fa-chevron-down button__icon-down" aria-hidden="true"></i></button>
+          </form>
+          <!-- /.entrance-->
+        </div>
+        <!-- /.navbar-collapse-->
+        <div class="second-menu">
+          <div class="trip"><span class="sprite trip__icon-arrow"></span>
+            <p class="wrap"><span class="sprite trip__icon-suitcase"></span></p><span class="trip__text">Командировка</span>
+          </div>
+          <!-- /.__trip-->
+          <div class="cart">
+            <button class="cart__button button" type="button"><span class="icon button__icon-cart"></span>
+              <p class="button__number">7</p>
+            </button>
+          </div>
+          <!-- /.cart-->
+        </div>
+        <!-- /.second-menu-->
+      </div>
+      <!-- /.container-->
+    </div>
+    <!-- /.header-->
     <main class="workspace">
       <div class="container">
         <aside class="settings">
@@ -20,7 +74,7 @@
           </div>
           <!-- /.__trip-->
           <hr class="settings__line">
-          <form class="search-form">
+          <form class="search-form" action="#">
             <div class="city">
               <label class="city__text" for="city">Город назначения</label><br>
               <input class="city__input-text" type="text" placeholder="Омск" id="city" required>
@@ -68,9 +122,72 @@
             </div>
             <!-- /.quantity-->
             <input class="search-form__checkbox" type="checkbox" id="bed">
-            <label class="search-form__checkbox-text" for="bed">Отдельные кровати</label><br>
-            <label class="search-form__slider-text" for="price">Цена за 2 суток</label>
-            <input class="search-form__range-slider" type="range" id="price">
+            <label class="search-form__checkbox-text" for="bed">Отдельные кровати</label>
+            <div class="place">
+              <label class="place__text" for="place">Адрес/название нужного места</label><br>
+              <input class="place__input-text" type="text" placeholder="КДЦ Маяковский" id="place">
+              <button class="button-reset" type="button"><i class="fa fa-times button-reset__icon-cross" aria-hidden="true"></i></button>
+            </div>
+            <!-- /.place-->
+            <p class="search-form__info-text">Подберём варианты поблизости от нужного адреса/метро/организации</p>
+            <div class="variant">
+              <p class="heading">Варианты размещения<span class="icon heading__icon-question"></span></p>
+              <input class="variant__checkbox" type="checkbox" id="hotel">
+              <label class="variant__checkbox-text" for="hotel">Отель</label><br>
+              <input class="variant__checkbox" type="checkbox" id="apartments">
+              <label class="variant__checkbox-text" for="apartments">Аппартаменты</label><br>
+              <input class="variant__checkbox" type="checkbox" id="hostel">
+              <label class="variant__checkbox-text" for="hostel">Хостел</label><br>
+            </div>
+            <!-- /.variant-->
+            <div class="price">
+              <label class="price__slider-text" for="price">Цена за 2 суток</label>
+              <input class="price__range-slider" type="range" id="price">
+            </div>
+            <!-- /.price-->
+            <hr class="search-form__line">
+            <div class="comfort">
+              <p class="heading"><a class="heading__link" role="button" data-toggle="collapse" href="#comfort-content" aria-expanded="true" aria-controls="comfort-content">Дополнительные удобства</a></p>
+              <!-- /.heading-->
+              <div class="comfort-collapse collapse" id="comfort-content">
+                <div class="comfort__body">
+                  <input class="comfort__checkbox" type="checkbox" id="conditioner"><span class="icon comfort__icon-conditioner"></span>
+                  <label class="comfort__checkbox-text" for="conditioner">Кондиционер</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="wifi"><span class="icon comfort__icon-wifi"></span>
+                  <label class="comfort__checkbox-text" for="wifi">Wi-Fi в номере</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="breakfast"><span class="icon comfort__icon-breakfast"></span>
+                  <label class="comfort__checkbox-text" for="breakfast">Бесплатный завтрак</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="booking"><span class="icon comfort__icon-booking"></span>
+                  <label class="comfort__checkbox-text" for="booking">Бесплатная отмена бронирования</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="parking"><span class="icon comfort__icon-parking"></span>
+                  <label class="comfort__checkbox-text" for="parking">Парковка</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="bar"><span class="icon comfort__icon-bar"></span>
+                  <label class="comfort__checkbox-text" for="bar">Мини-бар в номере</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="kitchen"><span class="icon comfort__icon-kitchen"></span>
+                  <label class="comfort__checkbox-text" for="kitchen">Кухня</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="transfer"><span class="icon comfort__icon-transfer"></span>
+                  <label class="comfort__checkbox-text" for="transfer">Трансфер от/до аэропорта</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="animals"><span class="icon comfort__icon-animals"></span>
+                  <label class="comfort__checkbox-text" for="animals">Размещение с животными</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="spa"><span class="icon comfort__icon-spa"></span>
+                  <label class="comfort__checkbox-text" for="spa">Спа/Сауна</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="restaurant"><span class="icon comfort__icon-restaurant"></span>
+                  <label class="comfort__checkbox-text" for="restaurant">Ресторан</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="smoking"><span class="icon comfort__icon-smoking"></span>
+                  <label class="comfort__checkbox-text" for="smoking">Место для курения</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="fitness"><span class="icon comfort__icon-fitness"></span>
+                  <label class="comfort__checkbox-text" for="fitness">Фитнес-центр</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="bathroom"><span class="icon comfort__icon-bathroom"></span>
+                  <label class="comfort__checkbox-text" for="bathroom">Ванная комната в номере</label><br>
+                  <input class="comfort__checkbox" type="checkbox" id="depositbox"><span class="icon comfort__icon-depositbox"></span>
+                  <label class="comfort__checkbox-text" for="depositbox">Сейф в номере</label><br>
+                </div>
+                <!-- /.comfort__body-->
+              </div>
+              <!-- /.comfort-collapse-->
+            </div>
+            <!-- /.comfort-->
+            <hr class="search-form__line">
           </form>
           <!-- /.search-form-->
         </aside>

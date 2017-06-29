@@ -1,0 +1,90 @@
+aside.settings
+  include ../../header/__trip
+  hr.settings__line
+  form.search-form(action='#')
+    include ___city
+    include ___date
+    .quantity
+      include ___person
+      include ___room
+    // /.quantity
+    input.search-form__checkbox(type='checkbox' id='bed')
+    label.search-form__checkbox-text(for='bed') Отдельные кровати
+    include ___place
+    p.search-form__info-text Подберём варианты поблизости от нужного адреса/метро/организации
+    include ___variant
+    include ___price
+    hr.search-form__line
+    .comfort
+      p.heading
+        a.heading__link(role="button" data-toggle="collapse" href="#comfort-content" aria-expanded="true" aria-controls="comfort-content")
+          | Дополнительные удобства
+      // /.heading
+      .comfort-collapse.collapse#comfort-content
+        .comfort__body
+          input.comfort__checkbox(type='checkbox' id='conditioner')
+          span.icon.comfort__icon-conditioner
+          label.comfort__checkbox-text(for='conditioner') Кондиционер
+          br
+          input.comfort__checkbox(type='checkbox' id='wifi')
+          span.icon.comfort__icon-wifi
+          label.comfort__checkbox-text(for='wifi') Wi-Fi в номере
+          br
+          input.comfort__checkbox(type='checkbox' id='breakfast')
+          span.icon.comfort__icon-breakfast
+          label.comfort__checkbox-text(for='breakfast') Бесплатный завтрак
+          br
+          input.comfort__checkbox(type='checkbox' id='booking')
+          span.icon.comfort__icon-booking
+          label.comfort__checkbox-text(for='booking') Бесплатная отмена бронирования
+          br
+          input.comfort__checkbox(type='checkbox' id='parking')
+          span.icon.comfort__icon-parking
+          label.comfort__checkbox-text(for='parking') Парковка
+          br
+          input.comfort__checkbox(type='checkbox' id='bar')
+          span.icon.comfort__icon-bar
+          label.comfort__checkbox-text(for='bar') Мини-бар в номере
+          br
+          input.comfort__checkbox(type='checkbox' id='kitchen')
+          span.icon.comfort__icon-kitchen
+          label.comfort__checkbox-text(for='kitchen') Кухня
+          br
+          input.comfort__checkbox(type='checkbox' id='transfer')
+          span.icon.comfort__icon-transfer
+          label.comfort__checkbox-text(for='transfer') Трансфер от/до аэропорта
+          br
+          input.comfort__checkbox(type='checkbox' id='animals')
+          span.icon.comfort__icon-animals
+          label.comfort__checkbox-text(for='animals') Размещение с животными
+          br
+          input.comfort__checkbox(type='checkbox' id='spa')
+          span.icon.comfort__icon-spa
+          label.comfort__checkbox-text(for='spa') Спа/Сауна
+          br
+          input.comfort__checkbox(type='checkbox' id='restaurant')
+          span.icon.comfort__icon-restaurant
+          label.comfort__checkbox-text(for='restaurant') Ресторан
+          br
+          input.comfort__checkbox(type='checkbox' id='smoking')
+          span.icon.comfort__icon-smoking
+          label.comfort__checkbox-text(for='smoking') Место для курения
+          br
+          input.comfort__checkbox(type='checkbox' id='fitness')
+          span.icon.comfort__icon-fitness
+          label.comfort__checkbox-text(for='fitness') Фитнес-центр
+          br
+          input.comfort__checkbox(type='checkbox' id='bathroom')
+          span.icon.comfort__icon-bathroom
+          label.comfort__checkbox-text(for='bathroom') Ванная комната в номере
+          br
+          input.comfort__checkbox(type='checkbox' id='depositbox')
+          span.icon.comfort__icon-depositbox
+          label.comfort__checkbox-text(for='depositbox') Сейф в номере
+          br
+        // /.comfort__body
+      // /.comfort-collapse
+    // /.comfort
+    hr.search-form__line
+  // /.search-form
+// /.settings
