@@ -41,7 +41,7 @@ body {
   body * a:focus {
     text-decoration: none; }
 
-.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset {
+.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset {
   background: none;
   border: none;
   outline: none;
@@ -322,35 +322,35 @@ body {
   background: -webkit-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
   background: -o-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
   background: linear-gradient(to right, white 50%, #f8fafb 50%, #f8fafb); }
-  .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room {
+  .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room, .workspace .settings .search-form .place {
     background: #f8fafb;
     padding: 5px 9px 9px; }
-  .workspace .settings .search-form .city__text, .workspace .settings .search-form .date .occupancy__text, .workspace .settings .search-form .date .leave__text, .workspace .settings .search-form .quantity .person__text, .workspace .settings .search-form .quantity .room__text {
+  .workspace .settings .search-form .city__text, .workspace .settings .search-form .date .occupancy__text, .workspace .settings .search-form .date .leave__text, .workspace .settings .search-form .quantity .person__text, .workspace .settings .search-form .quantity .room__text, .workspace .settings .search-form .place__text {
     color: #949494;
     font-size: 0.813rem;
     margin-bottom: 8px; }
-  .workspace .settings .search-form .city__input-text, .workspace .settings .search-form .date .occupancy__input-date, .workspace .settings .search-form .date .leave__input-date, .workspace .settings .search-form .quantity .person .input-number, .workspace .settings .search-form .quantity .room .input-number {
+  .workspace .settings .search-form .city__input-text, .workspace .settings .search-form .date .occupancy__input-date, .workspace .settings .search-form .date .leave__input-date, .workspace .settings .search-form .quantity .person .input-number, .workspace .settings .search-form .quantity .room .input-number, .workspace .settings .search-form .place__input-text {
     border: none;
     outline: none;
     background: transparent;
     color: black;
     font-size: 0.938rem; }
-    .workspace .settings .search-form .city__input-text::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number::-webkit-input-placeholder {
+    .workspace .settings .search-form .city__input-text::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number::-webkit-input-placeholder, .workspace .settings .search-form .place__input-text::-webkit-input-placeholder {
       color: #555555; }
-    .workspace .settings .search-form .city__input-text::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number::-moz-placeholder {
+    .workspace .settings .search-form .city__input-text::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number::-moz-placeholder, .workspace .settings .search-form .place__input-text::-moz-placeholder {
       color: #555555; }
-    .workspace .settings .search-form .city__input-text:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:-moz-placeholder {
+    .workspace .settings .search-form .city__input-text:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:-moz-placeholder, .workspace .settings .search-form .place__input-text:-moz-placeholder {
       color: #555555; }
-    .workspace .settings .search-form .city__input-text:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:-ms-input-placeholder {
+    .workspace .settings .search-form .city__input-text:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:-ms-input-placeholder, .workspace .settings .search-form .place__input-text:-ms-input-placeholder {
       color: #555555; }
-  .workspace .settings .search-form .city .button-reset {
+  .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset {
     float: right;
     color: #ced0da; }
-  .workspace .squaredThree {
+  .workspace .settings .search-form__checkbox, .workspace .settings .search-form .variant__checkbox, .workspace .settings .search-form .comfort__checkbox {
     width: 17px;
     position: relative;
     float: left; }
-    .workspace .squaredThree label {
+    .workspace .settings .search-form__checkbox label, .workspace .settings .search-form .variant__checkbox label, .workspace .settings .search-form .comfort__checkbox label {
       width: 17px;
       height: 17px;
       cursor: pointer;
@@ -361,7 +361,7 @@ body {
       border: 1px solid #b7b7b7;
       -webkit-border-radius: 3px;
               border-radius: 3px; }
-      .workspace .squaredThree label:after {
+      .workspace .settings .search-form__checkbox label:after, .workspace .settings .search-form .variant__checkbox label:after, .workspace .settings .search-form .comfort__checkbox label:after {
         content: '';
         width: 9px;
         height: 5px;
@@ -376,16 +376,16 @@ body {
         -webkit-transform: rotate(-45deg);
             -ms-transform: rotate(-45deg);
                 transform: rotate(-45deg); }
-      .workspace .squaredThree label:hover {
+      .workspace .settings .search-form__checkbox label:hover, .workspace .settings .search-form .variant__checkbox label:hover, .workspace .settings .search-form .comfort__checkbox label:hover {
         border: 1px solid #03a3f0; }
-    .workspace .squaredThree input[type=checkbox] {
+    .workspace .settings .search-form__checkbox input[type=checkbox], .workspace .settings .search-form .variant__checkbox input[type=checkbox], .workspace .settings .search-form .comfort__checkbox input[type=checkbox] {
       visibility: hidden; }
-      .workspace .squaredThree input[type=checkbox]:checked + label {
+      .workspace .settings .search-form__checkbox input[type=checkbox]:checked + label, .workspace .settings .search-form .variant__checkbox input[type=checkbox]:checked + label, .workspace .settings .search-form .comfort__checkbox input[type=checkbox]:checked + label {
         background: #03a3f0;
         border-color: #03a3f0; }
-      .workspace .squaredThree input[type=checkbox]:checked + label:after {
+      .workspace .settings .search-form__checkbox input[type=checkbox]:checked + label:after, .workspace .settings .search-form .variant__checkbox input[type=checkbox]:checked + label:after, .workspace .settings .search-form .comfort__checkbox input[type=checkbox]:checked + label:after {
         opacity: 1; }
-      .workspace .squaredThree input[type=checkbox]:checked:hover + label {
+      .workspace .settings .search-form__checkbox input[type=checkbox]:checked:hover + label, .workspace .settings .search-form .variant__checkbox input[type=checkbox]:checked:hover + label, .workspace .settings .search-form .comfort__checkbox input[type=checkbox]:checked:hover + label {
         opacity: 0.8; }
   .workspace .settings {
     background: white;
@@ -393,7 +393,11 @@ body {
     -webkit-box-shadow: 0 1px 21px 0 rgba(34, 31, 31, 0.13);
             box-shadow: 0 1px 21px 0 rgba(34, 31, 31, 0.13);
     padding: 0 20px;
-    margin-left: -20px; }
+    margin-left: -20px;
+    float: left;
+    left: 0;
+    top: 0;
+    height: 100%; }
     .workspace .settings .trip {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -454,11 +458,11 @@ body {
       border-top: 0;
       -webkit-border-radius: 0 0 3px 3px;
               border-radius: 0 0 3px 3px;
-      float: left;
+      display: inline-block;
       margin-bottom: 10px; }
       .workspace .settings .search-form .date .occupancy {
         width: 50%;
-        float: left;
+        display: inline-block;
         border-right: 1px solid #ebebeb; }
         .workspace .settings .search-form .date .occupancy__input-date {
           font-weight: 500;
@@ -477,14 +481,14 @@ body {
           float: right; }
     .workspace .settings .search-form .quantity {
       width: 100%;
-      float: left;
+      display: inline-block;
       border: 1px solid #ebebeb;
       -webkit-border-radius: 3px;
               border-radius: 3px;
       margin-bottom: 20px; }
       .workspace .settings .search-form .quantity .person {
         width: 50%;
-        float: left;
+        display: inline-block;
         border-right: 1px solid #ebebeb;
         padding-bottom: 9px; }
         .workspace .settings .search-form .quantity .person__icon-man {
@@ -496,6 +500,88 @@ body {
         float: right; }
         .workspace .settings .search-form .quantity .room .input-number {
           width: 88.2%; }
+    .workspace .settings .search-form__checkbox {
+      margin-bottom: 22px; }
+    .workspace .settings .search-form__checkbox-text {
+      color: #787878;
+      font-size: 0.938rem;
+      display: inline-block;
+      margin-top: 2px;
+      margin-left: 7px; }
+    .workspace .settings .search-form .place {
+      width: 100%;
+      border: 1px solid #ebebeb;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      display: inline-block;
+      margin-bottom: 9px; }
+      .workspace .settings .search-form .place .button-reset__icon-cross {
+        font-size: 0.8rem;
+        margin-top: 4px; }
+    .workspace .settings .search-form__info-text {
+      color: #2c2c2c;
+      font-size: 0.813rem;
+      font-weight: 300;
+      display: inline-block;
+      line-height: 15px;
+      margin-bottom: 29px; }
+    .workspace .settings .search-form .variant {
+      display: inline-block;
+      margin-bottom: 16px; }
+      .workspace .settings .search-form .variant .heading {
+        color: #3f3f3f;
+        font-size: 0.938rem;
+        font-weight: 700;
+        margin-bottom: 20px; }
+        .workspace .settings .search-form .variant .heading__icon-question {
+          font-size: 1.1rem;
+          color: #7d7d7d;
+          margin-left: 9px; }
+      .workspace .settings .search-form .variant__checkbox {
+        margin-bottom: 17px; }
+      .workspace .settings .search-form .variant .variant__checkbox-text {
+        color: #494949;
+        font-size: 0.875rem;
+        display: inline-block;
+        margin: 0 0 21px 12px; }
+    .workspace .settings .search-form__line {
+      margin-top: 0;
+      margin-left: -20px;
+      width: 305px;
+      border-top-color: #c2c2c2;
+      margin-bottom: 30px; }
+    .workspace .settings .search-form .comfort .heading__link {
+      color: #2c2c2c;
+      font-size: 0.938rem;
+      font-weight: 700; }
+      .workspace .settings .search-form .comfort .heading__link:hover {
+        color: #898989; }
+      .workspace .settings .search-form .comfort .heading__link .icon-down {
+        color: #bbbbbb;
+        font-size: 0.875rem;
+        float: right; }
+    .workspace .settings .search-form .comfort__body {
+      margin-top: 20px;
+      margin-bottom: -20px; }
+    .workspace .settings .search-form .comfort__checkbox {
+      margin-bottom: 17px; }
+    .workspace .settings .search-form .comfort__checkbox-text {
+      color: #494949;
+      font-size: 0.875rem;
+      display: inline-block;
+      margin: 0 0 21px 7px; }
+    .workspace .settings .search-form__line_bottom {
+      margin-top: 30px;
+      margin-bottom: 0;
+      margin-left: -20px;
+      width: 305px;
+      border-top-color: #c2c2c2; }
+  .workspace .content {
+    background: #f8fafb;
+    width: -webkit-calc(100% - 290px);
+    width: calc(100% - 290px);
+    float: right;
+    height: 2000px; }
 
 .icon {
   font-size: 10px; }

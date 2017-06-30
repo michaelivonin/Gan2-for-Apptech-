@@ -9,11 +9,12 @@ aside.settings
       include ___person
       include ___room
     // /.quantity
-    .squaredThree
-      input.search-form__checkbox(type='checkbox' id='bed')
-      label.search-form__checkbox-text(for='bed')
+    .search-form__checkbox
+      input(type='checkbox' id='bed')
+      label(for='bed')
+    span.search-form__checkbox-text Отдельные кровати
     include ___place
-    p.search-form__info-text Подберём варианты поблизости от нужного адреса/метро/организации
+    p.search-form__info-text Подберём варианты поблизости от&nbsp;нужного адреса/метро/организации
     include ___variant
     include ___price
     hr.search-form__line
@@ -21,72 +22,103 @@ aside.settings
       p.heading
         a.heading__link(role="button" data-toggle="collapse" href="#comfort-content" aria-expanded="true" aria-controls="comfort-content")
           | Дополнительные удобства
+          i.fa.fa-chevron-down.icon-down(aria-hidden="true")
       // /.heading
       .comfort-collapse.collapse#comfort-content
         .comfort__body
-          input.comfort__checkbox(type='checkbox' id='conditioner')
+          .comfort__checkbox
+            input(type='checkbox' id='conditioner')
+            label(for='conditioner')
           span.icon.comfort__icon-conditioner
-          label.comfort__checkbox-text(for='conditioner') Кондиционер
+          span.comfort__checkbox-text Кондиционер
           br
-          input.comfort__checkbox(type='checkbox' id='wifi')
+          .comfort__checkbox
+            input(type='checkbox' id='wifi')
+            label(for='wifi')
           span.icon.comfort__icon-wifi
-          label.comfort__checkbox-text(for='wifi') Wi-Fi в номере
+          span.comfort__checkbox-text Wi-Fi в номере
           br
-          input.comfort__checkbox(type='checkbox' id='breakfast')
+          .comfort__checkbox
+            input(type='checkbox' id='breakfast')
+            label(for='breakfast')
           span.icon.comfort__icon-breakfast
-          label.comfort__checkbox-text(for='breakfast') Бесплатный завтрак
+          span.comfort__checkbox-text Бесплатный завтрак
           br
-          input.comfort__checkbox(type='checkbox' id='booking')
+          .comfort__checkbox
+            input(type='checkbox' id='booking')
+            label(for='booking')
           span.icon.comfort__icon-booking
-          label.comfort__checkbox-text(for='booking') Бесплатная отмена бронирования
+          span.comfort__checkbox-text Бесплатная отмена бронирования
           br
-          input.comfort__checkbox(type='checkbox' id='parking')
+          .comfort__checkbox
+            input(type='checkbox' id='parking')
+            label(for='parking')
           span.icon.comfort__icon-parking
-          label.comfort__checkbox-text(for='parking') Парковка
+          span.comfort__checkbox-text Парковка
           br
-          input.comfort__checkbox(type='checkbox' id='bar')
+          .comfort__checkbox
+            input(type='checkbox' id='bar')
+            label(for='bar')
           span.icon.comfort__icon-bar
-          label.comfort__checkbox-text(for='bar') Мини-бар в номере
+          span.comfort__checkbox-text Мини-бар в номере
           br
-          input.comfort__checkbox(type='checkbox' id='kitchen')
+          .comfort__checkbox
+            input(type='checkbox' id='kitchen')
+            label(for='kitchen')
           span.icon.comfort__icon-kitchen
-          label.comfort__checkbox-text(for='kitchen') Кухня
+          span.comfort__checkbox-text Кухня
           br
-          input.comfort__checkbox(type='checkbox' id='transfer')
+          .comfort__checkbox
+            input(type='checkbox' id='transfer')
+            label(for='transfer')
           span.icon.comfort__icon-transfer
-          label.comfort__checkbox-text(for='transfer') Трансфер от/до аэропорта
+          span.comfort__checkbox-text Трансфер от/до аэропорта
           br
-          input.comfort__checkbox(type='checkbox' id='animals')
+          .comfort__checkbox
+            input(type='checkbox' id='animals')
+            label(for='animals')
           span.icon.comfort__icon-animals
-          label.comfort__checkbox-text(for='animals') Размещение с животными
+          span.comfort__checkbox-text Размещение с животными
           br
-          input.comfort__checkbox(type='checkbox' id='spa')
+          .comfort__checkbox
+            input(type='checkbox' id='spa')
+            label(for='spa')
           span.icon.comfort__icon-spa
-          label.comfort__checkbox-text(for='spa') Спа/Сауна
+          span.comfort__checkbox-text Спа/Сауна
           br
-          input.comfort__checkbox(type='checkbox' id='restaurant')
+          .comfort__checkbox
+            input(type='checkbox' id='restaurant')
+            label(for='restaurant')
           span.icon.comfort__icon-restaurant
-          label.comfort__checkbox-text(for='restaurant') Ресторан
+          span.comfort__checkbox-text Ресторан
           br
-          input.comfort__checkbox(type='checkbox' id='smoking')
+          .comfort__checkbox
+            input(type='checkbox' id='smoking')
+            label(for='smoking')
           span.icon.comfort__icon-smoking
-          label.comfort__checkbox-text(for='smoking') Место для курения
+          span.comfort__checkbox-text Место для курения
           br
-          input.comfort__checkbox(type='checkbox' id='fitness')
+          .comfort__checkbox
+            input(type='checkbox' id='fitness')
+            label(for='fitness')
           span.icon.comfort__icon-fitness
-          label.comfort__checkbox-text(for='fitness') Фитнес-центр
+          span.comfort__checkbox-text Фитнес-центр
           br
-          input.comfort__checkbox(type='checkbox' id='bathroom')
+          .comfort__checkbox
+            input(type='checkbox' id='bathroom')
+            label(for='bathroom')
           span.icon.comfort__icon-bathroom
-          label.comfort__checkbox-text(for='bathroom') Ванная комната в номере
+          span.comfort__checkbox-text Ванная комната в номере
           br
-          input.comfort__checkbox(type='checkbox' id='depositbox')
+          .comfort__checkbox
+            input(type='checkbox' id='depositbox')
+            label(for='depositbox')
           span.icon.comfort__icon-depositbox
-          label.comfort__checkbox-text(for='depositbox') Сейф в номере
+          span.comfort__checkbox-text Сейф в номере
           br
         // /.comfort__body
       // /.comfort-collapse
     // /.comfort
-    hr.search-form__line
+    hr.search-form__line_bottom
   // /.search-form
 // /.settings

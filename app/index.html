@@ -122,25 +122,31 @@
               <!-- /.room-->
             </div>
             <!-- /.quantity-->
-            <div class="squaredThree">
-              <input class="search-form__checkbox" type="checkbox" id="bed">
-              <label class="search-form__checkbox-text" for="bed"></label>
-            </div>
+            <div class="search-form__checkbox">
+              <input type="checkbox" id="bed">
+              <label for="bed"></label>
+            </div><span class="search-form__checkbox-text">Отдельные кровати</span>
             <div class="place">
               <label class="place__text" for="place">Адрес/название нужного места</label><br>
               <input class="place__input-text" type="text" placeholder="КДЦ Маяковский" id="place">
               <button class="button-reset" type="button"><i class="fa fa-times button-reset__icon-cross" aria-hidden="true"></i></button>
             </div>
             <!-- /.place-->
-            <p class="search-form__info-text">Подберём варианты поблизости от нужного адреса/метро/организации</p>
+            <p class="search-form__info-text">Подберём варианты поблизости от&nbsp;нужного адреса/метро/организации</p>
             <div class="variant">
-              <p class="heading">Варианты размещения<span class="icon heading__icon-question"></span></p>
-              <input class="variant__checkbox" type="checkbox" id="hotel">
-              <label class="variant__checkbox-text" for="hotel">Отель</label><br>
-              <input class="variant__checkbox" type="checkbox" id="apartments">
-              <label class="variant__checkbox-text" for="apartments">Аппартаменты</label><br>
-              <input class="variant__checkbox" type="checkbox" id="hostel">
-              <label class="variant__checkbox-text" for="hostel">Хостел</label><br>
+              <p class="heading">Варианты размещения<i class="fa fa-question-circle heading__icon-question" aria-hidden="true"></i></p>
+              <div class="variant__checkbox">
+                <input type="checkbox" id="hotel">
+                <label for="hotel"></label>
+              </div><span class="variant__checkbox-text">Отель</span><br>
+              <div class="variant__checkbox">
+                <input type="checkbox" id="apartments">
+                <label for="apartments"></label>
+              </div><span class="variant__checkbox-text">Аппартаменты</span><br>
+              <div class="variant__checkbox">
+                <input type="checkbox" id="hostel">
+                <label for="hostel"></label>
+              </div><span class="variant__checkbox-text">Хостел</span><br>
             </div>
             <!-- /.variant-->
             <div class="price">
@@ -150,47 +156,77 @@
             <!-- /.price-->
             <hr class="search-form__line">
             <div class="comfort">
-              <p class="heading"><a class="heading__link" role="button" data-toggle="collapse" href="#comfort-content" aria-expanded="true" aria-controls="comfort-content">Дополнительные удобства</a></p>
+              <p class="heading"><a class="heading__link" role="button" data-toggle="collapse" href="#comfort-content" aria-expanded="true" aria-controls="comfort-content">Дополнительные удобства<i class="fa fa-chevron-down icon-down" aria-hidden="true"></i></a></p>
               <!-- /.heading-->
               <div class="comfort-collapse collapse" id="comfort-content">
                 <div class="comfort__body">
-                  <input class="comfort__checkbox" type="checkbox" id="conditioner"><span class="icon comfort__icon-conditioner"></span>
-                  <label class="comfort__checkbox-text" for="conditioner">Кондиционер</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="wifi"><span class="icon comfort__icon-wifi"></span>
-                  <label class="comfort__checkbox-text" for="wifi">Wi-Fi в номере</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="breakfast"><span class="icon comfort__icon-breakfast"></span>
-                  <label class="comfort__checkbox-text" for="breakfast">Бесплатный завтрак</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="booking"><span class="icon comfort__icon-booking"></span>
-                  <label class="comfort__checkbox-text" for="booking">Бесплатная отмена бронирования</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="parking"><span class="icon comfort__icon-parking"></span>
-                  <label class="comfort__checkbox-text" for="parking">Парковка</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="bar"><span class="icon comfort__icon-bar"></span>
-                  <label class="comfort__checkbox-text" for="bar">Мини-бар в номере</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="kitchen"><span class="icon comfort__icon-kitchen"></span>
-                  <label class="comfort__checkbox-text" for="kitchen">Кухня</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="transfer"><span class="icon comfort__icon-transfer"></span>
-                  <label class="comfort__checkbox-text" for="transfer">Трансфер от/до аэропорта</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="animals"><span class="icon comfort__icon-animals"></span>
-                  <label class="comfort__checkbox-text" for="animals">Размещение с животными</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="spa"><span class="icon comfort__icon-spa"></span>
-                  <label class="comfort__checkbox-text" for="spa">Спа/Сауна</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="restaurant"><span class="icon comfort__icon-restaurant"></span>
-                  <label class="comfort__checkbox-text" for="restaurant">Ресторан</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="smoking"><span class="icon comfort__icon-smoking"></span>
-                  <label class="comfort__checkbox-text" for="smoking">Место для курения</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="fitness"><span class="icon comfort__icon-fitness"></span>
-                  <label class="comfort__checkbox-text" for="fitness">Фитнес-центр</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="bathroom"><span class="icon comfort__icon-bathroom"></span>
-                  <label class="comfort__checkbox-text" for="bathroom">Ванная комната в номере</label><br>
-                  <input class="comfort__checkbox" type="checkbox" id="depositbox"><span class="icon comfort__icon-depositbox"></span>
-                  <label class="comfort__checkbox-text" for="depositbox">Сейф в номере</label><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="conditioner">
+                    <label for="conditioner"></label>
+                  </div><span class="icon comfort__icon-conditioner"></span><span class="comfort__checkbox-text">Кондиционер</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="wifi">
+                    <label for="wifi"></label>
+                  </div><span class="icon comfort__icon-wifi"></span><span class="comfort__checkbox-text">Wi-Fi в номере</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="breakfast">
+                    <label for="breakfast"></label>
+                  </div><span class="icon comfort__icon-breakfast"></span><span class="comfort__checkbox-text">Бесплатный завтрак</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="booking">
+                    <label for="booking"></label>
+                  </div><span class="icon comfort__icon-booking"></span><span class="comfort__checkbox-text">Бесплатная отмена бронирования</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="parking">
+                    <label for="parking"></label>
+                  </div><span class="icon comfort__icon-parking"></span><span class="comfort__checkbox-text">Парковка</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="bar">
+                    <label for="bar"></label>
+                  </div><span class="icon comfort__icon-bar"></span><span class="comfort__checkbox-text">Мини-бар в номере</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="kitchen">
+                    <label for="kitchen"></label>
+                  </div><span class="icon comfort__icon-kitchen"></span><span class="comfort__checkbox-text">Кухня</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="transfer">
+                    <label for="transfer"></label>
+                  </div><span class="icon comfort__icon-transfer"></span><span class="comfort__checkbox-text">Трансфер от/до аэропорта</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="animals">
+                    <label for="animals"></label>
+                  </div><span class="icon comfort__icon-animals"></span><span class="comfort__checkbox-text">Размещение с животными</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="spa">
+                    <label for="spa"></label>
+                  </div><span class="icon comfort__icon-spa"></span><span class="comfort__checkbox-text">Спа/Сауна</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="restaurant">
+                    <label for="restaurant"></label>
+                  </div><span class="icon comfort__icon-restaurant"></span><span class="comfort__checkbox-text">Ресторан</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="smoking">
+                    <label for="smoking"></label>
+                  </div><span class="icon comfort__icon-smoking"></span><span class="comfort__checkbox-text">Место для курения</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="fitness">
+                    <label for="fitness"></label>
+                  </div><span class="icon comfort__icon-fitness"></span><span class="comfort__checkbox-text">Фитнес-центр</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="bathroom">
+                    <label for="bathroom"></label>
+                  </div><span class="icon comfort__icon-bathroom"></span><span class="comfort__checkbox-text">Ванная комната в номере</span><br>
+                  <div class="comfort__checkbox">
+                    <input type="checkbox" id="depositbox">
+                    <label for="depositbox"></label>
+                  </div><span class="icon comfort__icon-depositbox"></span><span class="comfort__checkbox-text">Сейф в номере</span><br>
                 </div>
                 <!-- /.comfort__body-->
               </div>
               <!-- /.comfort-collapse-->
             </div>
             <!-- /.comfort-->
-            <hr class="search-form__line">
+            <hr class="search-form__line_bottom">
           </form>
           <!-- /.search-form-->
         </aside>

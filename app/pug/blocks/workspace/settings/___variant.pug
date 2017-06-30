@@ -1,13 +1,19 @@
 .variant
   p.heading Варианты размещения
-    span.icon.heading__icon-question
-  input.variant__checkbox(type='checkbox' id='hotel')
-  label.variant__checkbox-text(for='hotel') Отель
+    i.fa.fa-question-circle.heading__icon-question(aria-hidden="true")
+  .variant__checkbox
+    input(type='checkbox' id='hotel')
+    label(for='hotel')
+  span.variant__checkbox-text Отель
   br
-  input.variant__checkbox(type='checkbox' id='apartments')
-  label.variant__checkbox-text(for='apartments') Аппартаменты
+  .variant__checkbox
+    input(type='checkbox' id='apartments')
+    label(for='apartments')
+  span.variant__checkbox-text Аппартаменты
   br
-  input.variant__checkbox(type='checkbox' id='hostel')
-  label.variant__checkbox-text(for='hostel') Хостел
+  .variant__checkbox
+    input(type='checkbox' id='hostel')
+    label(for='hostel')
+  span.variant__checkbox-text Хостел
   br
 // /.variant
