@@ -1,0 +1,42 @@
+.date
+  width: 100%
+  border: 1px solid $white2
+  border-top: 0
+  border-radius: 0 0 3px 3px
+  float: left
+  margin-bottom: 10px
+
+  .occupancy
+    @extend %search-form__item-default
+    width: 50%
+    float: left
+    border-right: 1px solid $white2
+
+    &__text
+      @extend %item__text-default
+
+    &__input-date
+      @extend %item__input-default
+      font-weight: 500
+      width: 70px
+      letter-spacing: -1px
+
+    .icon-calendar
+      float: right
+
+  .leave
+    @extend %search-form__item-default
+    width: 50%
+    float: right
+
+    &__text
+      @extend %item__text-default
+
+    &__input-date
+      @extend %item__input-default
+      font-weight: 500
+      width: 70px
+      letter-spacing: -1px
+
+    .icon-calendar
+      float: right

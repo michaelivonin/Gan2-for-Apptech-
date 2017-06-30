@@ -41,7 +41,7 @@ body {
   body * a:focus {
     text-decoration: none; }
 
-.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button {
+.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset {
   background: none;
   border: none;
   outline: none;
@@ -322,8 +322,78 @@ body {
   background: -webkit-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
   background: -o-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
   background: linear-gradient(to right, white 50%, #f8fafb 50%, #f8fafb); }
+  .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room {
+    background: #f8fafb;
+    padding: 5px 9px 9px; }
+  .workspace .settings .search-form .city__text, .workspace .settings .search-form .date .occupancy__text, .workspace .settings .search-form .date .leave__text, .workspace .settings .search-form .quantity .person__text, .workspace .settings .search-form .quantity .room__text {
+    color: #949494;
+    font-size: 0.813rem;
+    margin-bottom: 8px; }
+  .workspace .settings .search-form .city__input-text, .workspace .settings .search-form .date .occupancy__input-date, .workspace .settings .search-form .date .leave__input-date, .workspace .settings .search-form .quantity .person .input-number, .workspace .settings .search-form .quantity .room .input-number {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-size: 0.938rem; }
+    .workspace .settings .search-form .city__input-text::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number::-webkit-input-placeholder {
+      color: #555555; }
+    .workspace .settings .search-form .city__input-text::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number::-moz-placeholder {
+      color: #555555; }
+    .workspace .settings .search-form .city__input-text:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:-moz-placeholder {
+      color: #555555; }
+    .workspace .settings .search-form .city__input-text:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:-ms-input-placeholder {
+      color: #555555; }
+  .workspace .settings .search-form .city .button-reset {
+    float: right;
+    color: #ced0da; }
+  .workspace .squaredThree {
+    width: 17px;
+    position: relative;
+    float: left; }
+    .workspace .squaredThree label {
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: transparent;
+      border: 1px solid #b7b7b7;
+      -webkit-border-radius: 3px;
+              border-radius: 3px; }
+      .workspace .squaredThree label:after {
+        content: '';
+        width: 9px;
+        height: 5px;
+        position: absolute;
+        top: 4px;
+        left: 0.21rem;
+        border: 2px solid white;
+        border-top: none;
+        border-right: none;
+        background: transparent;
+        opacity: 0;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+      .workspace .squaredThree label:hover {
+        border: 1px solid #03a3f0; }
+    .workspace .squaredThree input[type=checkbox] {
+      visibility: hidden; }
+      .workspace .squaredThree input[type=checkbox]:checked + label {
+        background: #03a3f0;
+        border-color: #03a3f0; }
+      .workspace .squaredThree input[type=checkbox]:checked + label:after {
+        opacity: 1; }
+      .workspace .squaredThree input[type=checkbox]:checked:hover + label {
+        opacity: 0.8; }
   .workspace .settings {
-    width: 305px; }
+    background: white;
+    width: 305px;
+    -webkit-box-shadow: 0 1px 21px 0 rgba(34, 31, 31, 0.13);
+            box-shadow: 0 1px 21px 0 rgba(34, 31, 31, 0.13);
+    padding: 0 20px;
+    margin-left: -20px; }
     .workspace .settings .trip {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -365,10 +435,67 @@ body {
         font-size: 0.938rem;
         letter-spacing: 1.16px;
         margin-top: 4px; }
-    .workspace .settings .search-form {
-      background: transparent; }
-      .workspace .settings .search-form .quantity {
-        background: transparent; }
+    .workspace .settings__line {
+      margin-top: 0;
+      margin-left: -20px;
+      width: 305px;
+      border-top-color: #c2c2c2; }
+    .workspace .settings .search-form .city {
+      width: 100%;
+      border: 1px solid #ebebeb;
+      -webkit-border-radius: 3px 3px 0 0;
+              border-radius: 3px 3px 0 0; }
+      .workspace .settings .search-form .city .button-reset__icon-cross {
+        font-size: 0.8rem;
+        margin-top: 4px; }
+    .workspace .settings .search-form .date {
+      width: 100%;
+      border: 1px solid #ebebeb;
+      border-top: 0;
+      -webkit-border-radius: 0 0 3px 3px;
+              border-radius: 0 0 3px 3px;
+      float: left;
+      margin-bottom: 10px; }
+      .workspace .settings .search-form .date .occupancy {
+        width: 50%;
+        float: left;
+        border-right: 1px solid #ebebeb; }
+        .workspace .settings .search-form .date .occupancy__input-date {
+          font-weight: 500;
+          width: 70px;
+          letter-spacing: -1px; }
+        .workspace .settings .search-form .date .occupancy .icon-calendar {
+          float: right; }
+      .workspace .settings .search-form .date .leave {
+        width: 50%;
+        float: right; }
+        .workspace .settings .search-form .date .leave__input-date {
+          font-weight: 500;
+          width: 70px;
+          letter-spacing: -1px; }
+        .workspace .settings .search-form .date .leave .icon-calendar {
+          float: right; }
+    .workspace .settings .search-form .quantity {
+      width: 100%;
+      float: left;
+      border: 1px solid #ebebeb;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      margin-bottom: 20px; }
+      .workspace .settings .search-form .quantity .person {
+        width: 50%;
+        float: left;
+        border-right: 1px solid #ebebeb;
+        padding-bottom: 9px; }
+        .workspace .settings .search-form .quantity .person__icon-man {
+          color: #898989; }
+        .workspace .settings .search-form .quantity .person .input-number {
+          width: 88.2%; }
+      .workspace .settings .search-form .quantity .room {
+        width: 50%;
+        float: right; }
+        .workspace .settings .search-form .quantity .room .input-number {
+          width: 88.2%; }
 
 .icon {
   font-size: 10px; }
@@ -379,8 +506,8 @@ body {
   display: inline-block;
   background-image: url("../img/svg-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 2.6em 11.5em;
-          background-size: 2.6em 11.5em; }
+  -webkit-background-size: 2.6em 15.7em;
+          background-size: 2.6em 15.7em; }
 
 .no-svg .icon:before {
   background-image: url("../img/svg-sprite.png"); }
@@ -405,13 +532,23 @@ body {
   width: 1.3em;
   height: 1.3em; }
 
-.icon.trip__icon-arrow:before {
+.icon.icon-calendar:before {
   background-position: -0.2em -8.7em;
+  width: 1.6em;
+  height: 1.6em; }
+
+.icon.person__icon-man:before {
+  background-position: -0.2em -10.7em;
+  width: 0.8em;
+  height: 1.8em; }
+
+.icon.trip__icon-arrow:before {
+  background-position: -0.2em -12.899999999999999em;
   width: 1.3em;
   height: 0.9em; }
 
 .icon.trip__icon-suitcase:before {
-  background-position: -0.2em -10em;
+  background-position: -0.2em -14.2em;
   width: 1.3em;
   height: 1.3em; }
 

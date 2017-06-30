@@ -1,5 +1,88 @@
+%search-form__item-default
+  background: $white3
+  padding: 5px 9px 9px
+
+%item__text-default
+  color: $grey3
+  font-size: 0.813rem
+  margin-bottom: 8px
+
+%item__input-default
+  border: none
+  outline: none
+  background: transparent
+  color: $black
+  font-size: 0.938rem
+
+  &::-webkit-input-placeholder
+    color: $grey6
+  &::-moz-placeholder
+    color: $grey6
+
+  &:-moz-placeholder
+    color: $grey6
+
+  &:-ms-input-placeholder
+    color: $grey6
+
+%item__btn-default
+  @extend %btn-default
+  float: right
+  color: $grey7
+
+//%checkbox-default
+.squaredThree
+  width: 17px
+  position: relative
+  float: left
+
+  label
+    width: 17px
+    height: 17px
+    cursor: pointer
+    position: absolute
+    top: 0
+    left: 0
+    background: transparent
+    border: 1px solid $grey8
+    border-radius: 3px
+
+    &:after
+      content: ''
+      width: 9px
+      height: 5px
+      position: absolute
+      top: 4px
+      left: 0.21rem
+      border: 2px solid $white
+      border-top: none
+      border-right: none
+      background: transparent
+      opacity: 0
+      transform: rotate(-45deg)
+
+    &:hover
+      border: 1px solid $blue
+
+  input[type=checkbox]
+    visibility: hidden
+
+    &:checked + label
+      background: $blue
+      border-color: $blue
+
+    &:checked + label:after
+      opacity: 1
+
+    &:checked:hover + label
+      opacity: 0.8
+
 .settings
+  background: $white
   width: 305px
+  box-shadow: 0 1px 21px 0 rgba(34, 31, 31, 0.13)
+  padding: 0 20px
+  margin-left: -20px
 
   @import '../../header/__trip'
 
@@ -20,20 +103,31 @@
       letter-spacing: 1.16px
       margin-top: 4px
 
+  &__line
+    margin-top: 0
+    margin-left: -20px
+    width: 305px
+    border-top-color: $grey5
 
   .search-form
-    background: transparent
 
     @import '___city'
 
     @import '___date'
 
     .quantity
-      background: transparent
+      width: 100%
+      float: left
+      border: 1px solid $white2
+      border-radius: 3px
+      margin-bottom: 20px
 
       @import '___person'
 
       @import '___room'
+
+  .search-form__checkbox
+    //@extend %checkbox-default
 
   @import '___place'
 

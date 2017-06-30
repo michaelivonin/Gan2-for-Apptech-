@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/svg-sprite.svg");
     background-repeat: no-repeat;
-    background-size: 2.6em 11.5em;
+    background-size: 2.6em 15.7em;
 }
 
 .no-svg .icon:before {
@@ -53,8 +53,26 @@
 
 
 
-  .icon.trip__icon-arrow:before {
+  .icon.icon-calendar:before {
       background-position: -0.2em -8.7em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.person__icon-man:before {
+      background-position: -0.2em -10.7em;
+      width: 0.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.trip__icon-arrow:before {
+      background-position: -0.2em -12.899999999999999em;
       width: 1.3em;
       height: 0.9em;
   }
@@ -63,7 +81,7 @@
 
 
   .icon.trip__icon-suitcase:before {
-      background-position: -0.2em -10em;
+      background-position: -0.2em -14.2em;
       width: 1.3em;
       height: 1.3em;
   }

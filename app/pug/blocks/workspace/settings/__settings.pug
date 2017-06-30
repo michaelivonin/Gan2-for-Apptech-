@@ -4,12 +4,14 @@ aside.settings
   form.search-form(action='#')
     include ___city
     include ___date
+    br
     .quantity
       include ___person
       include ___room
     // /.quantity
-    input.search-form__checkbox(type='checkbox' id='bed')
-    label.search-form__checkbox-text(for='bed') Отдельные кровати
+    .squaredThree
+      input.search-form__checkbox(type='checkbox' id='bed')
+      label.search-form__checkbox-text(for='bed')
     include ___place
     p.search-form__info-text Подберём варианты поблизости от нужного адреса/метро/организации
     include ___variant
