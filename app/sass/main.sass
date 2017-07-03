@@ -41,6 +41,7 @@
 $white: rgb(255, 255, 255)
 $white2: rgb(235, 235, 235)
 $white3: rgb(248, 250, 251)
+$white4: rgb(228, 228, 228)
 $grey: rgb(137, 137, 137)
 $grey2: rgb(50, 50, 50)
 $grey3: rgb(148, 148, 148)
@@ -98,6 +99,9 @@ body
 
 // Include _content.sass
 @import 'blocks/workspace/workspace'
+
+.ui-datepicker
+  z-index: 3 !important
 
 // Include _footer.sass
   @import 'blocks/footer/footer'

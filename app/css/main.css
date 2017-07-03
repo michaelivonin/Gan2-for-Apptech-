@@ -118,7 +118,9 @@ body {
   background: white;
   width: 100%;
   -webkit-box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
-          box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19); }
+          box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
+  position: relative;
+  z-index: 2; }
   .header__logo {
     margin-top: 10px;
     margin-right: 396px; }
@@ -318,10 +320,13 @@ body {
         font-size: 0.623rem; }
 
 .workspace {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #f8fafb), to(#f8fafb));
-  background: -webkit-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
-  background: -o-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
-  background: linear-gradient(to right, white 50%, #f8fafb 50%, #f8fafb); }
+  background: -webkit-gradient(linear, left top, right top, color-stop(21%, white), color-stop(21%, #f8fafb), to(#f8fafb));
+  background: -webkit-linear-gradient(left, white 21%, #f8fafb 21%, #f8fafb);
+  background: -o-linear-gradient(left, white 21%, #f8fafb 21%, #f8fafb);
+  background: linear-gradient(to right, white 21%, #f8fafb 21%, #f8fafb);
+  clear: both; }
+  .workspace .container {
+    position: relative; }
   .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room, .workspace .settings .search-form .place {
     background: #f8fafb;
     padding: 5px 9px 9px; }
@@ -343,9 +348,20 @@ body {
       color: #555555; }
     .workspace .settings .search-form .city__input-text:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:-ms-input-placeholder, .workspace .settings .search-form .place__input-text:-ms-input-placeholder {
       color: #555555; }
+    .workspace .settings .search-form .city__input-text:focus::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date:focus::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus::-webkit-input-placeholder, .workspace .settings .search-form .place__input-text:focus::-webkit-input-placeholder {
+      color: transparent; }
+    .workspace .settings .search-form .city__input-text:focus::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:focus::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus::-moz-placeholder, .workspace .settings .search-form .place__input-text:focus::-moz-placeholder {
+      color: transparent; }
+    .workspace .settings .search-form .city__input-text:focus:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:focus:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus:-moz-placeholder, .workspace .settings .search-form .place__input-text:focus:-moz-placeholder {
+      color: transparent; }
+    .workspace .settings .search-form .city__input-text:focus:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:focus:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus:-ms-input-placeholder, .workspace .settings .search-form .place__input-text:focus:-ms-input-placeholder {
+      color: transparent; }
+    .workspace .settings .search-form .city__input-text::-ms-clear, .workspace .settings .search-form .date .occupancy__input-date::-ms-clear, .workspace .settings .search-form .date .leave__input-date::-ms-clear, .workspace .settings .search-form .quantity .person .input-number::-ms-clear, .workspace .settings .search-form .quantity .room .input-number::-ms-clear, .workspace .settings .search-form .place__input-text::-ms-clear {
+      display: none; }
   .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset {
     float: right;
-    color: #ced0da; }
+    color: #ced0da;
+    visibility: hidden; }
   .workspace .settings .search-form__checkbox, .workspace .settings .search-form .variant__checkbox, .workspace .settings .search-form .comfort__checkbox {
     width: 17px;
     position: relative;
@@ -395,6 +411,7 @@ body {
     padding: 0 20px;
     margin-left: -20px;
     float: left;
+    position: absolute;
     left: 0;
     top: 0;
     height: 100%; }
@@ -443,7 +460,7 @@ body {
       margin-top: 0;
       margin-left: -20px;
       width: 305px;
-      border-top-color: #c2c2c2; }
+      border-top-color: #e4e4e4; }
     .workspace .settings .search-form .city {
       width: 100%;
       border: 1px solid #ebebeb;
@@ -548,7 +565,7 @@ body {
       margin-top: 0;
       margin-left: -20px;
       width: 305px;
-      border-top-color: #c2c2c2;
+      border-top-color: #e4e4e4;
       margin-bottom: 30px; }
     .workspace .settings .search-form .comfort .heading__link {
       color: #2c2c2c;
@@ -575,13 +592,16 @@ body {
       margin-bottom: 0;
       margin-left: -20px;
       width: 305px;
-      border-top-color: #c2c2c2; }
+      border-top-color: #e4e4e4; }
   .workspace .content {
     background: #f8fafb;
-    width: -webkit-calc(100% - 290px);
-    width: calc(100% - 290px);
+    width: -webkit-calc(100% - 298px);
+    width: calc(100% - 298px);
     float: right;
-    height: 2000px; }
+    height: 1400px; }
+
+.ui-datepicker {
+  z-index: 3 !important; }
 
 .icon {
   font-size: 10px; }
@@ -650,6 +670,13 @@ body {
 .sprite.trip__icon-suitcase {
   background-position: 0 -14px;
   height: 13px; }
+
+@media (min-width: 2000px) {
+  .workspace {
+    background: -webkit-gradient(linear, left top, right top, color-stop(33%, white), color-stop(33%, #f8fafb), to(#f8fafb));
+    background: -webkit-linear-gradient(left, white 33%, #f8fafb 33%, #f8fafb);
+    background: -o-linear-gradient(left, white 33%, #f8fafb 33%, #f8fafb);
+    background: linear-gradient(to right, white 33%, #f8fafb 33%, #f8fafb); } }
 
 @media (min-width: 1280px) {
   .container {

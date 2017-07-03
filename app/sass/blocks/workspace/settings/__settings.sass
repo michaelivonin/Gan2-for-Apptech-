@@ -25,10 +25,26 @@
   &:-ms-input-placeholder
     color: $grey6
 
+  &:focus::-webkit-input-placeholder
+    color: transparent
+
+  &:focus::-moz-placeholder
+    color: transparent
+
+  &:focus:-moz-placeholder
+    color: transparent
+
+  &:focus:-ms-input-placeholder
+    color: transparent
+
+  &::-ms-clear
+    display: none
+
 %item__btn-default
   @extend %btn-default
   float: right
   color: $grey7
+  visibility: hidden
 
 %checkbox-default
   width: 17px
@@ -83,7 +99,7 @@
   padding: 0 20px
   margin-left: -20px
   float: left
-  //position: absolute
+  position: absolute
   left: 0
   top: 0
   height: 100%
@@ -111,7 +127,7 @@
     margin-top: 0
     margin-left: -20px
     width: 305px
-    border-top-color: $grey5
+    border-top-color: $white4
 
   .search-form
 
@@ -159,7 +175,7 @@
       margin-top: 0
       margin-left: -20px
       width: 305px
-      border-top-color: $grey5
+      border-top-color: $white4
       margin-bottom: 30px
 
     .comfort
@@ -198,4 +214,4 @@
       margin-bottom: 0
       margin-left: -20px
       width: 305px
-      border-top-color: $grey5
+      border-top-color: $white4
