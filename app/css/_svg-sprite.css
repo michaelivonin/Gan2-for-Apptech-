@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/svg-sprite.svg");
     background-repeat: no-repeat;
-    background-size: 2.6em 15.7em;
+    background-size: 2.6em 43.5em;
 }
 
 .no-svg .icon:before {
@@ -44,8 +44,143 @@
 
 
 
-  .icon.entrance__icon-user:before {
+  .icon.comfort__icon-animals:before {
       background-position: -0.2em -7em;
+      width: 1.5em;
+      height: 1.3em;
+  }
+
+
+
+
+  .icon.comfort__icon-bar:before {
+      background-position: -0.2em -8.7em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.comfort__icon-bathroom:before {
+      background-position: -0.2em -10.6em;
+      width: 1.7em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.comfort__icon-booking:before {
+      background-position: -0.2em -12.7em;
+      width: 1.1em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.comfort__icon-breakfast:before {
+      background-position: -0.2em -14.6em;
+      width: 1.7em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.comfort__icon-conditioner:before {
+      background-position: -0.2em -16.5em;
+      width: 1.6em;
+      height: 1.3em;
+  }
+
+
+
+
+  .icon.comfort__icon-depositbox:before {
+      background-position: -0.2em -18.2em;
+      width: 1.5em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.comfort__icon-fitness:before {
+      background-position: -0.2em -20.2em;
+      width: 1.7em;
+      height: 0.9em;
+  }
+
+
+
+
+  .icon.comfort__icon-kitchen:before {
+      background-position: -0.2em -21.5em;
+      width: 1em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.comfort__icon-parking:before {
+      background-position: -0.2em -23.5em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.comfort__icon-restaurant:before {
+      background-position: -0.2em -25.4em;
+      width: 1.3em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.comfort__icon-smoking:before {
+      background-position: -0.2em -27.4em;
+      width: 1.4em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.comfort__icon-spa:before {
+      background-position: -0.2em -29.599999999999998em;
+      width: 1.7em;
+      height: 1.5em;
+  }
+
+
+
+
+  .icon.comfort__icon-transfer:before {
+      background-position: -0.2em -31.5em;
+      width: 1.4em;
+      height: 1.3em;
+  }
+
+
+
+
+  .icon.comfort__icon-wifi:before {
+      background-position: -0.2em -33.2em;
+      width: 1.4em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.entrance__icon-user:before {
+      background-position: -0.2em -34.800000000000004em;
       width: 1.3em;
       height: 1.3em;
   }
@@ -54,7 +189,7 @@
 
 
   .icon.icon-calendar:before {
-      background-position: -0.2em -8.7em;
+      background-position: -0.2em -36.5em;
       width: 1.6em;
       height: 1.6em;
   }
@@ -63,7 +198,7 @@
 
 
   .icon.person__icon-man:before {
-      background-position: -0.2em -10.7em;
+      background-position: -0.2em -38.5em;
       width: 0.8em;
       height: 1.8em;
   }
@@ -72,7 +207,7 @@
 
 
   .icon.trip__icon-arrow:before {
-      background-position: -0.2em -12.899999999999999em;
+      background-position: -0.2em -40.7em;
       width: 1.3em;
       height: 0.9em;
   }
@@ -81,7 +216,7 @@
 
 
   .icon.trip__icon-suitcase:before {
-      background-position: -0.2em -14.2em;
+      background-position: -0.2em -42em;
       width: 1.3em;
       height: 1.3em;
   }

@@ -339,7 +339,8 @@ body {
     outline: none;
     background: transparent;
     color: black;
-    font-size: 0.938rem; }
+    font-size: 0.938rem;
+    line-height: normal; }
     .workspace .settings .search-form .city__input-text::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number::-webkit-input-placeholder, .workspace .settings .search-form .place__input-text::-webkit-input-placeholder {
       color: #555555; }
     .workspace .settings .search-form .city__input-text::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number::-moz-placeholder, .workspace .settings .search-form .place__input-text::-moz-placeholder {
@@ -561,6 +562,36 @@ body {
         font-size: 0.875rem;
         display: inline-block;
         margin: 0 0 21px 12px; }
+    .workspace .settings .search-form .price {
+      display: inline-block;
+      width: 100%; }
+      .workspace .settings .search-form .price__slider-text {
+        color: #2c2c2c;
+        font-size: 0.938rem;
+        margin-bottom: 43px; }
+      .workspace .settings .search-form .price .ui-slider-horizontal {
+        height: 3px;
+        background: #ebebeb;
+        border: none;
+        margin-bottom: 54px;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer; }
+      .workspace .settings .search-form .price .ui-slider-range, .workspace .settings .search-form .price .ui-slider-handle {
+        background: #03a3f0; }
+      .workspace .settings .search-form .price .ui-slider-handle {
+        width: 13px;
+        height: 13px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        border: none;
+        cursor: pointer; }
+        .workspace .settings .search-form .price .ui-slider-handle:hover {
+          background: #1cb7ff; }
+        .workspace .settings .search-form .price .ui-slider-handle:active {
+          background: #008dce; }
+        .workspace .settings .search-form .price .ui-slider-handle:focus {
+          outline: none; }
     .workspace .settings .search-form__line {
       margin-top: 0;
       margin-left: -20px;
@@ -612,8 +643,8 @@ body {
   display: inline-block;
   background-image: url("../img/svg-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 2.6em 15.7em;
-          background-size: 2.6em 15.7em; }
+  -webkit-background-size: 2.6em 43.5em;
+          background-size: 2.6em 43.5em; }
 
 .no-svg .icon:before {
   background-image: url("../img/svg-sprite.png"); }
@@ -633,28 +664,103 @@ body {
   width: 2.1em;
   height: 1.9em; }
 
-.icon.entrance__icon-user:before {
+.icon.comfort__icon-animals:before {
   background-position: -0.2em -7em;
+  width: 1.5em;
+  height: 1.3em; }
+
+.icon.comfort__icon-bar:before {
+  background-position: -0.2em -8.7em;
+  width: 1.5em;
+  height: 1.5em; }
+
+.icon.comfort__icon-bathroom:before {
+  background-position: -0.2em -10.6em;
+  width: 1.7em;
+  height: 1.7em; }
+
+.icon.comfort__icon-booking:before {
+  background-position: -0.2em -12.7em;
+  width: 1.1em;
+  height: 1.5em; }
+
+.icon.comfort__icon-breakfast:before {
+  background-position: -0.2em -14.6em;
+  width: 1.7em;
+  height: 1.5em; }
+
+.icon.comfort__icon-conditioner:before {
+  background-position: -0.2em -16.5em;
+  width: 1.6em;
+  height: 1.3em; }
+
+.icon.comfort__icon-depositbox:before {
+  background-position: -0.2em -18.2em;
+  width: 1.5em;
+  height: 1.6em; }
+
+.icon.comfort__icon-fitness:before {
+  background-position: -0.2em -20.2em;
+  width: 1.7em;
+  height: 0.9em; }
+
+.icon.comfort__icon-kitchen:before {
+  background-position: -0.2em -21.5em;
+  width: 1em;
+  height: 1.6em; }
+
+.icon.comfort__icon-parking:before {
+  background-position: -0.2em -23.5em;
+  width: 1.5em;
+  height: 1.5em; }
+
+.icon.comfort__icon-restaurant:before {
+  background-position: -0.2em -25.4em;
+  width: 1.3em;
+  height: 1.6em; }
+
+.icon.comfort__icon-smoking:before {
+  background-position: -0.2em -27.4em;
+  width: 1.4em;
+  height: 1.8em; }
+
+.icon.comfort__icon-spa:before {
+  background-position: -0.2em -29.599999999999998em;
+  width: 1.7em;
+  height: 1.5em; }
+
+.icon.comfort__icon-transfer:before {
+  background-position: -0.2em -31.5em;
+  width: 1.4em;
+  height: 1.3em; }
+
+.icon.comfort__icon-wifi:before {
+  background-position: -0.2em -33.2em;
+  width: 1.4em;
+  height: 1.2em; }
+
+.icon.entrance__icon-user:before {
+  background-position: -0.2em -34.800000000000004em;
   width: 1.3em;
   height: 1.3em; }
 
 .icon.icon-calendar:before {
-  background-position: -0.2em -8.7em;
+  background-position: -0.2em -36.5em;
   width: 1.6em;
   height: 1.6em; }
 
 .icon.person__icon-man:before {
-  background-position: -0.2em -10.7em;
+  background-position: -0.2em -38.5em;
   width: 0.8em;
   height: 1.8em; }
 
 .icon.trip__icon-arrow:before {
-  background-position: -0.2em -12.899999999999999em;
+  background-position: -0.2em -40.7em;
   width: 1.3em;
   height: 0.9em; }
 
 .icon.trip__icon-suitcase:before {
-  background-position: -0.2em -14.2em;
+  background-position: -0.2em -42em;
   width: 1.3em;
   height: 1.3em; }
 

@@ -38,61 +38,47 @@ $(function() {
   $('#occupancy, #leave').mask("99.99.9999");
 
   // Range-slider
-  /*$( '.price__range-slider' ).slider({
-    range: true,
-    min: 898,
-    max: 5000,
-    values: [898, 2678]
-  });*/
+  var rouble1 = $('<span />').css({
+    fontFamily: "ALSRubl, sans-serif",
+    fontWeight: 400
+  }).text('a');
 
-  var tooltipMin = $('<div id="tooltip" />').css({
+  var rouble2 = $('<span />').css({
+    fontFamily: "ALSRubl, sans-serif",
+    fontWeight: 400
+  }).text('a');
+
+  var tooltipMin = $('<div class="range-slider__tooltip" />').css({
     position: 'absolute',
     top: -25,
-    left: -10
-  });
+    color: 'rgb(44, 44, 44)',
+    fontSize: '0.938rem',
+    fontWeight: 700
+  }).text('898').append(rouble1);
 
-  var tooltipMax = $('<div id="tooltip" />').css({
+  var tooltipMax = $('<div class="range-slider__tooltip" />').css({
     position: 'absolute',
     top: -25,
-    left: -10
-  });
+    color: 'rgb(44, 44, 44)',
+    fontSize: '0.938rem',
+    fontWeight: 700
+  }).text('2678').append(rouble2);
 
   var sliderItem = $('.price__range-slider').slider({
     range: true,
     min: 898,
-    max: 7000,
+    max: 5000,
     values: [898, 2678],
     slide: function(event, ui) {
-      tooltipMin.text(ui.values[0]);
-      tooltipMax.text(ui.values[1]);
+      tooltipMin.text(ui.values[0]).append(rouble1);
+      tooltipMax.text(ui.values[1]).append(rouble2);
     },
     change: function(event, ui) {
-      tooltipMin.text(ui.values[0]);
-      tooltipMax.text(ui.values[1]);
+      tooltipMin.text(ui.values[0]).append(rouble1);
+      tooltipMax.text(ui.values[1]).append(rouble2);
     }
   });
 
-  sliderItem
-    .find(".ui-slider-handle")
-    .first()
-    .append(tooltipMin)
-    /*.hover(function() {
-      tooltipMin.show();
-      tooltipMax.show();
-    }, function() {
-      tooltipmin.hide();
-      tooltipmax.hide();
-    })*/;
-
-  sliderItem
-    .find(".ui-slider-handle")
-    .last()
-    .append(tooltipMax)
-    /*.hover(function() {
-      tooltipMin.show();
-      tooltipMax.show();
-    }, function() {
-      tooltipmin.hide();
-      tooltipmax.hide();
-    })*/;
+  sliderItem.find(".ui-slider-handle").first().append(tooltipMin);
+  sliderItem.find(".ui-slider-handle").last().append(tooltipMax);
 });
