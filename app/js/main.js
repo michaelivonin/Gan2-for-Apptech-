@@ -6,11 +6,11 @@
 
 $(function() {
   // Highlight label onfocus input
-  $('.city__input-text, .place__input-text').focus(function() {
+  $('.city__input-text, .place__input-text, .occupancy__input-date, .leave__input-date').focus(function() {
     $(this).siblings('label').css('color', 'rgb(0, 0, 0)');
   });
 
-  $('.city__input-text, .place__input-text').focusout(function(){
+  $('.city__input-text, .place__input-text, .occupancy__input-date, .leave__input-date').focusout(function(){
     $(this).siblings('label').css('color', 'rgb(148, 148, 148)');
   });
 

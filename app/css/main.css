@@ -155,6 +155,8 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .header .trip .fa-long-arrow-right {
+      color: #ffc816; }
     .header .trip .wrap {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -171,6 +173,9 @@ body {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       border: 1px solid #ffc816; }
+      .header .trip .wrap .fa-briefcase {
+        color: #ffc816;
+        font-size: 0.81rem; }
     .header .trip__text {
       color: #2c2c2c;
       font-weight: 700;
@@ -183,7 +188,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     float: left;
-    margin-right: 62px; }
+    margin-right: 61px; }
     .header .trip .wrap {
       width: 30px;
       height: 30px;
@@ -247,8 +252,12 @@ body {
   .header .bell {
     display: none;
     width: 70px; }
+    .header .bell__button .fa-bell-o {
+      font-size: 1.2rem;
+      color: #434343;
+      font-weight: 600; }
     .header .bell__button .button__number {
-      right: -10px; }
+      right: -9px; }
   .header .cart {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -263,6 +272,10 @@ body {
     display: -ms-inline-flexbox;
     display: inline-flex;
     width: 70px; }
+    .header .heart__button .fa-heart-o {
+      font-size: 1.25rem;
+      color: #434343;
+      font-weight: 600; }
     .header .heart__button .button__number {
       right: -11px; }
   .header .entrance {
@@ -272,9 +285,9 @@ body {
     display: inline-flex;
     width: 160px;
     border-right: 1px solid #ebebeb; }
-    .header .entrance:hover .entrance__icon-user {
+    .header .entrance:hover .wrap {
       opacity: 0.5; }
-    .header .entrance__icon-user {
+    .header .entrance .wrap {
       width: 27px;
       height: 27px;
       display: -webkit-inline-box;
@@ -293,6 +306,9 @@ body {
       -webkit-border-radius: 50%;
               border-radius: 50%;
       margin-right: 10px; }
+      .header .entrance .wrap .fa-user-o {
+        font-size: 0.87rem;
+        font-weight: 600; }
     .header .entrance__button .button__text {
       font-size: 1rem;
       color: #2c2c2c;
@@ -421,6 +437,8 @@ body {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
+      .workspace .settings .trip .fa-long-arrow-right {
+        color: #ffc816; }
       .workspace .settings .trip .wrap {
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
@@ -437,6 +455,9 @@ body {
         -webkit-border-radius: 50%;
                 border-radius: 50%;
         border: 1px solid #ffc816; }
+        .workspace .settings .trip .wrap .fa-briefcase {
+          color: #ffc816;
+          font-size: 0.81rem; }
       .workspace .settings .trip__text {
         color: #2c2c2c;
         font-weight: 700;
@@ -447,12 +468,14 @@ body {
       display: -ms-inline-flexbox;
       display: inline-flex;
       height: 62px; }
-      .workspace .settings .trip__icon-arrow {
+      .workspace .settings .trip .fa-long-arrow-right {
         display: none; }
       .workspace .settings .trip .wrap {
         width: 38px;
         height: 38px;
         margin-right: 11px; }
+        .workspace .settings .trip .wrap .fa-briefcase {
+          font-size: 1rem; }
       .workspace .settings .trip__text {
         font-size: 0.938rem;
         letter-spacing: 1.16px;
@@ -611,13 +634,63 @@ body {
     .workspace .settings .search-form .comfort__body {
       margin-top: 20px;
       margin-bottom: -20px; }
+      .workspace .settings .search-form .comfort__body .icon {
+        position: relative;
+        top: -2px; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-conditioner {
+        margin-left: 10px;
+        margin-right: 6px; }
+      .workspace .settings .search-form .comfort__body .fa-wifi {
+        margin-left: 9px;
+        margin-right: 5px; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-breakfast {
+        margin-left: 9px;
+        margin-right: 6px; }
+      .workspace .settings .search-form .comfort__body .fa-bookmark {
+        margin-left: 12px;
+        margin-right: 8px;
+        float: left; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-parking {
+        margin-left: 10px;
+        margin-right: 7px; }
+      .workspace .settings .search-form .comfort__body .fa-glass {
+        margin-left: 10px;
+        margin-right: 7px; }
+      .workspace .settings .search-form .comfort__body .fa-cutlery {
+        margin-left: 12px;
+        margin-right: 9px; }
+      .workspace .settings .search-form .comfort__body .fa-car {
+        margin-left: 10px;
+        margin-right: 6px; }
+      .workspace .settings .search-form .comfort__body .fa-paw {
+        margin-left: 13px;
+        margin-right: 8px; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-spa {
+        margin-left: 12px;
+        margin-right: 8px; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-restaurant {
+        margin-left: 11px;
+        margin-right: 8px; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-smoking {
+        margin-left: 9px;
+        margin-right: 9px; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-fitness {
+        margin-left: 9px;
+        margin-right: 6px; }
+      .workspace .settings .search-form .comfort__body .fa-bath {
+        margin-left: 8px;
+        margin-right: 7px; }
+      .workspace .settings .search-form .comfort__body .comfort__icon-depositbox {
+        margin-left: 10px;
+        margin-right: 6px; }
     .workspace .settings .search-form .comfort__checkbox {
       margin-bottom: 17px; }
     .workspace .settings .search-form .comfort__checkbox-text {
       color: #494949;
       font-size: 0.875rem;
       display: inline-block;
-      margin: 0 0 21px 7px; }
+      margin: 0 0 21px 0;
+      line-height: 18px; }
     .workspace .settings .search-form__line_bottom {
       margin-top: 30px;
       margin-bottom: 0;
@@ -643,126 +716,61 @@ body {
   display: inline-block;
   background-image: url("../img/svg-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 2.6em 43.5em;
-          background-size: 2.6em 43.5em; }
+  -webkit-background-size: 2.6em 19em;
+          background-size: 2.6em 19em; }
 
 .no-svg .icon:before {
   background-image: url("../img/svg-sprite.png"); }
 
-.icon.button__icon-bell:before {
-  background-position: -0.2em -0.2em;
-  width: 1.7em;
-  height: 2em; }
-
 .icon.button__icon-cart:before {
-  background-position: -0.2em -2.6em;
+  background-position: -0.2em -0.2em;
   width: 2.2em;
   height: 1.7em; }
 
-.icon.button__icon-heart:before {
-  background-position: -0.2em -4.7em;
-  width: 2.1em;
-  height: 1.9em; }
-
-.icon.comfort__icon-animals:before {
-  background-position: -0.2em -7em;
-  width: 1.5em;
-  height: 1.3em; }
-
-.icon.comfort__icon-bar:before {
-  background-position: -0.2em -8.7em;
-  width: 1.5em;
-  height: 1.5em; }
-
-.icon.comfort__icon-bathroom:before {
-  background-position: -0.2em -10.6em;
-  width: 1.7em;
-  height: 1.7em; }
-
-.icon.comfort__icon-booking:before {
-  background-position: -0.2em -12.7em;
-  width: 1.1em;
-  height: 1.5em; }
-
 .icon.comfort__icon-breakfast:before {
-  background-position: -0.2em -14.6em;
+  background-position: -0.2em -2.3000000000000003em;
   width: 1.7em;
   height: 1.5em; }
 
 .icon.comfort__icon-conditioner:before {
-  background-position: -0.2em -16.5em;
+  background-position: -0.2em -4.2em;
   width: 1.6em;
   height: 1.3em; }
 
 .icon.comfort__icon-depositbox:before {
-  background-position: -0.2em -18.2em;
+  background-position: -0.2em -5.9em;
   width: 1.5em;
   height: 1.6em; }
 
 .icon.comfort__icon-fitness:before {
-  background-position: -0.2em -20.2em;
+  background-position: -0.2em -7.9em;
   width: 1.7em;
   height: 0.9em; }
 
-.icon.comfort__icon-kitchen:before {
-  background-position: -0.2em -21.5em;
-  width: 1em;
-  height: 1.6em; }
-
 .icon.comfort__icon-parking:before {
-  background-position: -0.2em -23.5em;
+  background-position: -0.2em -9.2em;
   width: 1.5em;
   height: 1.5em; }
 
 .icon.comfort__icon-restaurant:before {
-  background-position: -0.2em -25.4em;
+  background-position: -0.2em -11.1em;
   width: 1.3em;
   height: 1.6em; }
 
 .icon.comfort__icon-smoking:before {
-  background-position: -0.2em -27.4em;
+  background-position: -0.2em -13.1em;
   width: 1.4em;
   height: 1.8em; }
 
 .icon.comfort__icon-spa:before {
-  background-position: -0.2em -29.599999999999998em;
+  background-position: -0.2em -15.299999999999999em;
   width: 1.7em;
   height: 1.5em; }
 
-.icon.comfort__icon-transfer:before {
-  background-position: -0.2em -31.5em;
-  width: 1.4em;
-  height: 1.3em; }
-
-.icon.comfort__icon-wifi:before {
-  background-position: -0.2em -33.2em;
-  width: 1.4em;
-  height: 1.2em; }
-
-.icon.entrance__icon-user:before {
-  background-position: -0.2em -34.800000000000004em;
-  width: 1.3em;
-  height: 1.3em; }
-
 .icon.icon-calendar:before {
-  background-position: -0.2em -36.5em;
+  background-position: -0.2em -17.2em;
   width: 1.6em;
   height: 1.6em; }
-
-.icon.person__icon-man:before {
-  background-position: -0.2em -38.5em;
-  width: 0.8em;
-  height: 1.8em; }
-
-.icon.trip__icon-arrow:before {
-  background-position: -0.2em -40.7em;
-  width: 1.3em;
-  height: 0.9em; }
-
-.icon.trip__icon-suitcase:before {
-  background-position: -0.2em -42em;
-  width: 1.3em;
-  height: 1.3em; }
 
 .sprite {
   background: url(../img/png-sprite.png) no-repeat top left;

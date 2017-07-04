@@ -111,13 +111,16 @@
     display: inline-flex
     height: 62px
 
-    &__icon-arrow
+    .fa-long-arrow-right
       display: none
 
     .wrap
       width: 38px
       height: 38px
       margin-right: 11px
+
+      .fa-briefcase
+        font-size: 1rem
 
     &__text
       font-size: 0.938rem
@@ -200,6 +203,71 @@
         margin-top: 20px
         margin-bottom: -20px
 
+        .icon
+          position: relative
+          top: -2px
+
+        .comfort__icon-conditioner
+          margin-left: 10px
+          margin-right: 6px
+
+        .fa-wifi
+          margin-left: 9px
+          margin-right: 5px
+
+        .comfort__icon-breakfast
+          margin-left: 9px
+          margin-right: 6px
+
+        .fa-bookmark
+          margin-left: 12px
+          margin-right: 8px
+          float: left
+
+        .comfort__icon-parking
+          margin-left: 10px
+          margin-right: 7px
+
+        .fa-glass
+          margin-left: 10px
+          margin-right: 7px
+
+        .fa-cutlery
+          margin-left: 12px
+          margin-right: 9px
+
+        .fa-car
+          margin-left: 10px
+          margin-right: 6px
+
+        .fa-paw
+          margin-left: 13px
+          margin-right: 8px
+
+        .comfort__icon-spa
+          margin-left: 12px
+          margin-right: 8px
+
+        .comfort__icon-restaurant
+          margin-left: 11px
+          margin-right: 8px
+
+        .comfort__icon-smoking
+          margin-left: 9px
+          margin-right: 9px
+
+        .comfort__icon-fitness
+          margin-left: 9px
+          margin-right: 6px
+
+        .fa-bath
+          margin-left: 8px
+          margin-right: 7px
+
+        .comfort__icon-depositbox
+          margin-left: 10px
+          margin-right: 6px
+
       &__checkbox
         @extend %checkbox-default
         margin-bottom: 17px
@@ -208,7 +276,8 @@
         color: $grey12
         font-size: 0.875rem
         display: inline-block
-        margin: 0 0 21px 7px
+        margin: 0 0 21px 0
+        line-height: 18px
 
     &__line_bottom
       margin-top: 30px

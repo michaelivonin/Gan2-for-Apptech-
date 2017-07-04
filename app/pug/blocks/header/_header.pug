@@ -16,17 +16,18 @@
       include __info
       .bell
         button.bell__button.button(type='button')
-          span.icon.button__icon-bell
+          i.fa.fa-bell-o(aria-hidden="true")
           p.button__number 7
       // /.bell
       include __cart
       .heart
         button.heart__button.button(type='button')
-          span.icon.button__icon-heart
+          i.fa.fa-heart-o(aria-hidden="true")
           p.button__number 1
       // /.heart
       form.entrance(action='#')
-        span.icon.entrance__icon-user
+        .wrap
+          i.fa.fa-user-o(aria-hidden="true")
         button.entrance__button.button(type='button')
           span.button__text Войти
           i.fa.fa-chevron-down.button__icon-down(aria-hidden='true')

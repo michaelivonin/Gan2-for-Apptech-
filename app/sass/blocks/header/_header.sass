@@ -104,7 +104,7 @@
     display: none
     justify-content: center
     float: left
-    margin-right: 62px
+    margin-right: 61px
 
     .wrap
       width: 30px
@@ -128,9 +128,14 @@
     &__button
       @extend %item__button-default
 
+      .fa-bell-o
+        font-size: 1.2rem
+        color: $black2
+        font-weight: 600
+
       .button__number
         @extend %button__number-default
-        right: -10px
+        right: -9px
 
   @import '__cart'
 
@@ -141,6 +146,11 @@
 
     &__button
       @extend %item__button-default
+
+      .fa-heart-o
+        font-size: 1.25rem
+        color: $black2
+        font-weight: 600
 
       .button__number
         @extend %button__number-default
@@ -153,10 +163,10 @@
     border-right: 1px solid $white2
 
     &:hover
-      .entrance__icon-user
+      .wrap
         opacity: 0.5
 
-    &__icon-user
+    .wrap
       width: 27px
       height: 27px
       display: inline-flex
@@ -165,6 +175,10 @@
       border: 2px solid $black
       border-radius: 50%
       margin-right: 10px
+
+      .fa-user-o
+        font-size: 0.87rem
+        font-weight: 600
 
     &__button
       @extend %btn-default
