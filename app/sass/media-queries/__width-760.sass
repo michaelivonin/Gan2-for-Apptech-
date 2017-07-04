@@ -1,4 +1,4 @@
-@media (min-width: 760px) and (max-width: 991px)
+@media (max-width: 991px)
   .header
     &__logo
       margin-top: 12px
@@ -23,3 +23,32 @@
 
     .bell, .cart, .heart, .entrance
       height: 55px
+
+    .collapse
+      display: block
+      border-top: 0
+
+    &__button
+      display: none
+
+  .workspace
+    background: linear-gradient(to right, white 12%, #f8fafb 12%, #f8fafb)
+
+    .settings
+      margin-left: 0
+
+      .calculator, .filters
+        display: block
+
+      .trip
+        height: 57px
+        display: none
+
+      &__line
+        display: none
+
+      .search-form
+        display: none
+
+    .content
+      width: calc(100% - 24px)

@@ -19,14 +19,11 @@
     .container > .navbar-collapse
       margin-top: 60px
 
-    .link
+    .trip, .link, .cart
       display: none
 
     .bell
       display: inline-flex
-
-    .cart
-      display: none
 
     .bell, .heart, .entrance
       border: none
@@ -34,9 +31,18 @@
     .entrance
       float: right
 
+    .collapse
+      display: none
+      border-top: 1px solid transparent
+
+    .collapse.in
+      display: block
+
     &__button
+      display: block
       margin: 12px 0 11px 0
       padding: 9px 0
+
       .icon-bar
         width: 22px
         height: 3px
@@ -49,3 +55,7 @@
         display: inline-flex
         border: none
         height: 60px
+
+  .workspace
+    .settings
+      display: none

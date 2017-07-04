@@ -1,4 +1,11 @@
 aside.settings
+  .calculator
+    .calculator__indicator
+    button.calculator__button(type='button')
+      i.fa.fa-calculator(aria-hidden="true")
+  .filters
+    button.filters__button(type='button')
+      i.fa.fa-sliders(aria-hidden="true")
   include ../../header/__trip
   hr.settings__line
   form.search-form(action='#')
@@ -14,7 +21,10 @@ aside.settings
       label(for='bed')
     span.search-form__checkbox-text Отдельные кровати
     include ___place
-    p.search-form__info-text Подберём варианты поблизости от&nbsp;нужного адреса/метро/организации
+    p.search-form__info-text
+     | Подберём варианты поблизости
+     br
+     | от&nbsp;нужного адреса/метро/организации
     include ___variant
     include ___price
     hr.search-form__line
