@@ -81,4 +81,31 @@ $(function() {
 
   sliderItem.find(".ui-slider-handle").first().append(tooltipMin);
   sliderItem.find(".ui-slider-handle").last().append(tooltipMax);
+
+  // Show or hide calculator
+  var calcCount = 0;
+  $('.calculator__button').click(function() {
+    if (calcCount === 0) {
+      $('.calculator__indicator').addClass('calculator__indicator_visible');
+      $(this).children('i').addClass('button-icon_grey');
+      ++calcCount;
+    } else if (calcCount !== 0) {
+      $('.calculator__indicator').removeClass('calculator__indicator_visible');
+      $(this).children('i').removeClass('button-icon_grey');
+      --calcCount;
+    }
+  });
+
+  // Show or hide filters
+  $('.filters__button').click(function() {
+    $('.calculator, .filters').addClass('hide-elem');
+    $(this).parent().siblings('.trip').addClass('trip_visible');
+    $('.search-form, .settings__button-hide').addClass('show_elem');
+  });
+
+  $('.settings__button-hide').click(function() {
+    $('.settings__button-hide, .search-form').removeClass('show_elem');
+    $(this).siblings('.trip').removeClass('trip_visible');
+    $('.calculator, .filters').removeClass('hide-elem');
+  });
 });

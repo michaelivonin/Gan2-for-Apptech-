@@ -4,6 +4,10 @@
   outline: none
   padding: 0
 
+%btn-opacity
+  &:hover
+    opacity: 0.8
+
 %btn-animation
   &:active
     position: relative
@@ -28,10 +32,8 @@
 
 %item__button-default
   @extend %btn-default
+  @extend %btn-opacity
   position: relative
-
-  &:hover
-    opacity: 0.7
 
   &:active
     margin-top: 0.25rem
@@ -182,6 +184,7 @@
 
     &__button
       @extend %btn-default
+      @extend %btn-opacity
       @extend %btn-animation
 
       .button__text
@@ -193,9 +196,6 @@
         font-size: 0.81rem
         position: relative
         top: -1px
-
-      &:hover
-        opacity: 0.7
 
   .second-menu
     display: none

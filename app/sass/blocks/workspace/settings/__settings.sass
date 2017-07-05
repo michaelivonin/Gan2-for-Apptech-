@@ -43,6 +43,7 @@
 
 %item__btn-default
   @extend %btn-default
+  @extend %btn-opacity
   float: right
   color: $grey7
   visibility: hidden
@@ -104,12 +105,23 @@
   top: 0
   height: 100%
 
+  &__button-hide
+    @extend %btn-default
+    @extend %btn-opacity
+    float: right
+    margin-top: 10px
+    display: none
+
+    .fa-minus
+      color: $grey7
+
   .calculator
     display: none
 
     &__indicator
+      visibility: hidden
       width: 4px
-      height: 57px
+      height: 60px
       background: $yellow
       margin-left: -20px
       float: left
@@ -117,15 +129,18 @@
     &__button
       @extend %btn-default
       @extend %btn-animation
-
-      &:hover
-        opacity: 0.8
+      margin-top: 21px
+      margin-bottom: 16px
 
       .fa-calculator
         font-size: 1.4rem
-        color: $grey8
-        margin-top: 17px
+        color: $blue2
         margin-left: 1px
+
+    &__line
+      margin: 0 -20px
+      width: 63px
+      border-top-color: $white4
 
   .filters
     display: none
@@ -135,15 +150,12 @@
     &__button
       @extend %btn-default
       @extend %btn-animation
-
-      &:hover
-        opacity: 0.8
+      margin-top: 19px
 
       .fa-sliders
         color: $blue2
         transform: rotate(-90deg)
         font-size: 1.4rem
-        margin-top: 12px
 
   @import '../../header/__trip'
 

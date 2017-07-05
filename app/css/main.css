@@ -41,11 +41,14 @@ body {
   body * a:focus {
     text-decoration: none; }
 
-.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .settings .calculator__button, .workspace .settings .filters__button {
+.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button {
   background: none;
   border: none;
   outline: none;
   padding: 0; }
+
+.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover {
+  opacity: 0.8; }
 
 .header .link:active, .header .entrance__button:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active {
   position: relative;
@@ -74,8 +77,6 @@ body {
 
 .header .bell__button, .header .cart__button, .header .heart__button {
   position: relative; }
-  .header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover {
-    opacity: 0.7; }
   .header .bell__button:active, .header .cart__button:active, .header .heart__button:active {
     margin-top: 0.25rem; }
     .header .bell__button:active .icon, .header .cart__button:active .icon, .header .heart__button:active .icon {
@@ -317,8 +318,6 @@ body {
       font-size: 0.81rem;
       position: relative;
       top: -1px; }
-    .header .entrance__button:hover {
-      opacity: 0.7; }
   .header .second-menu {
     display: none;
     position: absolute;
@@ -431,34 +430,44 @@ body {
     left: 0;
     top: 0;
     height: 100%; }
+    .workspace .settings__button-hide {
+      float: right;
+      margin-top: 10px;
+      display: none; }
+      .workspace .settings__button-hide .fa-minus {
+        color: #ced0da; }
     .workspace .settings .calculator {
       display: none; }
       .workspace .settings .calculator__indicator {
+        visibility: hidden;
         width: 4px;
-        height: 57px;
+        height: 60px;
         background: #ffc816;
         margin-left: -20px;
         float: left; }
-      .workspace .settings .calculator__button:hover {
-        opacity: 0.8; }
-      .workspace .settings .calculator__button .fa-calculator {
-        font-size: 1.4rem;
-        color: #b7b7b7;
-        margin-top: 17px;
-        margin-left: 1px; }
+      .workspace .settings .calculator__button {
+        margin-top: 21px;
+        margin-bottom: 16px; }
+        .workspace .settings .calculator__button .fa-calculator {
+          font-size: 1.4rem;
+          color: #7fb1d8;
+          margin-left: 1px; }
+      .workspace .settings .calculator__line {
+        margin: 0 -20px;
+        width: 63px;
+        border-top-color: #e4e4e4; }
     .workspace .settings .filters {
       display: none;
       float: left;
       clear: both; }
-      .workspace .settings .filters__button:hover {
-        opacity: 0.8; }
-      .workspace .settings .filters__button .fa-sliders {
-        color: #7fb1d8;
-        -webkit-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
-                transform: rotate(-90deg);
-        font-size: 1.4rem;
-        margin-top: 12px; }
+      .workspace .settings .filters__button {
+        margin-top: 19px; }
+        .workspace .settings .filters__button .fa-sliders {
+          color: #7fb1d8;
+          -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+          font-size: 1.4rem; }
     .workspace .settings .trip {
       -webkit-box-align: center;
       -webkit-align-items: center;
@@ -893,13 +902,27 @@ body {
       margin-left: 0; }
       .workspace .settings .calculator, .workspace .settings .filters {
         display: block; }
+      .workspace .settings .calculator__indicator_visible {
+        visibility: visible; }
+      .workspace .settings .button-icon_grey {
+        color: #b7b7b7 !important; }
       .workspace .settings .trip {
         height: 57px;
-        display: none; }
+        display: none;
+        visibility: hidden; }
       .workspace .settings__line {
         display: none; }
       .workspace .settings .search-form {
         display: none; }
+      .workspace .settings .hide-elem {
+        display: none; }
+      .workspace .settings .trip_visible {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex; }
+      .workspace .settings .show_elem {
+        display: block; }
     .workspace .content {
       width: -webkit-calc(100% - 24px);
       width: calc(100% - 24px); } }
