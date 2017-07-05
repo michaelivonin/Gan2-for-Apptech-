@@ -41,13 +41,13 @@ body {
   body * a:focus {
     text-decoration: none; }
 
-.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button {
+.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button, .workspace .content .calc-content .btn-show, .workspace .content .calc-content__button {
   background: none;
   border: none;
   outline: none;
   padding: 0; }
 
-.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover {
+.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover {
   opacity: 0.8; }
 
 .header .link:active, .header .entrance__button:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active {
@@ -121,7 +121,7 @@ body {
   -webkit-box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
           box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
   position: relative;
-  z-index: 2; }
+  z-index: 3; }
   .header__logo {
     margin-top: 10px;
     margin-right: 396px; }
@@ -429,7 +429,8 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%; }
+    height: 100%;
+    z-index: 2; }
     .workspace .settings__button-hide {
       float: right;
       margin-top: 10px;
@@ -746,8 +747,140 @@ body {
     background: #f8fafb;
     width: -webkit-calc(100% - 298px);
     width: calc(100% - 298px);
+    padding: 0 15px;
     float: right;
-    height: 1400px; }
+    height: 1500px; }
+    .workspace .content .calc-content {
+      position: relative; }
+      .workspace .content .calc-content .btn-show {
+        display: none;
+        position: absolute;
+        left: 50%; }
+        .workspace .content .calc-content .btn-show .fa-chevron-down {
+          font-size: 0.88rem;
+          color: #7fb1d8; }
+      .workspace .content .calc-content .text__item {
+        color: #2c2c2c;
+        font-size: 0.688rem;
+        text-transform: uppercase;
+        font-weight: 500; }
+      .workspace .content .calc-content .text .fa-male {
+        color: #898989;
+        font-size: 1.2rem;
+        position: relative;
+        top: -2px;
+        margin: 0 4px; }
+      .workspace .content .calc-content .text__item_big {
+        margin-left: 4px;
+        font-size: 1.063rem; }
+      .workspace .content .calc-content .input {
+        display: inline-block;
+        margin-top: 18px;
+        width: 110px;
+        padding: 4px 0;
+        background: white;
+        border: 1px solid #e4e4e4;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        -webkit-box-shadow: 0 1px 1px 0 rgba(34, 31, 31, 0.05);
+                box-shadow: 0 1px 1px 0 rgba(34, 31, 31, 0.05); }
+        .workspace .content .calc-content .input__sum {
+          width: 81px;
+          padding-left: 12px;
+          background: transparent;
+          border: none;
+          outline: none;
+          color: #323232;
+          font-size: 1.063rem;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.7px; }
+          .workspace .content .calc-content .input__sum::-webkit-input-placeholder {
+            color: #787878; }
+          .workspace .content .calc-content .input__sum::-moz-placeholder {
+            color: #787878; }
+          .workspace .content .calc-content .input__sum:-moz-placeholder {
+            color: #787878; }
+          .workspace .content .calc-content .input__sum:-ms-input-placeholder {
+            color: #787878; }
+          .workspace .content .calc-content .input__sum:focus::-webkit-input-placeholder {
+            color: transparent; }
+          .workspace .content .calc-content .input__sum:focus::-moz-placeholder {
+            color: transparent; }
+          .workspace .content .calc-content .input__sum:focus:-moz-placeholder {
+            color: transparent; }
+          .workspace .content .calc-content .input__sum:focus:-ms-input-placeholder {
+            color: transparent; }
+          .workspace .content .calc-content .input__sum::-ms-clear {
+            display: none; }
+        .workspace .content .calc-content .input__rouble {
+          font-family: "ALSRubl", sans-serif;
+          color: #787878;
+          font-size: 1.063rem;
+          font-weight: 600; }
+      .workspace .content .calc-content .calculation {
+        display: inline-block;
+        margin-left: 5px; }
+        .workspace .content .calc-content .calculation__item {
+          color: #2c2c2c;
+          font-size: 1.063rem;
+          font-weight: 700; }
+        .workspace .content .calc-content .calculation .sale-rouble {
+          font-family: "ALSRubl", sans-serif;
+          color: #2c2c2c;
+          font-size: 1.063rem;
+          font-weight: 600;
+          margin-left: 3px;
+          margin-right: 3px; }
+        .workspace .content .calc-content .calculation .fa-ticket {
+          color: #bbbbbb;
+          font-size: 1.13rem;
+          margin-right: 4px; }
+        .workspace .content .calc-content .calculation__result {
+          margin-left: 7px;
+          color: #65cf6a;
+          font-size: 1.063rem;
+          font-weight: 500; }
+        .workspace .content .calc-content .calculation .result-rouble {
+          font-family: "ALSRubl", sans-serif;
+          color: #65cf6a;
+          font-size: 1.063rem;
+          font-weight: 600;
+          margin-left: 3px; }
+      .workspace .content .calc-content .fa-long-arrow-right {
+        margin-left: 18px;
+        margin-right: 5px;
+        color: #ffc816; }
+      .workspace .content .calc-content__link {
+        text-transform: uppercase;
+        color: #ffc816;
+        font-size: 0.688rem;
+        font-weight: 700;
+        position: relative;
+        top: -1.7px; }
+        .workspace .content .calc-content__link:hover {
+          opacity: 0.7; }
+      .workspace .content .calc-content__button {
+        float: right;
+        margin-top: 25px; }
+        .workspace .content .calc-content__button .btn-text {
+          color: #b7b7b7;
+          font-size: 0.688rem;
+          text-transform: uppercase;
+          letter-spacing: 1.2px; }
+        .workspace .content .calc-content__button .fa-chevron-up {
+          font-size: 0.88rem;
+          color: #b7b7b7;
+          margin-left: 10px; }
+      .workspace .content .calc-content__line {
+        margin: 12px 0 0 -28px;
+        width: -webkit-calc(100% + 28px);
+        width: calc(100% + 28px);
+        border-top-color: #e4e4e4; }
+      .workspace .content .calc-content .calc-content_hide-elem {
+        display: none; }
+      .workspace .content .calc-content .calc-content_show-elem {
+        display: block; }
 
 .ui-datepicker {
   z-index: 3 !important; }
@@ -761,8 +894,8 @@ body {
   display: inline-block;
   background-image: url("../img/svg-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 2.6em 23.9em;
-          background-size: 2.6em 23.9em; }
+  -webkit-background-size: 2.6em 25.8em;
+          background-size: 2.6em 25.8em; }
 
 .no-svg .icon:before {
   background-image: url("../img/svg-sprite.png"); }
@@ -826,6 +959,11 @@ body {
   background-position: -0.2em -22.099999999999998em;
   width: 1.6em;
   height: 1.6em; }
+
+.icon.reset-icon:before {
+  background-position: -0.2em -24.099999999999998em;
+  width: 1.5em;
+  height: 1.5em; }
 
 .sprite {
   background: url(../img/png-sprite.png) no-repeat top left;

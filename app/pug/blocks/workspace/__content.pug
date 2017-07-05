@@ -1,2 +1,29 @@
 .content
+  .calc-content
+    button.btn-show(type='button')
+      i.fa.fa-chevron-down(aria-hidden="true")
+    label.text(for='sum')
+      span.text__item Бюджет на
+      i.fa.fa-male(aria-hidden='true')
+      span.text__item x
+      span.text__item_big 2:
+    // /.text
+    .input
+      input.input__sum(type='text' placeholder='100 000' id='sum')
+      span.input__rouble a
+    .calculation
+      span.calculation__item &ndash; &nbsp;15 678
+      span.sale-rouble a
+      i.fa.fa-ticket(aria-hidden='true')
+      span.calculation__item =
+      span.calculation__result 84 322
+      span.result-rouble a
+    // /.calculation
+    i.fa.fa-long-arrow-right(aria-hidden="true")
+    a.calc-content__link(href='#') К корзине
+    button.calc-content__button
+      span.btn-text Свернуть
+      i.fa.fa-chevron-up(aria-hidden="true")
+    hr.calc-content__line
+  // /.calc-content
 // /.content

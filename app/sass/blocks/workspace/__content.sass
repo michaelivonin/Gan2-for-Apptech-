@@ -1,5 +1,174 @@
 .content
   background: $white3
   width: calc(100% - 298px)
+  padding: 0 15px
   float: right
-  height: 1400px
+  height: 1500px
+
+  .calc-content
+    position: relative
+
+    .btn-show
+      @extend %btn-default
+      @extend %btn-opacity
+
+      display: none
+      position: absolute
+      left: 50%
+
+      .fa-chevron-down
+        font-size: 0.88rem
+        color: $blue2
+
+    .text
+
+      &__item
+        color: $grey4
+        font-size: 0.688rem
+        text-transform: uppercase
+        font-weight: 500
+
+      .fa-male
+        color: $grey
+        font-size: 1.2rem
+        position: relative
+        top: -2px
+        margin: 0 4px
+
+      &__item_big
+        margin-left: 4px
+        font-size: 1.063rem
+
+    .input
+      display: inline-block
+      margin-top: 18px
+      width: 110px
+      padding: 4px 0
+      background: $white
+      border: 1px solid $white4
+      border-radius: 3px
+      box-shadow: 0 1px 1px 0 rgba(34, 31, 31, 0.05)
+
+      &__sum
+        width: 81px
+        padding-left: 12px
+        background: transparent
+        border: none
+        outline: none
+        color: $grey2
+        font-size: 1.063rem
+        font-weight: 700
+        line-height: normal
+        letter-spacing: 0.7px
+
+        &::-webkit-input-placeholder
+          color: $grey9
+
+        &::-moz-placeholder
+          color: $grey9
+
+        &:-moz-placeholder
+          color: $grey9
+
+        &:-ms-input-placeholder
+          color: $grey9
+
+        &:focus::-webkit-input-placeholder
+          color: transparent
+
+        &:focus::-moz-placeholder
+          color: transparent
+
+        &:focus:-moz-placeholder
+          color: transparent
+
+        &:focus:-ms-input-placeholder
+          color: transparent
+
+        &::-ms-clear
+          display: none
+
+      &__rouble
+        font-family: "ALSRubl", sans-serif
+        color: $grey9
+        font-size: 1.063rem
+        font-weight: 600
+
+    .calculation
+      display: inline-block
+      margin-left: 5px
+
+      &__item
+        color: $grey4
+        font-size: 1.063rem
+        font-weight: 700
+
+      .sale-rouble
+        font-family: "ALSRubl", sans-serif
+        color: $grey4
+        font-size: 1.063rem
+        font-weight: 600
+        margin-left: 3px
+        margin-right: 3px
+
+      .fa-ticket
+        color: $grey13
+        font-size: 1.13rem
+        margin-right: 4px
+
+      &__result
+        margin-left: 7px
+        color: $green
+        font-size: 1.063rem
+        font-weight: 500
+
+      .result-rouble
+        font-family: "ALSRubl", sans-serif
+        color: $green
+        font-size: 1.063rem
+        font-weight: 600
+        margin-left: 3px
+
+    .fa-long-arrow-right
+      margin-left: 18px
+      margin-right: 5px
+      color: $yellow
+
+    &__link
+      text-transform: uppercase
+      color: $yellow
+      font-size: 0.688rem
+      font-weight: 700
+      position: relative
+      top: -1.7px
+
+      &:hover
+        opacity: 0.7
+
+    &__button
+      @extend %btn-default
+      @extend %btn-opacity
+      float: right
+      margin-top: 25px
+
+      .btn-text
+        color: $grey8
+        font-size: 0.688rem
+        text-transform: uppercase
+        letter-spacing: 1.2px
+
+      .fa-chevron-up
+        font-size: 0.88rem
+        color: $grey8
+        margin-left: 10px
+
+    &__line
+      margin: 12px 0 0 -28px
+      width: calc(100% + 28px)
+      border-top-color: $white4
+
+    .calc-content_hide-elem
+      display: none
+
+    .calc-content_show-elem
+      display: block

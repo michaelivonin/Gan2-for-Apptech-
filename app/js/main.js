@@ -108,4 +108,16 @@ $(function() {
     $(this).siblings('.trip').removeClass('trip_visible');
     $('.calculator, .filters').removeClass('hide-elem');
   });
+
+  // Show or hide calculator
+  $('.calc-content__button').click(function() {
+    $(this).siblings().not('.btn-show').addClass('calc-content_hide-elem');
+    $(this).addClass('calc-content_hide-elem');
+    $('.btn-show').addClass('calc-content_show-elem');
+  });
+
+  $('.btn-show').click(function() {
+    $(this).removeClass('calc-content_show-elem');
+    $(this).siblings().removeClass('calc-content_hide-elem');
+  });
 });
