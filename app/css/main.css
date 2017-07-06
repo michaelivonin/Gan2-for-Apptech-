@@ -46,21 +46,22 @@ body {
   border: none;
   outline: none;
   padding: 0; }
-
-.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover {
-  opacity: 0.8; }
-
-.header .link:active, .header .entrance__button:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active {
-  position: relative;
-  top: 2px;
-  left: 0; }
-  .header .link:active span, .header .entrance__button:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .header .link:active i, .header .entrance__button:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i {
+  .header .bell__button:active, .header .cart__button:active, .header .heart__button:active, .header .entrance__button:active, .workspace .settings .search-form .city .button-reset:active, .workspace .settings .search-form .place .button-reset:active, .workspace .settings__button-hide:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .calc-content .btn-show:active, .workspace .content .calc-content__button:active {
+    position: relative;
+    left: 0; }
+    .header .bell__button:active span, .header .cart__button:active span, .header .heart__button:active span, .header .entrance__button:active span, .workspace .settings .search-form .city .button-reset:active span, .workspace .settings .search-form .place .button-reset:active span, .workspace .settings__button-hide:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .workspace .content .calc-content .btn-show:active span, .workspace .content .calc-content__button:active span, .header .bell__button:active i, .header .cart__button:active i, .header .heart__button:active i, .header .entrance__button:active i, .workspace .settings .search-form .city .button-reset:active i, .workspace .settings .search-form .place .button-reset:active i, .workspace .settings__button-hide:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i, .workspace .content .calc-content .btn-show:active i, .workspace .content .calc-content__button:active i {
+      position: relative;
+      left: 0; }
+  .header .bell__button:focus span, .header .cart__button:focus span, .header .heart__button:focus span, .header .entrance__button:focus span, .workspace .settings .search-form .city .button-reset:focus span, .workspace .settings .search-form .place .button-reset:focus span, .workspace .settings__button-hide:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .workspace .content .calc-content .btn-show:focus span, .workspace .content .calc-content__button:focus span, .header .bell__button:focus i, .header .cart__button:focus i, .header .heart__button:focus i, .header .entrance__button:focus i, .workspace .settings .search-form .city .button-reset:focus i, .workspace .settings .search-form .place .button-reset:focus i, .workspace .settings__button-hide:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i, .workspace .content .calc-content .btn-show:focus i, .workspace .content .calc-content__button:focus i {
     position: relative;
     left: 0; }
 
-.header .link:focus span, .header .entrance__button:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .header .link:focus i, .header .entrance__button:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i {
+.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover {
+  opacity: 0.7; }
+
+.header .link:active, .header .entrance__button:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active {
   position: relative;
-  left: 0; }
+  top: 2px; }
 
 .header .bell, .header .cart, .header .heart, .header .entrance {
   height: 71px;
@@ -79,14 +80,6 @@ body {
   position: relative; }
   .header .bell__button:active, .header .cart__button:active, .header .heart__button:active {
     margin-top: 0.25rem; }
-    .header .bell__button:active .icon, .header .cart__button:active .icon, .header .heart__button:active .icon {
-      position: relative;
-      top: 0;
-      left: 0; }
-  .header .bell__button:focus .icon, .header .cart__button:focus .icon, .header .heart__button:focus .icon {
-    position: relative;
-    top: 0;
-    left: 0; }
 
 .header .bell__button .button__number, .header .cart__button .button__number, .header .heart__button .button__number {
   width: 19px;
@@ -339,7 +332,8 @@ body {
   background: -webkit-linear-gradient(left, white 21%, #f8fafb 21%, #f8fafb);
   background: -o-linear-gradient(left, white 21%, #f8fafb 21%, #f8fafb);
   background: linear-gradient(to right, white 21%, #f8fafb 21%, #f8fafb);
-  clear: both; }
+  clear: both;
+  overflow: hidden; }
   .workspace .container {
     position: relative; }
   .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room, .workspace .settings .search-form .place {
@@ -759,6 +753,8 @@ body {
         .workspace .content .calc-content .btn-show .fa-chevron-down {
           font-size: 0.88rem;
           color: #7fb1d8; }
+        .workspace .content .calc-content .btn-show:active {
+          left: 50%; }
       .workspace .content .calc-content .text__item {
         color: #2c2c2c;
         font-size: 0.688rem;
@@ -793,7 +789,7 @@ body {
           color: #323232;
           font-size: 1.063rem;
           font-weight: 700;
-          line-height: normal;
+          line-height: 1.25rem;
           letter-spacing: 0.7px; }
           .workspace .content .calc-content .input__sum::-webkit-input-placeholder {
             color: #787878; }
@@ -811,6 +807,8 @@ body {
             color: transparent; }
           .workspace .content .calc-content .input__sum:focus:-ms-input-placeholder {
             color: transparent; }
+          .workspace .content .calc-content .input__sum:focus + .input__rouble {
+            color: #323232; }
           .workspace .content .calc-content .input__sum::-ms-clear {
             display: none; }
         .workspace .content .calc-content .input__rouble {
@@ -874,8 +872,7 @@ body {
           margin-left: 10px; }
       .workspace .content .calc-content__line {
         margin: 12px 0 0 -28px;
-        width: -webkit-calc(100% + 28px);
-        width: calc(100% + 28px);
+        width: 100vw;
         border-top-color: #e4e4e4; }
       .workspace .content .calc-content .calc-content_hide-elem {
         display: none; }
@@ -1000,7 +997,9 @@ body {
   .header__logo {
     margin-right: 262px; }
   .workspace .settings {
-    margin-left: -5px; } }
+    margin-left: -5px; }
+  .workspace .content .calc-content__link, .workspace .content .calc-content .fa-long-arrow-right {
+    display: none; } }
 
 @media (max-width: 991px) {
   .header__logo {
@@ -1059,11 +1058,31 @@ body {
         display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
         display: inline-flex; }
-      .workspace .settings .show_elem {
+      .workspace .settings .show-elem {
         display: block; }
     .workspace .content {
-      width: -webkit-calc(100% - 24px);
-      width: calc(100% - 24px); } }
+      width: -webkit-calc(100% - 53px);
+      width: calc(100% - 53px); }
+      .workspace .content .calc-content {
+        display: none; }
+        .workspace .content .calc-content .btn-show {
+          display: none; }
+        .workspace .content .calc-content .input {
+          margin-top: 15px; }
+        .workspace .content .calc-content__button {
+          margin-top: 22px; }
+          .workspace .content .calc-content__button .btn-text {
+            font-size: 0.563rem; }
+          .workspace .content .calc-content__button .fa-chevron-up {
+            -webkit-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+            position: relative;
+            top: 1px; }
+        .workspace .content .calc-content__line {
+          margin: 12px 0 0 -21px; }
+      .workspace .content .show-elem {
+        display: block; } }
 
 @media (max-width: 759px) {
   body {
@@ -1104,6 +1123,11 @@ body {
       width: 22px;
       height: 3px;
       background: black; }
+    .header__button:hover {
+      opacity: 0.7; }
+    .header__button:active .icon-bar {
+      position: relative;
+      left: 0; }
   .header .second-menu {
     display: block; }
     .header .second-menu .cart {

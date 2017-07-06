@@ -65,8 +65,34 @@
       .trip_visible
         display: inline-flex
 
-      .show_elem
+      .show-elem
         display: block
 
     .content
-      width: calc(100% - 24px)
+      width: calc(100% - 53px)
+
+      .calc-content
+        display: none
+
+        .btn-show
+          display: none
+
+        .input
+          margin-top: 15px
+
+        &__button
+          margin-top: 22px
+
+          .btn-text
+            font-size: 0.563rem
+
+          .fa-chevron-up
+            transform: rotate(-90deg)
+            position: relative
+            top: 1px
+
+        &__line
+          margin: 12px 0 0 -21px
+
+      .show-elem
+        display: block

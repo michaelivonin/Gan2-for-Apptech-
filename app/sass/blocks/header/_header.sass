@@ -4,14 +4,8 @@
   outline: none
   padding: 0
 
-%btn-opacity
-  &:hover
-    opacity: 0.8
-
-%btn-animation
   &:active
     position: relative
-    top: 2px
     left: 0
 
     span, i
@@ -22,6 +16,15 @@
     span, i
       position: relative
       left: 0
+
+%btn-opacity
+  &:hover
+    opacity: 0.7
+
+%btn-animation
+  &:active
+    position: relative
+    top: 2px
 
 %item-default
   height: 71px
@@ -37,17 +40,6 @@
 
   &:active
     margin-top: 0.25rem
-
-    .icon
-      position: relative
-      top: 0
-      left: 0
-
-  &:focus
-    .icon
-      position: relative
-      top: 0
-      left: 0
 
 %button__number-default
   width: 19px

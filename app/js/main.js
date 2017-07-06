@@ -88,8 +88,10 @@ $(function() {
     if (calcCount === 0) {
       $('.calculator__indicator').addClass('calculator__indicator_visible');
       $(this).children('i').addClass('button-icon_grey');
+      $('.calc-content').addClass('show-elem');
       ++calcCount;
     } else if (calcCount !== 0) {
+      $('.calc-content').removeClass('show-elem');
       $('.calculator__indicator').removeClass('calculator__indicator_visible');
       $(this).children('i').removeClass('button-icon_grey');
       --calcCount;
@@ -100,24 +102,40 @@ $(function() {
   $('.filters__button').click(function() {
     $('.calculator, .filters').addClass('hide-elem');
     $(this).parent().siblings('.trip').addClass('trip_visible');
-    $('.search-form, .settings__button-hide').addClass('show_elem');
+    $('.search-form, .settings__button-hide').addClass('show-elem');
   });
 
   $('.settings__button-hide').click(function() {
-    $('.settings__button-hide, .search-form').removeClass('show_elem');
+    $('.settings__button-hide, .search-form').removeClass('show-elem');
     $(this).siblings('.trip').removeClass('trip_visible');
     $('.calculator, .filters').removeClass('hide-elem');
   });
 
   // Show or hide calculator
   $('.calc-content__button').click(function() {
-    $(this).siblings().not('.btn-show').addClass('calc-content_hide-elem');
-    $(this).addClass('calc-content_hide-elem');
-    $('.btn-show').addClass('calc-content_show-elem');
+    if ($(window).width() <= 975 ) {
+      $('.calc-content').removeClass('show-elem');
+      $('.calculator__button').click();
+    } else {
+      $(this).siblings().not('.btn-show').addClass('calc-content_hide-elem');
+      $(this).addClass('calc-content_hide-elem');
+      $('.btn-show').addClass('calc-content_show-elem');
+    }
   });
 
   $('.btn-show').click(function() {
     $(this).removeClass('calc-content_show-elem');
     $(this).siblings().removeClass('calc-content_hide-elem');
+  });
+
+  // Calculate
+  $('.input__sum').keyup(function() {
+    var inputSum = +($('.input__sum').val()),
+        sale = +($('.calculation__item').text()).replace(/\D/g, ''),
+        result = $('.calculation__result');
+    if (inputSum >= sale) {
+      var dif = String(inputSum - sale);
+      result.text(dif.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+    }
   });
 });

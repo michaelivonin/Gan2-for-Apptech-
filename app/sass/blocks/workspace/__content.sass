@@ -20,6 +20,9 @@
         font-size: 0.88rem
         color: $blue2
 
+      &:active
+        left: 50%
+
     .text
 
       &__item
@@ -58,7 +61,7 @@
         color: $grey2
         font-size: 1.063rem
         font-weight: 700
-        line-height: normal
+        line-height: 1.25rem
         letter-spacing: 0.7px
 
         &::-webkit-input-placeholder
@@ -84,6 +87,9 @@
 
         &:focus:-ms-input-placeholder
           color: transparent
+
+        &:focus + .input__rouble
+          color: $grey2
 
         &::-ms-clear
           display: none
@@ -164,7 +170,7 @@
 
     &__line
       margin: 12px 0 0 -28px
-      width: calc(100% + 28px)
+      width: 100vw
       border-top-color: $white4
 
     .calc-content_hide-elem
