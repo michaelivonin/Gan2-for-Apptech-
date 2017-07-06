@@ -59,7 +59,7 @@ body {
 .header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover {
   opacity: 0.7; }
 
-.header .link:active, .header .entrance__button:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active {
+.header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active {
   position: relative;
   top: 2px; }
 
@@ -311,6 +311,10 @@ body {
       font-size: 0.81rem;
       position: relative;
       top: -1px; }
+    .header .entrance__button .rotate-icon {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
   .header .second-menu {
     display: none;
     position: absolute;
@@ -328,13 +332,14 @@ body {
         font-size: 0.623rem; }
 
 .workspace {
-  background: -webkit-gradient(linear, left top, right top, color-stop(21%, white), color-stop(21%, #f8fafb), to(#f8fafb));
-  background: -webkit-linear-gradient(left, white 21%, #f8fafb 21%, #f8fafb);
-  background: -o-linear-gradient(left, white 21%, #f8fafb 21%, #f8fafb);
-  background: linear-gradient(to right, white 21%, #f8fafb 21%, #f8fafb);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #f8fafb), to(#f8fafb));
+  background: -webkit-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
+  background: -o-linear-gradient(left, white 50%, #f8fafb 50%, #f8fafb);
+  background: linear-gradient(to right, white 50%, #f8fafb 50%, #f8fafb);
   clear: both;
   overflow: hidden; }
   .workspace .container {
+    background: #f8fafb;
     position: relative; }
   .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room, .workspace .settings .search-form .place {
     background: #f8fafb;
@@ -664,13 +669,18 @@ body {
         .workspace .settings .search-form .comfort .heading__link {
           color: #2c2c2c;
           font-size: 0.938rem;
-          font-weight: 700; }
+          font-weight: 700;
+          display: block; }
           .workspace .settings .search-form .comfort .heading__link:hover {
             color: #898989; }
           .workspace .settings .search-form .comfort .heading__link .icon-down {
             color: #bbbbbb;
             font-size: 0.875rem;
             float: right; }
+          .workspace .settings .search-form .comfort .heading__link .rotate-icon {
+            -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                    transform: rotate(180deg); }
       .workspace .settings .search-form .comfort__body {
         margin-top: 20px;
         margin-bottom: -20px; }
@@ -738,9 +748,8 @@ body {
       float: left;
       clear: both; }
   .workspace .content {
-    background: #f8fafb;
-    width: -webkit-calc(100% - 298px);
-    width: calc(100% - 298px);
+    width: -webkit-calc(100% - 299px);
+    width: calc(100% - 299px);
     padding: 0 15px;
     float: right;
     height: 1500px; }
@@ -858,6 +867,9 @@ body {
         top: -1.7px; }
         .workspace .content .calc-content__link:hover {
           opacity: 0.7; }
+        .workspace .content .calc-content__link:active {
+          position: relative;
+          top: 0.1px; }
       .workspace .content .calc-content__button {
         float: right;
         margin-top: 25px; }
@@ -891,8 +903,8 @@ body {
   display: inline-block;
   background-image: url("../img/svg-sprite.svg");
   background-repeat: no-repeat;
-  -webkit-background-size: 2.6em 25.8em;
-          background-size: 2.6em 25.8em; }
+  -webkit-background-size: 2.6em 19em;
+          background-size: 2.6em 19em; }
 
 .no-svg .icon:before {
   background-image: url("../img/svg-sprite.png"); }
@@ -902,65 +914,50 @@ body {
   width: 2.2em;
   height: 1.7em; }
 
-.icon.calculator__icon-calculator:before {
-  background-position: -0.2em -2.3000000000000003em;
-  width: 1.6em;
-  height: 2.2em; }
-
 .icon.comfort__icon-breakfast:before {
-  background-position: -0.2em -4.9em;
+  background-position: -0.2em -2.3000000000000003em;
   width: 1.7em;
   height: 1.5em; }
 
 .icon.comfort__icon-conditioner:before {
-  background-position: -0.2em -6.8em;
+  background-position: -0.2em -4.2em;
   width: 1.6em;
   height: 1.3em; }
 
 .icon.comfort__icon-depositbox:before {
-  background-position: -0.2em -8.5em;
+  background-position: -0.2em -5.9em;
   width: 1.5em;
   height: 1.6em; }
 
 .icon.comfort__icon-fitness:before {
-  background-position: -0.2em -10.5em;
+  background-position: -0.2em -7.9em;
   width: 1.7em;
   height: 0.9em; }
 
 .icon.comfort__icon-parking:before {
-  background-position: -0.2em -11.799999999999999em;
+  background-position: -0.2em -9.2em;
   width: 1.5em;
   height: 1.5em; }
 
 .icon.comfort__icon-restaurant:before {
-  background-position: -0.2em -13.7em;
+  background-position: -0.2em -11.1em;
   width: 1.3em;
   height: 1.6em; }
 
 .icon.comfort__icon-smoking:before {
-  background-position: -0.2em -15.7em;
+  background-position: -0.2em -13.1em;
   width: 1.4em;
   height: 1.8em; }
 
 .icon.comfort__icon-spa:before {
-  background-position: -0.2em -17.9em;
+  background-position: -0.2em -15.299999999999999em;
   width: 1.7em;
   height: 1.5em; }
-
-.icon.filters__icon-sliders:before {
-  background-position: -0.2em -19.8em;
-  width: 1.7em;
-  height: 1.9em; }
 
 .icon.icon-calendar:before {
-  background-position: -0.2em -22.099999999999998em;
+  background-position: -0.2em -17.2em;
   width: 1.6em;
   height: 1.6em; }
-
-.icon.reset-icon:before {
-  background-position: -0.2em -24.099999999999998em;
-  width: 1.5em;
-  height: 1.5em; }
 
 .sprite {
   background: url(../img/png-sprite.png) no-repeat top left;
@@ -974,13 +971,6 @@ body {
 .sprite.trip__icon-suitcase {
   background-position: 0 -14px;
   height: 13px; }
-
-@media (min-width: 2000px) {
-  .workspace {
-    background: -webkit-gradient(linear, left top, right top, color-stop(33%, white), color-stop(33%, #f8fafb), to(#f8fafb));
-    background: -webkit-linear-gradient(left, white 33%, #f8fafb 33%, #f8fafb);
-    background: -o-linear-gradient(left, white 33%, #f8fafb 33%, #f8fafb);
-    background: linear-gradient(to right, white 33%, #f8fafb 33%, #f8fafb); } }
 
 @media (min-width: 1280px) {
   .container {
@@ -1030,59 +1020,56 @@ body {
     border-top: 0; }
   .header__button {
     display: none; }
-  .workspace {
-    background: -webkit-gradient(linear, left top, right top, color-stop(12%, white), color-stop(12%, #f8fafb), to(#f8fafb));
-    background: -webkit-linear-gradient(left, white 12%, #f8fafb 12%, #f8fafb);
-    background: -o-linear-gradient(left, white 12%, #f8fafb 12%, #f8fafb);
-    background: linear-gradient(to right, white 12%, #f8fafb 12%, #f8fafb); }
-    .workspace .settings {
-      margin-left: 0; }
-      .workspace .settings .calculator, .workspace .settings .filters {
-        display: block; }
-      .workspace .settings .calculator__indicator_visible {
-        visibility: visible; }
-      .workspace .settings .button-icon_grey {
-        color: #b7b7b7 !important; }
-      .workspace .settings .trip {
-        height: 57px;
-        display: none;
-        visibility: hidden; }
-      .workspace .settings__line {
+  .workspace .settings {
+    margin-left: 0; }
+    .workspace .settings .calculator, .workspace .settings .filters {
+      display: block; }
+    .workspace .settings .calculator__indicator_visible {
+      visibility: visible; }
+    .workspace .settings .button-icon_grey {
+      color: #b7b7b7 !important; }
+    .workspace .settings .trip {
+      height: 57px;
+      display: none;
+      visibility: hidden; }
+    .workspace .settings__line {
+      display: none; }
+    .workspace .settings .search-form {
+      display: none; }
+    .workspace .settings .hide-elem {
+      display: none; }
+    .workspace .settings .trip_visible {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+    .workspace .settings .show-elem {
+      display: block; }
+  .workspace .content {
+    width: -webkit-calc(100% - 54px);
+    width: calc(100% - 54px); }
+    .workspace .content .calc-content {
+      display: none; }
+      .workspace .content .calc-content .btn-show {
         display: none; }
-      .workspace .settings .search-form {
-        display: none; }
-      .workspace .settings .hide-elem {
-        display: none; }
-      .workspace .settings .trip_visible {
-        display: -webkit-inline-box;
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
-        display: inline-flex; }
-      .workspace .settings .show-elem {
-        display: block; }
-    .workspace .content {
-      width: -webkit-calc(100% - 53px);
-      width: calc(100% - 53px); }
-      .workspace .content .calc-content {
-        display: none; }
-        .workspace .content .calc-content .btn-show {
-          display: none; }
-        .workspace .content .calc-content .input {
-          margin-top: 15px; }
-        .workspace .content .calc-content__button {
-          margin-top: 22px; }
-          .workspace .content .calc-content__button .btn-text {
-            font-size: 0.563rem; }
-          .workspace .content .calc-content__button .fa-chevron-up {
-            -webkit-transform: rotate(-90deg);
-                -ms-transform: rotate(-90deg);
-                    transform: rotate(-90deg);
-            position: relative;
-            top: 1px; }
-        .workspace .content .calc-content__line {
-          margin: 12px 0 0 -21px; }
-      .workspace .content .show-elem {
-        display: block; } }
+      .workspace .content .calc-content .input {
+        margin-top: 15px; }
+      .workspace .content .calc-content__button {
+        margin-top: 22px; }
+        .workspace .content .calc-content__button .btn-text {
+          font-size: 0.563rem; }
+        .workspace .content .calc-content__button .fa-chevron-up {
+          -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+          position: relative;
+          top: 1px; }
+      .workspace .content .calc-content__line {
+        margin: 12px 0 0 -21px; }
+    .workspace .content .show-elem {
+      display: block !important; }
+    .workspace .content .show-elem_inline {
+      display: inline-block !important; } }
 
 @media (max-width: 759px) {
   body {

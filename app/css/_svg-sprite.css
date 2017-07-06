@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../img/svg-sprite.svg");
     background-repeat: no-repeat;
-    background-size: 2.6em 25.8em;
+    background-size: 2.6em 19em;
 }
 
 .no-svg .icon:before {
@@ -26,17 +26,8 @@
 
 
 
-  .icon.calculator__icon-calculator:before {
-      background-position: -0.2em -2.3000000000000003em;
-      width: 1.6em;
-      height: 2.2em;
-  }
-
-
-
-
   .icon.comfort__icon-breakfast:before {
-      background-position: -0.2em -4.9em;
+      background-position: -0.2em -2.3000000000000003em;
       width: 1.7em;
       height: 1.5em;
   }
@@ -45,7 +36,7 @@
 
 
   .icon.comfort__icon-conditioner:before {
-      background-position: -0.2em -6.8em;
+      background-position: -0.2em -4.2em;
       width: 1.6em;
       height: 1.3em;
   }
@@ -54,7 +45,7 @@
 
 
   .icon.comfort__icon-depositbox:before {
-      background-position: -0.2em -8.5em;
+      background-position: -0.2em -5.9em;
       width: 1.5em;
       height: 1.6em;
   }
@@ -63,7 +54,7 @@
 
 
   .icon.comfort__icon-fitness:before {
-      background-position: -0.2em -10.5em;
+      background-position: -0.2em -7.9em;
       width: 1.7em;
       height: 0.9em;
   }
@@ -72,7 +63,7 @@
 
 
   .icon.comfort__icon-parking:before {
-      background-position: -0.2em -11.799999999999999em;
+      background-position: -0.2em -9.2em;
       width: 1.5em;
       height: 1.5em;
   }
@@ -81,7 +72,7 @@
 
 
   .icon.comfort__icon-restaurant:before {
-      background-position: -0.2em -13.7em;
+      background-position: -0.2em -11.1em;
       width: 1.3em;
       height: 1.6em;
   }
@@ -90,7 +81,7 @@
 
 
   .icon.comfort__icon-smoking:before {
-      background-position: -0.2em -15.7em;
+      background-position: -0.2em -13.1em;
       width: 1.4em;
       height: 1.8em;
   }
@@ -99,36 +90,18 @@
 
 
   .icon.comfort__icon-spa:before {
-      background-position: -0.2em -17.9em;
+      background-position: -0.2em -15.299999999999999em;
       width: 1.7em;
       height: 1.5em;
-  }
-
-
-
-
-  .icon.filters__icon-sliders:before {
-      background-position: -0.2em -19.8em;
-      width: 1.7em;
-      height: 1.9em;
   }
 
 
 
 
   .icon.icon-calendar:before {
-      background-position: -0.2em -22.099999999999998em;
+      background-position: -0.2em -17.2em;
       width: 1.6em;
       height: 1.6em;
-  }
-
-
-
-
-  .icon.reset-icon:before {
-      background-position: -0.2em -24.099999999999998em;
-      width: 1.5em;
-      height: 1.5em;
   }
 
 

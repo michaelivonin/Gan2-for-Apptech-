@@ -5,6 +5,18 @@
 'use strict';
 
 $(function() {
+  // Rotate icon-down
+  var loginCount = 0;
+  $('.entrance__button, .heading__link').click(function() {
+    if (loginCount === 0) {
+      $(this).children('i').addClass('rotate-icon');
+      ++loginCount;
+    } else {
+      $(this).children('i').removeClass('rotate-icon');
+      --loginCount;
+    }
+  });
+
   // Highlight label onfocus input
   $('.city__input-text, .place__input-text, .occupancy__input-date, .leave__input-date').focus(function() {
     $(this).siblings('label').css('color', 'rgb(0, 0, 0)');
@@ -86,15 +98,23 @@ $(function() {
   var calcCount = 0;
   $('.calculator__button').click(function() {
     if (calcCount === 0) {
+
       $('.calculator__indicator').addClass('calculator__indicator_visible');
       $(this).children('i').addClass('button-icon_grey');
-      $('.calc-content').addClass('show-elem');
+      $('.calc-content, .calc-content__button, .calc-content__line').addClass('show-elem');
+      $('.calc-content').children('.text, .input, .calculation').addClass('show-elem_inline');
+
       ++calcCount;
-    } else if (calcCount !== 0) {
-      $('.calc-content').removeClass('show-elem');
-      $('.calculator__indicator').removeClass('calculator__indicator_visible');
+
+    } else {
+
+      $('.calc-content').children('.text, .input, .calculation').removeClass('show-elem_inline');
+      $('.calc-content, .calc-content__button, .calc-content__line').removeClass('show-elem');
       $(this).children('i').removeClass('button-icon_grey');
+      $('.calculator__indicator').removeClass('calculator__indicator_visible');
+
       --calcCount;
+
     }
   });
 
@@ -113,13 +133,22 @@ $(function() {
 
   // Show or hide calculator
   $('.calc-content__button').click(function() {
-    if ($(window).width() <= 975 ) {
-      $('.calc-content').removeClass('show-elem');
+    if ( /(MSIE|Trident\/|Edge\/)/i.test(navigator.userAgent) && $(window).width() <= (974 + 17) ) {
+
+      calcCount = 1;
       $('.calculator__button').click();
+
+    } else if ($(window).width() <= 974) {
+
+      calcCount = 1;
+      $('.calculator__button').click();
+
     } else {
+
       $(this).siblings().not('.btn-show').addClass('calc-content_hide-elem');
       $(this).addClass('calc-content_hide-elem');
       $('.btn-show').addClass('calc-content_show-elem');
+
     }
   });
 
@@ -129,13 +158,22 @@ $(function() {
   });
 
   // Calculate
-  $('.input__sum').keyup(function() {
-    var inputSum = +($('.input__sum').val()),
-        sale = +($('.calculation__item').text()).replace(/\D/g, ''),
-        result = $('.calculation__result');
-    if (inputSum >= sale) {
-      var dif = String(inputSum - sale);
-      result.text(dif.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+  $('.input__sum').keypress(function(e) {
+    if ( e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+      return false;
+    } else {
+
+      $(this).keyup(function() {
+        var inputSum = +($('.input__sum').val()),
+            sale = +($('.calculation__item').text()).replace(/\D/g, ''),
+            result = $('.calculation__result');
+
+        if (inputSum >= sale) {
+          var dif = String(inputSum - sale);
+          result.text(dif.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+        }
+      });
+
     }
   });
 });
