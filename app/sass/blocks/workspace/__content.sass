@@ -13,14 +13,14 @@
 
       display: none
       position: absolute
-      left: 50%
+      left: 49.2%
 
       .fa-chevron-down
         font-size: 0.88rem
         color: $blue2
 
       &:active
-        left: 50%
+        left: 49.2%
 
     .text
 
@@ -181,3 +181,173 @@
 
     .calc-content_show-elem
       display: block
+
+  .steps
+    width: 100%
+    margin-top: 36px
+    display: inline-flex
+    background: $white
+    border-radius: 3px
+    box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3)
+    text-align: center
+
+    %steps__item_default
+      width: 25%
+      height: 112px
+      position: relative
+
+      %icon-wrap_default
+        width: 38px
+        height: 38px
+        background: $white
+        border: 1px solid
+        border-radius: 50%
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        position: relative
+        top: -19px
+        margin-bottom: -5px
+
+      %item__heading_default
+        font-size: 0.875rem
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 1.3px
+        margin-bottom: 13px
+
+    .item-tickets
+      @extend %steps__item_default
+      border-right: 1px solid $white5
+
+      .icon-wrap
+        @extend %icon-wrap_default
+        border-color: $green
+
+        .fa-ticket
+          color: $green
+          font-size: 1.38rem
+
+      .item__heading
+        @extend %item__heading_default
+        color: $grey2
+
+      .item__sum
+        color: $grey4
+        display: inline-block
+        margin-left: 34px
+
+        .text
+          font-size: 1.25rem
+          font-weight: 700
+
+        .fa-rub
+          font-size: 1.1rem
+          margin-left: 8px
+
+      .item__button-delete
+        @extend %btn-default
+        @extend %btn-opacity
+
+        margin-left: 16px
+        position: relative
+        top: -2px
+
+        &:active
+          top: 0.1px
+
+        .fa-trash
+          color: $grey7
+
+      .item__tip
+        color: $blue
+        font-size: 0.626rem
+        text-transform: uppercase
+        margin-top: 12px
+        letter-spacing: 1.57px
+        margin-left: 6px
+
+    .item-residence
+      @extend %steps__item_default
+      border-right: 1px solid $white5
+
+      .icon-wrap
+        @extend %icon-wrap_default
+        border-color: $yellow
+
+        .fa-building
+          color: $yellow
+          font-size: 1.1rem
+
+      .item__heading
+        @extend %item__heading_default
+        color: $grey2
+
+      .item__tip
+        color: $grey4
+        font-size: 0.813rem
+        margin-bottom: 9px
+
+        .text_strong
+          font-weight: 700
+
+      .item__price
+        color: $grey4
+        font-size: 0.813rem
+
+        .text_strong
+          font-weight: 700
+
+        .fa-rub
+          font-size: 0.72rem
+          margin-left: 5px
+
+      .item__indicator
+        width: 100%
+        height: 4px
+        background: $yellow
+        position: absolute
+        bottom: 0
+
+    .item-transfer
+      @extend %steps__item_default
+      border-right: 1px solid $white5
+
+      .icon-wrap
+        @extend %icon-wrap_default
+        border-color: $grey14
+
+        .fa-car
+          color: $grey
+          font-size: 1.05rem
+
+      .item__heading
+        @extend %item__heading_default
+        color: $grey15
+
+      .item__tip
+        color: $grey4
+        font-size: 0.813rem
+        font-weight: 300
+        line-height: 14px
+
+    .item-service
+      @extend %steps__item_default
+
+      .icon-wrap
+        @extend %icon-wrap_default
+        border-color: $grey14
+
+        .fa-star
+          color: $grey
+          font-size: 1.3rem
+
+      .item__heading
+        @extend %item__heading_default
+        color: $grey15
+
+      .item__tip
+        color: $grey4
+        font-size: 0.813rem
+        font-weight: 300
+        line-height: 14px
