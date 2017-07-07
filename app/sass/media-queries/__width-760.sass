@@ -1,5 +1,6 @@
-@media (max-width: 991px)
+@media (min-width: 760px) and (max-width: 991px)
   .header
+
     &__logo
       margin-top: 12px
       margin-right: 20px
@@ -98,3 +99,56 @@
 
       .show-elem_inline
         display: inline-block !important
+
+      .steps
+
+        .item-tickets, .item-residence, .item-transfer, .item-service
+          height: 96px
+
+          .icon-wrap
+            margin-bottom: -8px
+
+          .item__heading
+            font-size: 0.75rem
+            margin-bottom: 9px
+
+        .item-tickets
+
+          .item__sum
+            margin-left: 27px
+
+            .text
+              font-size:  1.188rem
+
+            .fa-rub
+              font-size: 1.05rem
+
+          .item__button-delete
+            margin-left: 12px
+            top: -1px
+
+          .item__tip
+            margin-top: 9px
+            color: $blue2
+
+        .item-residence
+
+          .item__tip, .item__price
+
+            .text, .text_strong
+              font-size: 0.75rem
+
+        .item-transfer, .item-service
+
+          .icon-wrap
+
+            .fa
+              color: $grey16
+
+          .item__heading
+            color: $grey16
+
+          .item__tip
+            color: $grey16
+            font-size: 0.75rem
+            letter-spacing: -0.85px

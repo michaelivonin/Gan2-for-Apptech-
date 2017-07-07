@@ -754,7 +754,8 @@ body {
     float: right;
     height: 1500px; }
     .workspace .content .calc-content {
-      position: relative; }
+      position: relative;
+      min-height: 16px; }
       .workspace .content .calc-content .btn-show {
         display: none;
         position: absolute;
@@ -763,6 +764,7 @@ body {
           font-size: 0.88rem;
           color: #7fb1d8; }
         .workspace .content .calc-content .btn-show:active {
+          position: relative;
           left: 49.2%; }
       .workspace .content .calc-content .text__item {
         color: #2c2c2c;
@@ -1111,13 +1113,13 @@ body {
     width: 1240px;
     padding: 0; } }
 
-@media (max-width: 1279px) {
+@media (min-width: 1200px) and (max-width: 1279px) {
   .header__logo {
     margin-right: 296px; }
   .workspace .settings {
     margin-left: -5px; } }
 
-@media (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .header__logo {
     margin-right: 262px; }
   .workspace .settings {
@@ -1134,7 +1136,7 @@ body {
     padding: 0 3px;
     height: 126px; } }
 
-@media (max-width: 991px) {
+@media (min-width: 760px) and (max-width: 991px) {
   .header__logo {
     margin-top: 12px;
     margin-right: 20px; }
@@ -1212,7 +1214,36 @@ body {
     .workspace .content .show-elem {
       display: block !important; }
     .workspace .content .show-elem_inline {
-      display: inline-block !important; } }
+      display: inline-block !important; }
+    .workspace .content .steps .item-tickets, .workspace .content .steps .item-residence, .workspace .content .steps .item-transfer, .workspace .content .steps .item-service {
+      height: 96px; }
+      .workspace .content .steps .item-tickets .icon-wrap, .workspace .content .steps .item-residence .icon-wrap, .workspace .content .steps .item-transfer .icon-wrap, .workspace .content .steps .item-service .icon-wrap {
+        margin-bottom: -8px; }
+      .workspace .content .steps .item-tickets .item__heading, .workspace .content .steps .item-residence .item__heading, .workspace .content .steps .item-transfer .item__heading, .workspace .content .steps .item-service .item__heading {
+        font-size: 0.75rem;
+        margin-bottom: 9px; }
+    .workspace .content .steps .item-tickets .item__sum {
+      margin-left: 27px; }
+      .workspace .content .steps .item-tickets .item__sum .text {
+        font-size: 1.188rem; }
+      .workspace .content .steps .item-tickets .item__sum .fa-rub {
+        font-size: 1.05rem; }
+    .workspace .content .steps .item-tickets .item__button-delete {
+      margin-left: 12px;
+      top: -1px; }
+    .workspace .content .steps .item-tickets .item__tip {
+      margin-top: 9px;
+      color: #7fb1d8; }
+    .workspace .content .steps .item-residence .item__tip .text, .workspace .content .steps .item-residence .item__tip .text_strong, .workspace .content .steps .item-residence .item__price .text, .workspace .content .steps .item-residence .item__price .text_strong {
+      font-size: 0.75rem; }
+    .workspace .content .steps .item-transfer .icon-wrap .fa, .workspace .content .steps .item-service .icon-wrap .fa {
+      color: #a1a1a1; }
+    .workspace .content .steps .item-transfer .item__heading, .workspace .content .steps .item-service .item__heading {
+      color: #a1a1a1; }
+    .workspace .content .steps .item-transfer .item__tip, .workspace .content .steps .item-service .item__tip {
+      color: #a1a1a1;
+      font-size: 0.75rem;
+      letter-spacing: -0.85px; } }
 
 @media (max-width: 759px) {
   body {
@@ -1268,4 +1299,58 @@ body {
       border: none;
       height: 60px; }
   .workspace .settings {
-    display: none; } }
+    display: none; }
+  .workspace .content {
+    float: none;
+    width: 100%;
+    padding: 0; }
+    .workspace .content .calc-content {
+      display: none; }
+    .workspace .content .steps {
+      width: -webkit-calc(100vw - 17px);
+      width: calc(100vw - 17px);
+      margin-top: 0;
+      margin-left: -15px;
+      -webkit-border-radius: 0;
+              border-radius: 0; }
+      .workspace .content .steps .item-tickets, .workspace .content .steps .item-residence, .workspace .content .steps .item-transfer, .workspace .content .steps .item-service {
+        height: 67px;
+        padding-top: 6px; }
+        .workspace .content .steps .item-tickets .icon-wrap, .workspace .content .steps .item-residence .icon-wrap, .workspace .content .steps .item-transfer .icon-wrap, .workspace .content .steps .item-service .icon-wrap {
+          width: auto;
+          height: 21px;
+          top: 0;
+          border: none;
+          background: transparent;
+          margin-bottom: 4px; }
+        .workspace .content .steps .item-tickets .item__heading, .workspace .content .steps .item-residence .item__heading, .workspace .content .steps .item-transfer .item__heading, .workspace .content .steps .item-service .item__heading {
+          font-size: 0.563rem;
+          margin-bottom: 5px; }
+      .workspace .content .steps .item-tickets .icon-wrap .fa-ticket {
+        font-size: 1.25rem; }
+      .workspace .content .steps .item-tickets .item__sum {
+        margin-left: 0; }
+        .workspace .content .steps .item-tickets .item__sum .text {
+          font-size: 0.75rem;
+          font-weight: 500; }
+        .workspace .content .steps .item-tickets .item__sum .fa-rub {
+          font-size: 0.718rem;
+          margin-left: 6px; }
+      .workspace .content .steps .item-tickets .item__button-delete, .workspace .content .steps .item-tickets .item__tip {
+        display: none; }
+      .workspace .content .steps .item-residence .icon-wrap .fa-building {
+        font-size: 1.05rem; }
+      .workspace .content .steps .item-residence .item__tip .text_strong, .workspace .content .steps .item-residence .item__tip .text {
+        color: #131313;
+        font-size: 0.625rem;
+        font-weight: 300; }
+      .workspace .content .steps .item-residence .item__price {
+        display: none; }
+      .workspace .content .steps .item-transfer .icon-wrap .fa, .workspace .content .steps .item-service .icon-wrap .fa {
+        color: #a1a1a1; }
+      .workspace .content .steps .item-transfer .item__heading, .workspace .content .steps .item-service .item__heading {
+        color: #a1a1a1; }
+      .workspace .content .steps .item-transfer .item__tip, .workspace .content .steps .item-service .item__tip {
+        color: #a1a1a1;
+        font-size: 0.625rem;
+        font-weight: 300; } }

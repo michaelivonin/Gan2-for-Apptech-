@@ -3,6 +3,7 @@
     min-width: 375px
 
   .header
+
     &__logo
       margin-top: 17px
       margin-right: 0
@@ -52,6 +53,7 @@
         opacity: 0.7
 
       &:active
+
         .icon-bar
           position: relative
           left: 0
@@ -65,5 +67,91 @@
         height: 60px
 
   .workspace
+
     .settings
       display: none
+
+    .content
+      float: none
+      width: 100%
+      padding: 0
+
+      .calc-content
+        display: none
+
+      .steps
+        width: calc(100vw - 17px)
+        margin-top: 0
+        margin-left: -15px
+        border-radius: 0
+
+        .item-tickets, .item-residence, .item-transfer, .item-service
+          height: 67px
+          padding-top: 6px
+
+          .icon-wrap
+            width: auto
+            height: 21px
+            top: 0
+            border: none
+            background: transparent
+            margin-bottom: 4px
+
+          .item__heading
+            font-size: 0.563rem
+            margin-bottom: 5px
+
+        .item-tickets
+
+          .icon-wrap
+
+            .fa-ticket
+              font-size: 1.25rem
+
+          .item__sum
+            margin-left: 0
+
+            .text
+              font-size: 0.75rem
+              font-weight: 500
+
+            .fa-rub
+              font-size: 0.718rem
+              margin-left: 6px
+
+          .item__button-delete, .item__tip
+            display: none
+
+        .item-residence
+
+          .icon-wrap
+
+            .fa-building
+              font-size: 1.05rem
+
+          .item__tip
+
+            .text_strong, .text
+              color: $black3
+              font-size: 0.625rem
+              font-weight: 300
+
+          .item__price
+            display: none
+
+        .item-transfer, .item-service
+
+          .icon-wrap
+
+            .fa
+              color: $grey16
+
+          .item__heading
+            color: $grey16
+
+          .item__tip
+            color: $grey16
+            font-size: 0.625rem
+            font-weight: 300
+
+            &:nth-child(n):not()
