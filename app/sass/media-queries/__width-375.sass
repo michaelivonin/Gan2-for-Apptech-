@@ -154,4 +154,72 @@
             font-size: 0.625rem
             font-weight: 300
 
-            &:nth-child(n):not()
+      .settings2
+        width: calc(100vw - 17px)
+        margin-left: -15px
+        background: $blue3
+        padding: 23px 6px
+
+        .search-form
+
+          .city, .date, .person
+            display: inline-flex
+
+          .sort
+            display: none
+
+          .map-button
+            float: none
+            margin-top: 7px
+            border-radius: 3px
+            background: $white
+            width: calc(25% - 3px)
+            height: 40px
+
+            .fa-map-marker
+              font-size: 1.3rem
+              color: $yellow
+
+            &__text
+              color: $blue4
+              font-size: 0.625rem
+              font-weight: 700
+              margin-left: 7px
+
+            &:hover
+              opacity: 0.95
+
+          .filter-button, .sort-button
+            display: inline-flex
+            align-items: center
+            justify-content: center
+            margin-top: 7px
+            border-radius: 3px
+            background: $white
+            height: 40px
+
+            .fa
+              color: $yellow
+
+            &__text
+              color: $blue4
+              font-size: 0.625rem
+              font-weight: 700
+              margin-left: 7px
+              text-transform: uppercase
+
+            &:hover
+              opacity: 0.95
+
+          .filter-button
+            width: calc(37.5% - 2px)
+
+            .fa-sliders
+              transform: rotate(-90deg)
+              font-size: 1.3rem
+
+          .sort-button
+            width: calc(37.5% - 3px)
+
+            .fa-sort-amount-asc
+              font-size: 1.25rem

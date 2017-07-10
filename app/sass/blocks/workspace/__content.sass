@@ -358,6 +358,99 @@
 
     .search-form
 
+      .city, .date, .person
+        display: none
+
+        label, br
+          display: none
+
+      .city
+        @extend %search-form__item-default
+        width: calc(25% - 3px)
+        height: 48px
+        border-radius: 3px 0 0 3px
+        padding: 11px 11px
+        border-right: 1px solid $white4
+        align-items: center
+
+        &__input-text
+          @extend %item__input-default
+          width: 85%
+          font-size: 0.813rem
+          text-align: center
+
+        .button-reset
+          @extend %item__btn-default
+
+          .fa-times
+            font-size: 0.9rem
+
+      .date
+        width: calc(50% + 6px)
+        background: $white3
+        border-right: 1px solid $white4
+        margin-left: -4px
+        justify-content: center
+
+      .occupancy
+        @extend %search-form__item-default
+        width: 85px
+        display: inline-flex
+        height: 48px
+        padding: 11px 11px
+        align-items: center
+        flex-direction: row-reverse
+        justify-content: flex-end
+
+        &__input-date
+          @extend %item__input-default
+          font-size: 0.813rem
+          width: 80px
+          letter-spacing: -1px
+
+        .icon-calendar
+          margin-right: 10px
+
+      .leave
+        @extend %search-form__item-default
+        width: 85px
+        display: inline-flex
+        height: 48px
+        padding: 11px 11px
+        align-items: center
+
+        &__input-date
+          @extend %item__input-default
+          font-size: 0.813rem
+          width: 80px
+          letter-spacing: -1px
+
+        .icon-calendar
+          display: none
+
+        &:before
+          content:  "—"
+          position: relative
+          left: -5px
+          color: $grey6
+
+      .person
+        @extend %search-form__item-default
+        width: calc(25% - 3px)
+        height: 48px
+        border-radius: 0 3px 3px 0
+        padding: 11px 11px
+        margin-left: -4px
+
+        .person__icon-man
+          color: $grey7
+          margin-top: 3px
+          margin-right: 4px
+
+        .input-number
+          @extend %item__input-default
+          width: 88.2%
+
       .btn-group>.btn
         border-radius: 3px !important
 
@@ -411,3 +504,10 @@
           color: $grey4
           text-transform: uppercase
           margin-left: 9px
+
+      .filter-button, .sort-button
+        @extend %btn-default
+        @extend %btn-opacity
+        @extend %btn-animation
+
+        display: none

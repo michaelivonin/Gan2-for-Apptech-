@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
@@ -41,25 +42,25 @@ body {
   body * a:focus {
     text-decoration: none; }
 
-.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button, .workspace .content .calc-content .btn-show, .workspace .content .calc-content__button, .workspace .content .steps .item-tickets .item__button-delete, .workspace .content .settings2 .search-form .map-button {
+.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .content .settings2 .search-form .city .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button, .workspace .content .calc-content .btn-show, .workspace .content .calc-content__button, .workspace .content .steps .item-tickets .item__button-delete, .workspace .content .settings2 .search-form .map-button, .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
   background: none;
   border: none;
   outline: none;
   padding: 0; }
-  .header .bell__button:active, .header .cart__button:active, .header .heart__button:active, .header .entrance__button:active, .workspace .settings .search-form .city .button-reset:active, .workspace .settings .search-form .place .button-reset:active, .workspace .settings__button-hide:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .calc-content .btn-show:active, .workspace .content .calc-content__button:active, .workspace .content .steps .item-tickets .item__button-delete:active, .workspace .content .settings2 .search-form .map-button:active {
+  .header .bell__button:active, .header .cart__button:active, .header .heart__button:active, .header .entrance__button:active, .workspace .settings .search-form .city .button-reset:active, .workspace .settings .search-form .place .button-reset:active, .workspace .content .settings2 .search-form .city .button-reset:active, .workspace .settings__button-hide:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .calc-content .btn-show:active, .workspace .content .calc-content__button:active, .workspace .content .steps .item-tickets .item__button-delete:active, .workspace .content .settings2 .search-form .map-button:active, .workspace .content .settings2 .search-form .filter-button:active, .workspace .content .settings2 .search-form .sort-button:active {
     position: relative;
     left: 0; }
-    .header .bell__button:active span, .header .cart__button:active span, .header .heart__button:active span, .header .entrance__button:active span, .workspace .settings .search-form .city .button-reset:active span, .workspace .settings .search-form .place .button-reset:active span, .workspace .settings__button-hide:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .workspace .content .calc-content .btn-show:active span, .workspace .content .calc-content__button:active span, .workspace .content .steps .item-tickets .item__button-delete:active span, .workspace .content .settings2 .search-form .map-button:active span, .header .bell__button:active i, .header .cart__button:active i, .header .heart__button:active i, .header .entrance__button:active i, .workspace .settings .search-form .city .button-reset:active i, .workspace .settings .search-form .place .button-reset:active i, .workspace .settings__button-hide:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i, .workspace .content .calc-content .btn-show:active i, .workspace .content .calc-content__button:active i, .workspace .content .steps .item-tickets .item__button-delete:active i, .workspace .content .settings2 .search-form .map-button:active i {
+    .header .bell__button:active span, .header .cart__button:active span, .header .heart__button:active span, .header .entrance__button:active span, .workspace .settings .search-form .city .button-reset:active span, .workspace .settings .search-form .place .button-reset:active span, .workspace .content .settings2 .search-form .city .button-reset:active span, .workspace .settings__button-hide:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .workspace .content .calc-content .btn-show:active span, .workspace .content .calc-content__button:active span, .workspace .content .steps .item-tickets .item__button-delete:active span, .workspace .content .settings2 .search-form .map-button:active span, .workspace .content .settings2 .search-form .filter-button:active span, .workspace .content .settings2 .search-form .sort-button:active span, .header .bell__button:active i, .header .cart__button:active i, .header .heart__button:active i, .header .entrance__button:active i, .workspace .settings .search-form .city .button-reset:active i, .workspace .settings .search-form .place .button-reset:active i, .workspace .content .settings2 .search-form .city .button-reset:active i, .workspace .settings__button-hide:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i, .workspace .content .calc-content .btn-show:active i, .workspace .content .calc-content__button:active i, .workspace .content .steps .item-tickets .item__button-delete:active i, .workspace .content .settings2 .search-form .map-button:active i, .workspace .content .settings2 .search-form .filter-button:active i, .workspace .content .settings2 .search-form .sort-button:active i {
       position: relative;
       left: 0; }
-  .header .bell__button:focus span, .header .cart__button:focus span, .header .heart__button:focus span, .header .entrance__button:focus span, .workspace .settings .search-form .city .button-reset:focus span, .workspace .settings .search-form .place .button-reset:focus span, .workspace .settings__button-hide:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .workspace .content .calc-content .btn-show:focus span, .workspace .content .calc-content__button:focus span, .workspace .content .steps .item-tickets .item__button-delete:focus span, .workspace .content .settings2 .search-form .map-button:focus span, .header .bell__button:focus i, .header .cart__button:focus i, .header .heart__button:focus i, .header .entrance__button:focus i, .workspace .settings .search-form .city .button-reset:focus i, .workspace .settings .search-form .place .button-reset:focus i, .workspace .settings__button-hide:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i, .workspace .content .calc-content .btn-show:focus i, .workspace .content .calc-content__button:focus i, .workspace .content .steps .item-tickets .item__button-delete:focus i, .workspace .content .settings2 .search-form .map-button:focus i {
+  .header .bell__button:focus span, .header .cart__button:focus span, .header .heart__button:focus span, .header .entrance__button:focus span, .workspace .settings .search-form .city .button-reset:focus span, .workspace .settings .search-form .place .button-reset:focus span, .workspace .content .settings2 .search-form .city .button-reset:focus span, .workspace .settings__button-hide:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .workspace .content .calc-content .btn-show:focus span, .workspace .content .calc-content__button:focus span, .workspace .content .steps .item-tickets .item__button-delete:focus span, .workspace .content .settings2 .search-form .map-button:focus span, .workspace .content .settings2 .search-form .filter-button:focus span, .workspace .content .settings2 .search-form .sort-button:focus span, .header .bell__button:focus i, .header .cart__button:focus i, .header .heart__button:focus i, .header .entrance__button:focus i, .workspace .settings .search-form .city .button-reset:focus i, .workspace .settings .search-form .place .button-reset:focus i, .workspace .content .settings2 .search-form .city .button-reset:focus i, .workspace .settings__button-hide:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i, .workspace .content .calc-content .btn-show:focus i, .workspace .content .calc-content__button:focus i, .workspace .content .steps .item-tickets .item__button-delete:focus i, .workspace .content .settings2 .search-form .map-button:focus i, .workspace .content .settings2 .search-form .filter-button:focus i, .workspace .content .settings2 .search-form .sort-button:focus i {
     position: relative;
     left: 0; }
 
-.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover, .workspace .content .settings2 .search-form .map-button:hover {
+.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .content .settings2 .search-form .city .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover, .workspace .content .settings2 .search-form .map-button:hover, .workspace .content .settings2 .search-form .filter-button:hover, .workspace .content .settings2 .search-form .sort-button:hover {
   opacity: 0.7; }
 
-.header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .settings2 .search-form .map-button:active {
+.header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .settings2 .search-form .map-button:active, .workspace .content .settings2 .search-form .filter-button:active, .workspace .content .settings2 .search-form .sort-button:active {
   position: relative;
   top: 2px; }
 
@@ -341,39 +342,39 @@ body {
   .workspace .container {
     background: #f8fafb;
     position: relative; }
-  .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room, .workspace .settings .search-form .place {
+  .workspace .settings .search-form .city, .workspace .settings .search-form .date .occupancy, .workspace .settings .search-form .date .leave, .workspace .settings .search-form .quantity .person, .workspace .settings .search-form .quantity .room, .workspace .settings .search-form .place, .workspace .content .settings2 .search-form .city, .workspace .content .settings2 .search-form .occupancy, .workspace .content .settings2 .search-form .leave, .workspace .content .settings2 .search-form .person {
     background: #f8fafb;
     padding: 5px 9px 9px; }
   .workspace .settings .search-form .city__text, .workspace .settings .search-form .date .occupancy__text, .workspace .settings .search-form .date .leave__text, .workspace .settings .search-form .quantity .person__text, .workspace .settings .search-form .quantity .room__text, .workspace .settings .search-form .place__text {
     color: #949494;
     font-size: 0.813rem;
     margin-bottom: 8px; }
-  .workspace .settings .search-form .city__input-text, .workspace .settings .search-form .date .occupancy__input-date, .workspace .settings .search-form .date .leave__input-date, .workspace .settings .search-form .quantity .person .input-number, .workspace .settings .search-form .quantity .room .input-number, .workspace .settings .search-form .place__input-text {
+  .workspace .settings .search-form .city__input-text, .workspace .settings .search-form .date .occupancy__input-date, .workspace .settings .search-form .date .leave__input-date, .workspace .settings .search-form .quantity .person .input-number, .workspace .settings .search-form .quantity .room .input-number, .workspace .settings .search-form .place__input-text, .workspace .content .settings2 .search-form .city__input-text, .workspace .content .settings2 .search-form .occupancy__input-date, .workspace .content .settings2 .search-form .leave__input-date, .workspace .content .settings2 .search-form .person .input-number {
     border: none;
     outline: none;
     background: transparent;
     color: black;
     font-size: 0.938rem;
     line-height: normal; }
-    .workspace .settings .search-form .city__input-text::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number::-webkit-input-placeholder, .workspace .settings .search-form .place__input-text::-webkit-input-placeholder {
+    .workspace .settings .search-form .city__input-text::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number::-webkit-input-placeholder, .workspace .settings .search-form .place__input-text::-webkit-input-placeholder, .workspace .content .settings2 .search-form .city__input-text::-webkit-input-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date::-webkit-input-placeholder, .workspace .content .settings2 .search-form .leave__input-date::-webkit-input-placeholder, .workspace .content .settings2 .search-form .person .input-number::-webkit-input-placeholder {
       color: #555555; }
-    .workspace .settings .search-form .city__input-text::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number::-moz-placeholder, .workspace .settings .search-form .place__input-text::-moz-placeholder {
+    .workspace .settings .search-form .city__input-text::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number::-moz-placeholder, .workspace .settings .search-form .place__input-text::-moz-placeholder, .workspace .content .settings2 .search-form .city__input-text::-moz-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date::-moz-placeholder, .workspace .content .settings2 .search-form .leave__input-date::-moz-placeholder, .workspace .content .settings2 .search-form .person .input-number::-moz-placeholder {
       color: #555555; }
-    .workspace .settings .search-form .city__input-text:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:-moz-placeholder, .workspace .settings .search-form .place__input-text:-moz-placeholder {
+    .workspace .settings .search-form .city__input-text:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:-moz-placeholder, .workspace .settings .search-form .place__input-text:-moz-placeholder, .workspace .content .settings2 .search-form .city__input-text:-moz-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date:-moz-placeholder, .workspace .content .settings2 .search-form .leave__input-date:-moz-placeholder, .workspace .content .settings2 .search-form .person .input-number:-moz-placeholder {
       color: #555555; }
-    .workspace .settings .search-form .city__input-text:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:-ms-input-placeholder, .workspace .settings .search-form .place__input-text:-ms-input-placeholder {
+    .workspace .settings .search-form .city__input-text:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:-ms-input-placeholder, .workspace .settings .search-form .place__input-text:-ms-input-placeholder, .workspace .content .settings2 .search-form .city__input-text:-ms-input-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date:-ms-input-placeholder, .workspace .content .settings2 .search-form .leave__input-date:-ms-input-placeholder, .workspace .content .settings2 .search-form .person .input-number:-ms-input-placeholder {
       color: #555555; }
-    .workspace .settings .search-form .city__input-text:focus::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date:focus::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus::-webkit-input-placeholder, .workspace .settings .search-form .place__input-text:focus::-webkit-input-placeholder {
+    .workspace .settings .search-form .city__input-text:focus::-webkit-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus::-webkit-input-placeholder, .workspace .settings .search-form .date .leave__input-date:focus::-webkit-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus::-webkit-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus::-webkit-input-placeholder, .workspace .settings .search-form .place__input-text:focus::-webkit-input-placeholder, .workspace .content .settings2 .search-form .city__input-text:focus::-webkit-input-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date:focus::-webkit-input-placeholder, .workspace .content .settings2 .search-form .leave__input-date:focus::-webkit-input-placeholder, .workspace .content .settings2 .search-form .person .input-number:focus::-webkit-input-placeholder {
       color: transparent; }
-    .workspace .settings .search-form .city__input-text:focus::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:focus::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus::-moz-placeholder, .workspace .settings .search-form .place__input-text:focus::-moz-placeholder {
+    .workspace .settings .search-form .city__input-text:focus::-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus::-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:focus::-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus::-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus::-moz-placeholder, .workspace .settings .search-form .place__input-text:focus::-moz-placeholder, .workspace .content .settings2 .search-form .city__input-text:focus::-moz-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date:focus::-moz-placeholder, .workspace .content .settings2 .search-form .leave__input-date:focus::-moz-placeholder, .workspace .content .settings2 .search-form .person .input-number:focus::-moz-placeholder {
       color: transparent; }
-    .workspace .settings .search-form .city__input-text:focus:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:focus:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus:-moz-placeholder, .workspace .settings .search-form .place__input-text:focus:-moz-placeholder {
+    .workspace .settings .search-form .city__input-text:focus:-moz-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus:-moz-placeholder, .workspace .settings .search-form .date .leave__input-date:focus:-moz-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus:-moz-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus:-moz-placeholder, .workspace .settings .search-form .place__input-text:focus:-moz-placeholder, .workspace .content .settings2 .search-form .city__input-text:focus:-moz-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date:focus:-moz-placeholder, .workspace .content .settings2 .search-form .leave__input-date:focus:-moz-placeholder, .workspace .content .settings2 .search-form .person .input-number:focus:-moz-placeholder {
       color: transparent; }
-    .workspace .settings .search-form .city__input-text:focus:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:focus:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus:-ms-input-placeholder, .workspace .settings .search-form .place__input-text:focus:-ms-input-placeholder {
+    .workspace .settings .search-form .city__input-text:focus:-ms-input-placeholder, .workspace .settings .search-form .date .occupancy__input-date:focus:-ms-input-placeholder, .workspace .settings .search-form .date .leave__input-date:focus:-ms-input-placeholder, .workspace .settings .search-form .quantity .person .input-number:focus:-ms-input-placeholder, .workspace .settings .search-form .quantity .room .input-number:focus:-ms-input-placeholder, .workspace .settings .search-form .place__input-text:focus:-ms-input-placeholder, .workspace .content .settings2 .search-form .city__input-text:focus:-ms-input-placeholder, .workspace .content .settings2 .search-form .occupancy__input-date:focus:-ms-input-placeholder, .workspace .content .settings2 .search-form .leave__input-date:focus:-ms-input-placeholder, .workspace .content .settings2 .search-form .person .input-number:focus:-ms-input-placeholder {
       color: transparent; }
-    .workspace .settings .search-form .city__input-text::-ms-clear, .workspace .settings .search-form .date .occupancy__input-date::-ms-clear, .workspace .settings .search-form .date .leave__input-date::-ms-clear, .workspace .settings .search-form .quantity .person .input-number::-ms-clear, .workspace .settings .search-form .quantity .room .input-number::-ms-clear, .workspace .settings .search-form .place__input-text::-ms-clear {
+    .workspace .settings .search-form .city__input-text::-ms-clear, .workspace .settings .search-form .date .occupancy__input-date::-ms-clear, .workspace .settings .search-form .date .leave__input-date::-ms-clear, .workspace .settings .search-form .quantity .person .input-number::-ms-clear, .workspace .settings .search-form .quantity .room .input-number::-ms-clear, .workspace .settings .search-form .place__input-text::-ms-clear, .workspace .content .settings2 .search-form .city__input-text::-ms-clear, .workspace .content .settings2 .search-form .occupancy__input-date::-ms-clear, .workspace .content .settings2 .search-form .leave__input-date::-ms-clear, .workspace .content .settings2 .search-form .person .input-number::-ms-clear {
       display: none; }
-  .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset {
+  .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .content .settings2 .search-form .city .button-reset {
     float: right;
     color: #ced0da;
     visibility: hidden; }
@@ -1026,6 +1027,102 @@ body {
         font-size: 0.813rem;
         font-weight: 300;
         line-height: 14px; }
+    .workspace .content .settings2 .search-form .city, .workspace .content .settings2 .search-form .date, .workspace .content .settings2 .search-form .person {
+      display: none; }
+      .workspace .content .settings2 .search-form .city label, .workspace .content .settings2 .search-form .city br, .workspace .content .settings2 .search-form .date label, .workspace .content .settings2 .search-form .date br, .workspace .content .settings2 .search-form .person label, .workspace .content .settings2 .search-form .person br {
+        display: none; }
+    .workspace .content .settings2 .search-form .city {
+      width: -webkit-calc(25% - 3px);
+      width: calc(25% - 3px);
+      height: 48px;
+      -webkit-border-radius: 3px 0 0 3px;
+              border-radius: 3px 0 0 3px;
+      padding: 11px 11px;
+      border-right: 1px solid #e4e4e4;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .workspace .content .settings2 .search-form .city__input-text {
+        width: 85%;
+        font-size: 0.813rem;
+        text-align: center; }
+      .workspace .content .settings2 .search-form .city .button-reset .fa-times {
+        font-size: 0.9rem; }
+    .workspace .content .settings2 .search-form .date {
+      width: -webkit-calc(50% + 6px);
+      width: calc(50% + 6px);
+      background: #f8fafb;
+      border-right: 1px solid #e4e4e4;
+      margin-left: -4px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .workspace .content .settings2 .search-form .occupancy {
+      width: 85px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      height: 48px;
+      padding: 11px 11px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .workspace .content .settings2 .search-form .occupancy__input-date {
+        font-size: 0.813rem;
+        width: 80px;
+        letter-spacing: -1px; }
+      .workspace .content .settings2 .search-form .occupancy .icon-calendar {
+        margin-right: 10px; }
+    .workspace .content .settings2 .search-form .leave {
+      width: 85px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      height: 48px;
+      padding: 11px 11px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .workspace .content .settings2 .search-form .leave__input-date {
+        font-size: 0.813rem;
+        width: 80px;
+        letter-spacing: -1px; }
+      .workspace .content .settings2 .search-form .leave .icon-calendar {
+        display: none; }
+      .workspace .content .settings2 .search-form .leave:before {
+        content: "—";
+        position: relative;
+        left: -5px;
+        color: #555555; }
+    .workspace .content .settings2 .search-form .person {
+      width: -webkit-calc(25% - 3px);
+      width: calc(25% - 3px);
+      height: 48px;
+      -webkit-border-radius: 0 3px 3px 0;
+              border-radius: 0 3px 3px 0;
+      padding: 11px 11px;
+      margin-left: -4px; }
+      .workspace .content .settings2 .search-form .person .person__icon-man {
+        color: #ced0da;
+        margin-top: 3px;
+        margin-right: 4px; }
+      .workspace .content .settings2 .search-form .person .input-number {
+        width: 88.2%; }
     .workspace .content .settings2 .search-form .btn-group > .btn {
       -webkit-border-radius: 3px !important;
               border-radius: 3px !important; }
@@ -1080,6 +1177,8 @@ body {
         color: #2c2c2c;
         text-transform: uppercase;
         margin-left: 9px; }
+    .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
+      display: none; }
 
 .ui-datepicker {
   z-index: 3 !important; }
@@ -1432,4 +1531,77 @@ body {
       .workspace .content .steps .item-transfer .item__tip, .workspace .content .steps .item-service .item__tip {
         color: #a1a1a1;
         font-size: 0.625rem;
-        font-weight: 300; } }
+        font-weight: 300; }
+    .workspace .content .settings2 {
+      width: -webkit-calc(100vw - 17px);
+      width: calc(100vw - 17px);
+      margin-left: -15px;
+      background: #275f8b;
+      padding: 23px 6px; }
+      .workspace .content .settings2 .search-form .city, .workspace .content .settings2 .search-form .date, .workspace .content .settings2 .search-form .person {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex; }
+      .workspace .content .settings2 .search-form .sort {
+        display: none; }
+      .workspace .content .settings2 .search-form .map-button {
+        float: none;
+        margin-top: 7px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        background: white;
+        width: -webkit-calc(25% - 3px);
+        width: calc(25% - 3px);
+        height: 40px; }
+        .workspace .content .settings2 .search-form .map-button .fa-map-marker {
+          font-size: 1.3rem;
+          color: #ffc816; }
+        .workspace .content .settings2 .search-form .map-button__text {
+          color: #8cb9dc;
+          font-size: 0.625rem;
+          font-weight: 700;
+          margin-left: 7px; }
+        .workspace .content .settings2 .search-form .map-button:hover {
+          opacity: 0.95; }
+      .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-top: 7px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        background: white;
+        height: 40px; }
+        .workspace .content .settings2 .search-form .filter-button .fa, .workspace .content .settings2 .search-form .sort-button .fa {
+          color: #ffc816; }
+        .workspace .content .settings2 .search-form .filter-button__text, .workspace .content .settings2 .search-form .sort-button__text {
+          color: #8cb9dc;
+          font-size: 0.625rem;
+          font-weight: 700;
+          margin-left: 7px;
+          text-transform: uppercase; }
+        .workspace .content .settings2 .search-form .filter-button:hover, .workspace .content .settings2 .search-form .sort-button:hover {
+          opacity: 0.95; }
+      .workspace .content .settings2 .search-form .filter-button {
+        width: -webkit-calc(37.5% - 2px);
+        width: calc(37.5% - 2px); }
+        .workspace .content .settings2 .search-form .filter-button .fa-sliders {
+          -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+          font-size: 1.3rem; }
+      .workspace .content .settings2 .search-form .sort-button {
+        width: -webkit-calc(37.5% - 3px);
+        width: calc(37.5% - 3px); }
+        .workspace .content .settings2 .search-form .sort-button .fa-sort-amount-asc {
+          font-size: 1.25rem; } }

@@ -83,6 +83,9 @@
   // /.steps
   .settings2
     form.search-form(action='#')
+      include settings/___city
+      include settings/___date
+      include settings/___person
       .btn-group.sort(data-toggle="buttons")
         label.btn.btn-primary.sort__item
           input(type="checkbox" autocomplete="off" checked)
@@ -103,8 +106,16 @@
       button.map-button(type='button')
         i.fa.fa-map-marker(aria-hidden='true')
         span.map-button__text.visible-lg Показать на карте
-        span.map-button__text.visible-md.visible-sm Карта
+        span.map-button__text.hidden-lg Карта
       // /.map-button
+      button.filter-button(type='button')
+        i.fa.fa-sliders(aria-hidden='true')
+        span.filter-button__text Фильтровать
+      // /.filter-button
+      button.sort-button(type='button')
+        i.fa.fa-sort-amount-asc(aria-hidden='true')
+        span.sort-button__text Сортировать
+      // /.sort-button
     // /.search-form
   // /.settings2
 // /.content

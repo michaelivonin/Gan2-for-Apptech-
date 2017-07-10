@@ -294,6 +294,38 @@
           <!-- /.steps-->
           <div class="settings2">
             <form class="search-form" action="#">
+              <div class="city">
+                <label class="city__text" for="city">Город назначения</label><br>
+                <input class="city__input-text" type="text" placeholder="Омск" id="city" required>
+                <button class="button-reset" type="button"><i class="fa fa-times button-reset__icon-cross" aria-hidden="true"></i></button>
+              </div>
+              <!-- /.city-->
+              <div class="date">
+                <div class="occupancy">
+                  <label class="occupancy__text" for="occupancy">Заезд</label><br>
+                  <input class="occupancy__input-date" type="text" placeholder="05.07.2017" id="occupancy" required><span class="icon icon-calendar"></span>
+                </div>
+                <!-- /.occupancy-->
+                <div class="leave">
+                  <label class="leave__text" for="leave">Выезд</label><br>
+                  <input class="leave__input-date" type="text" placeholder="15.07.2017" id="leave" required><span class="icon icon-calendar"></span>
+                </div>
+                <!-- /.leave-->
+              </div>
+              <!-- /.date-->
+              <div class="person">
+                <label class="person__text">Гостей</label><br><i class="fa fa-male person__icon-man" aria-hidden="true"></i>
+                <!--span.icon.person__icon-man-->
+                <select class="input-number">
+                  <option class="input-number__item">1</option>
+                  <option class="input-number__item" selected>2</option>
+                  <option class="input-number__item">3</option>
+                  <option class="input-number__item">4</option>
+                  <option class="input-number__item">5</option>
+                </select>
+                <!-- /.input-number-->
+              </div>
+              <!-- /.person-->
               <div class="btn-group sort" data-toggle="buttons">
                 <label class="btn btn-primary sort__item">
                   <input type="checkbox" autocomplete="off" checked>Ближе к нужному адресу
@@ -312,8 +344,12 @@
                 </label>
               </div>
               <!-- /.sort-->
-              <button class="map-button" type="button"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="map-button__text visible-lg">Показать на карте</span><span class="map-button__text visible-md visible-sm">Карта</span></button>
+              <button class="map-button" type="button"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="map-button__text visible-lg">Показать на карте</span><span class="map-button__text hidden-lg">Карта</span></button>
               <!-- /.map-button-->
+              <button class="filter-button" type="button"><i class="fa fa-sliders" aria-hidden="true"></i><span class="filter-button__text">Фильтровать</span></button>
+              <!-- /.filter-button-->
+              <button class="sort-button" type="button"><i class="fa fa-sort-amount-asc" aria-hidden="true"></i><span class="sort-button__text">Сортировать</span></button>
+              <!-- /.sort-button-->
             </form>
             <!-- /.search-form-->
           </div>
