@@ -41,25 +41,25 @@ body {
   body * a:focus {
     text-decoration: none; }
 
-.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button, .workspace .content .calc-content .btn-show, .workspace .content .calc-content__button, .workspace .content .steps .item-tickets .item__button-delete {
+.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button, .workspace .content .calc-content .btn-show, .workspace .content .calc-content__button, .workspace .content .steps .item-tickets .item__button-delete, .workspace .content .settings2 .search-form .map-button {
   background: none;
   border: none;
   outline: none;
   padding: 0; }
-  .header .bell__button:active, .header .cart__button:active, .header .heart__button:active, .header .entrance__button:active, .workspace .settings .search-form .city .button-reset:active, .workspace .settings .search-form .place .button-reset:active, .workspace .settings__button-hide:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .calc-content .btn-show:active, .workspace .content .calc-content__button:active, .workspace .content .steps .item-tickets .item__button-delete:active {
+  .header .bell__button:active, .header .cart__button:active, .header .heart__button:active, .header .entrance__button:active, .workspace .settings .search-form .city .button-reset:active, .workspace .settings .search-form .place .button-reset:active, .workspace .settings__button-hide:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .calc-content .btn-show:active, .workspace .content .calc-content__button:active, .workspace .content .steps .item-tickets .item__button-delete:active, .workspace .content .settings2 .search-form .map-button:active {
     position: relative;
     left: 0; }
-    .header .bell__button:active span, .header .cart__button:active span, .header .heart__button:active span, .header .entrance__button:active span, .workspace .settings .search-form .city .button-reset:active span, .workspace .settings .search-form .place .button-reset:active span, .workspace .settings__button-hide:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .workspace .content .calc-content .btn-show:active span, .workspace .content .calc-content__button:active span, .workspace .content .steps .item-tickets .item__button-delete:active span, .header .bell__button:active i, .header .cart__button:active i, .header .heart__button:active i, .header .entrance__button:active i, .workspace .settings .search-form .city .button-reset:active i, .workspace .settings .search-form .place .button-reset:active i, .workspace .settings__button-hide:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i, .workspace .content .calc-content .btn-show:active i, .workspace .content .calc-content__button:active i, .workspace .content .steps .item-tickets .item__button-delete:active i {
+    .header .bell__button:active span, .header .cart__button:active span, .header .heart__button:active span, .header .entrance__button:active span, .workspace .settings .search-form .city .button-reset:active span, .workspace .settings .search-form .place .button-reset:active span, .workspace .settings__button-hide:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .workspace .content .calc-content .btn-show:active span, .workspace .content .calc-content__button:active span, .workspace .content .steps .item-tickets .item__button-delete:active span, .workspace .content .settings2 .search-form .map-button:active span, .header .bell__button:active i, .header .cart__button:active i, .header .heart__button:active i, .header .entrance__button:active i, .workspace .settings .search-form .city .button-reset:active i, .workspace .settings .search-form .place .button-reset:active i, .workspace .settings__button-hide:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i, .workspace .content .calc-content .btn-show:active i, .workspace .content .calc-content__button:active i, .workspace .content .steps .item-tickets .item__button-delete:active i, .workspace .content .settings2 .search-form .map-button:active i {
       position: relative;
       left: 0; }
-  .header .bell__button:focus span, .header .cart__button:focus span, .header .heart__button:focus span, .header .entrance__button:focus span, .workspace .settings .search-form .city .button-reset:focus span, .workspace .settings .search-form .place .button-reset:focus span, .workspace .settings__button-hide:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .workspace .content .calc-content .btn-show:focus span, .workspace .content .calc-content__button:focus span, .workspace .content .steps .item-tickets .item__button-delete:focus span, .header .bell__button:focus i, .header .cart__button:focus i, .header .heart__button:focus i, .header .entrance__button:focus i, .workspace .settings .search-form .city .button-reset:focus i, .workspace .settings .search-form .place .button-reset:focus i, .workspace .settings__button-hide:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i, .workspace .content .calc-content .btn-show:focus i, .workspace .content .calc-content__button:focus i, .workspace .content .steps .item-tickets .item__button-delete:focus i {
+  .header .bell__button:focus span, .header .cart__button:focus span, .header .heart__button:focus span, .header .entrance__button:focus span, .workspace .settings .search-form .city .button-reset:focus span, .workspace .settings .search-form .place .button-reset:focus span, .workspace .settings__button-hide:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .workspace .content .calc-content .btn-show:focus span, .workspace .content .calc-content__button:focus span, .workspace .content .steps .item-tickets .item__button-delete:focus span, .workspace .content .settings2 .search-form .map-button:focus span, .header .bell__button:focus i, .header .cart__button:focus i, .header .heart__button:focus i, .header .entrance__button:focus i, .workspace .settings .search-form .city .button-reset:focus i, .workspace .settings .search-form .place .button-reset:focus i, .workspace .settings__button-hide:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i, .workspace .content .calc-content .btn-show:focus i, .workspace .content .calc-content__button:focus i, .workspace .content .steps .item-tickets .item__button-delete:focus i, .workspace .content .settings2 .search-form .map-button:focus i {
     position: relative;
     left: 0; }
 
-.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover {
+.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover, .workspace .content .settings2 .search-form .map-button:hover {
   opacity: 0.7; }
 
-.header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active {
+.header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .settings2 .search-form .map-button:active {
   position: relative;
   top: 2px; }
 
@@ -1026,6 +1026,60 @@ body {
         font-size: 0.813rem;
         font-weight: 300;
         line-height: 14px; }
+    .workspace .content .settings2 .search-form .btn-group > .btn {
+      -webkit-border-radius: 3px !important;
+              border-radius: 3px !important; }
+    .workspace .content .settings2 .search-form .btn.focus, .workspace .content .settings2 .search-form .btn:focus {
+      outline: none !important; }
+    .workspace .content .settings2 .search-form .btn.active, .workspace .content .settings2 .search-form .btn:active {
+      outline: none !important;
+      background: #03a3f0;
+      color: white; }
+    .workspace .content .settings2 .search-form .sort {
+      margin-top: 45px; }
+      .workspace .content .settings2 .search-form .sort__item {
+        padding: 6px 8px;
+        font-size: 0.813rem;
+        color: #2c2c2c;
+        line-height: inherit;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        margin-right: 5px;
+        background: #deedf4;
+        border: none; }
+        .workspace .content .settings2 .search-form .sort__item:hover {
+          opacity: 0.8; }
+    .workspace .content .settings2 .search-form .map-button {
+      width: 200px;
+      height: 45px;
+      background: url(../../../img/map-button_bg.jpg);
+      -webkit-background-size: cover;
+              background-size: cover;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      float: right;
+      margin-top: 34px; }
+      .workspace .content .settings2 .search-form .map-button .fa-map-marker {
+        font-size: 1.85rem;
+        color: #03a3f0; }
+      .workspace .content .settings2 .search-form .map-button__text {
+        font-size: 0.813rem;
+        font-weight: 700;
+        color: #2c2c2c;
+        text-transform: uppercase;
+        margin-left: 9px; }
 
 .ui-datepicker {
   z-index: 3 !important; }
@@ -1134,7 +1188,16 @@ body {
     margin-left: 24px; }
   .workspace .content .steps .item-tickets, .workspace .content .steps .item-residence, .workspace .content .steps .item-transfer, .workspace .content .steps .item-service {
     padding: 0 3px;
-    height: 126px; } }
+    height: 126px; }
+  .workspace .content .settings2 .search-form .sort__item {
+    font-size: 0.75rem; }
+  .workspace .content .settings2 .search-form .map-button {
+    width: 70px; }
+    .workspace .content .settings2 .search-form .map-button .fa-map-marker {
+      font-size: 1.6rem; }
+    .workspace .content .settings2 .search-form .map-button__text {
+      font-size: 0.75rem;
+      margin-left: 6px; } }
 
 @media (min-width: 760px) and (max-width: 991px) {
   .header__logo {
@@ -1243,7 +1306,23 @@ body {
     .workspace .content .steps .item-transfer .item__tip, .workspace .content .steps .item-service .item__tip {
       color: #a1a1a1;
       font-size: 0.75rem;
-      letter-spacing: -0.85px; } }
+      letter-spacing: -0.85px; }
+    .workspace .content .settings2 .search-form .btn.active, .workspace .content .settings2 .search-form .btn:active {
+      outline: none !important;
+      background: #7fb1d8; }
+    .workspace .content .settings2 .search-form .sort__item {
+      font-size: 0.77rem;
+      padding: 6px 7px; }
+    .workspace .content .settings2 .search-form .map-button {
+      width: 90px; }
+      .workspace .content .settings2 .search-form .map-button .fa-map-marker {
+        color: #7fb1d8;
+        font-size: 1.6rem; }
+      .workspace .content .settings2 .search-form .map-button .visible-sm {
+        display: inline !important; }
+      .workspace .content .settings2 .search-form .map-button__text {
+        font-size: 0.75rem;
+        margin-left: 7px; } }
 
 @media (max-width: 759px) {
   body {

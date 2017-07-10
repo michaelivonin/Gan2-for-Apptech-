@@ -353,3 +353,61 @@
         font-size: 0.813rem
         font-weight: 300
         line-height: 14px
+
+  .settings2
+
+    .search-form
+
+      .btn-group>.btn
+        border-radius: 3px !important
+
+      .btn.focus, .btn:focus
+        outline: none !important
+
+      .btn.active, .btn:active
+        outline: none !important
+        background: $blue
+        color: $white
+
+      .sort
+        margin-top: 45px
+
+        &__item
+          padding: 6px 8px
+          font-size: 0.813rem
+          color: $grey4
+          line-height: inherit
+          border-radius: 3px
+          margin-right: 5px
+          background: $white6
+          border: none
+
+          &:hover
+            opacity: 0.8
+
+      .map-button
+        @extend %btn-default
+        @extend %btn-opacity
+        @extend %btn-animation
+
+        width: 200px
+        height: 45px
+        background: url(../../../img/map-button_bg.jpg)
+        background-size: cover
+        border-radius: 5px
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        float: right
+        margin-top: 34px
+
+        .fa-map-marker
+          font-size: 1.85rem
+          color: $blue
+
+        &__text
+          font-size: 0.813rem
+          font-weight: 700
+          color: $grey4
+          text-transform: uppercase
+          margin-left: 9px

@@ -81,4 +81,30 @@
       .item__indicator
     // /.item-service
   // /.steps
+  .settings2
+    form.search-form(action='#')
+      .btn-group.sort(data-toggle="buttons")
+        label.btn.btn-primary.sort__item
+          input(type="checkbox" autocomplete="off" checked)
+          | Ближе к нужному адресу
+        label.btn.btn-primary.sort__item
+          input(type="checkbox" autocomplete="off")
+          | Низкая цена в начале
+        label.btn.btn-primary.sort__item
+          input(type="checkbox" autocomplete="off")
+          | Оценка
+        label.btn.btn-primary.sort__item
+          input(type="checkbox" autocomplete="off")
+          | Цена/Качество
+        label.btn.btn-primary.sort__item
+          input(type="checkbox" autocomplete="off")
+          | Скидка
+      // /.sort
+      button.map-button(type='button')
+        i.fa.fa-map-marker(aria-hidden='true')
+        span.map-button__text.visible-lg Показать на карте
+        span.map-button__text.visible-md.visible-sm Карта
+      // /.map-button
+    // /.search-form
+  // /.settings2
 // /.content
