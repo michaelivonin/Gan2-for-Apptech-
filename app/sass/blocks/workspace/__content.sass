@@ -516,7 +516,7 @@
         display: none
 
   .hotels
-    margin-top: 18px
+    margin-top: 25px
 
     %hotels__item_default
       width: 100%
@@ -525,6 +525,7 @@
       border-radius: 3px
       box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3)
       display: inline-block
+      margin-bottom: 12px
 
       .item__img
         float: left
@@ -568,9 +569,6 @@
         .item__rooms
           margin-top: 25px
 
-          .fa
-            margin-right: 9px
-
           .text
             color: $grey4
             font-size: 0.875rem
@@ -580,7 +578,6 @@
           font-size: 0.813rem
           font-weight: 700
           margin-top: 9px
-          margin-left: 28px
 
         .comfort
           margin-top: 24px
@@ -588,19 +585,213 @@
           &__item
             margin-bottom: 14px
 
-            .fa
-              font-size: 0.98rem
-              margin-right: 10px
-
-            .icon
-              margin-right: 12px
-
             .text
               color: $grey4
               font-size: 0.75rem
 
       .column2
         float: right
+        position: relative
 
-    .item
+        .rating
+          float: right
+          color: $grey4
+          font-weight: 700
+          margin-top: 11px
+
+          .text_strong
+            font-size: 1.125rem
+
+        .reviews
+          display: inline-block
+          float: right
+          clear: both
+          margin-top: 12px
+          color: $blue
+          font-size: 0.688rem
+          text-decoration: underline
+
+        .wrap
+          float: right
+          clear: right
+
+          .like-button
+            @extend %btn-default
+            @extend %btn-opacity
+
+            margin-right: 20px
+            position: relative
+            top: 5px
+
+            .fa-heart-o
+              color: $grey13
+              font-size: 1.44rem
+
+            .fa-heart
+              color: $grey5
+              font-size: 1.44rem
+              display: none
+
+
+          .choose-button
+            @extend %btn-default
+
+            margin-top: 117px
+            width: 200px
+            height: 50px
+            background: $yellow
+            border-radius: 3px
+            color: $white
+
+            &__text
+              font-size: 0.813rem
+              font-weight: 700
+              text-transform: uppercase
+              letter-spacing: 1.4px
+
+            .fa-chevron-right
+              font-size: 0.75rem
+              margin-left: 21px
+
+            &:hover
+              background: rgba(255, 200, 22, .8)
+
+            &:active
+              position: static
+              background: rgba(255, 160, 52, 1)
+
+            .sale, .sale-info, .price
+              cursor: default
+              pointer-events: none
+
+            .sale
+              position: absolute
+              top: 74px
+              right: -16px
+              width: 72px
+              height: 30px
+              background: $red2
+              align-items: center
+              justify-content: center
+              border-radius: 4px
+              box-shadow: 0 1px 0 0 rgba(34, 31, 31, 0.54)
+              color: $white
+              font-size: 1.5rem
+              font-weight: 700
+
+            .sale-info
+              position: absolute
+              top: 120px
+              right: 124px
+              color: $red
+              text-decoration: line-through
+
+              .main
+                font-size: 1.129rem
+                color: $black4
+
+              .fa-rub
+                color: $black4
+
+            .price
+              position: absolute
+              top: 116px
+              right: 0
+              color: $black4
+              text-align: right
+
+              .main
+                font-size: 1.125rem
+                font-weight: 700
+
+              .main_strong
+                font-size: 1.875rem
+                font-weight: 700
+
+              .fa-rub
+                font-size: 1.73rem
+
+
+              .info
+                color: $grey4
+                font-size: 0.813rem
+
+        .extra-info
+          float: right
+          clear: both
+          color: $grey4
+          font-size: 0.75rem
+          margin-top: 7px
+
+    .item.ibis
       @extend %hotels__item_default
+
+      .column1
+
+        .item__rooms
+
+          .fa-bed
+            margin-right: 9px
+
+        .warning
+          margin-left: 28px
+          visibility: hidden
+
+        .comfort
+
+          &__item
+
+            .fa-car
+              font-size: 0.98rem
+              margin-right: 10px
+
+            .comfort__icon-breakfast
+              margin-left: 1px
+              margin-right: 11px
+
+      .column2
+
+        .choose-button
+
+          .sale, .sale-info
+            display: none
+
+    .item.owl
+      @extend %hotels__item_default
+
+      .column1
+
+        .item__rooms
+
+          .fa-bed
+            margin-right: 9px
+
+        .warning
+          margin-left: 28px
+
+        .comfort
+
+          &__item
+
+            .fa-car
+              font-size: 0.98rem
+              margin-right: 10px
+
+            .fa-wifi
+              margin-left: 1px
+              margin-right: 10px
+
+      .column2
+
+        .choose-button
+
+          .sale
+            display: inline-flex
+
+          .price
+
+            .main
+              display: none
+
+        .extra-info
+          display: none

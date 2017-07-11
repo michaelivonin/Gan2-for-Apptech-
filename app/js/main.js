@@ -176,4 +176,18 @@ $(function() {
 
     }
   });
+
+  // Likes
+  var likeCount = 0;
+  $('.like-button')/*.each()*/.click(function() {
+    if (likeCount === 0) {
+      $(this).children('.fa-heart-o').hide();
+      $(this).children('.fa-heart').show();
+      ++likeCount;
+    } else {
+      $(this).children('.fa-heart-o').show();
+      $(this).children('.fa-heart').hide();
+      --likeCount;
+    }
+  });
 });

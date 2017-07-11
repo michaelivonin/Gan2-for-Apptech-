@@ -119,7 +119,7 @@
     // /.search-form
   // /.settings2
   .hotels
-    .item
+    .item.ibis
       img.item__img(src='img/ibis.jpg' alt='Ibis' title='Ибис Сибирь-Омск')
       .column1
         h6.item__heading Отель &laquo;Ибис Сибирь-Омск&raquo; 4*
@@ -144,28 +144,82 @@
       // /.column1
       .column2
         p.rating
-          span.text Отлично
+          span.text Отлично&nbsp;
           span.text_strong 5.0
         a.reviews(href='#') 15 отзывов
-        button.like-button(type='button')
-          i.fa.fa-heart-o(aria-hidden='true')
-        button.choose-button(type='button')
-          p.sale -50%
-          p.sale-info
-            span.main 8 567&nbsp;
-            i.fa.fa-rub(aria-hidden='true')
-          p.price
-            span.main от
-            span.main_strong &nbsp;8 567&nbsp;
-            i.fa.fa-rub(aria-hidden='true')
-            br
-            span.info за 2 суток для 2х гостей
-          // /.price
-          span.choose-button__text Выбрать
-          i.fa.fa-chevron-right(aria-hidden='true')
-        // /.choose-button
+        .wrap
+          button.like-button(type='button')
+            i.fa.fa-heart-o(aria-hidden='true')
+            i.fa.fa-heart(aria-hidden='true')
+          button.choose-button(type='button')
+            p.sale - 50%
+            p.sale-info
+              span.main 8 567&nbsp;
+              i.fa.fa-rub(aria-hidden='true')
+            p.price
+              span.main от&nbsp;
+              span.main_strong 8 567&nbsp;
+              i.fa.fa-rub(aria-hidden='true')
+              br
+              span.info за 2 суток для 2х гостей
+            // /.price
+            span.choose-button__text Выбрать
+            i.fa.fa-chevron-right(aria-hidden='true')
+          // /.choose-button
+        // /.wrap
         p.extra-info + ещё 3 варианта размещения
       // /.column2
-    // /.item
+    // /.item.ibis
+    .item.owl
+      img.item__img(src='img/owl.jpg' alt='Sova' title='Мини-Отель "Sova"')
+      .column1
+        h6.item__heading Мини-Отель &laquo;Sova&raquo; 3*
+        p.item__address ул. 10 Лет Октября, 109
+        p.map
+          i.fa.fa-map-marker(aria-hidden='true')
+          span.map__text 600м до нужного адреса.
+          a.map__link(href='#') На карте
+        // /.map
+        p.item__rooms
+          i.fa.fa-bed(aria-hidden='true')
+          span.text 1 комната, 2 кровати
+        p.warning Осталось номеров: 2
+        .comfort
+          p.comfort__item
+            i.fa.fa-car(aria-hidden='true')
+            span.text Трансфер от/до аэропорта
+          p.comfort__item
+            i.fa.fa-wifi(aria-hidden='true')
+            span.text Wi-Fi в номере
+        // /.comfort
+      // /.column1
+      .column2
+        p.rating
+          span.text Приемлемо&nbsp;
+          span.text_strong 3.4
+        a.reviews(href='#') 56 отзывов
+        .wrap
+          button.like-button(type='button')
+            i.fa.fa-heart-o(aria-hidden='true')
+            i.fa.fa-heart(aria-hidden='true')
+          button.choose-button(type='button')
+            p.sale - 50%
+            p.sale-info
+              span.main 8 567&nbsp;
+              i.fa.fa-rub(aria-hidden='true')
+            p.price
+              span.main от&nbsp;
+              span.main_strong 4 567&nbsp;
+              i.fa.fa-rub(aria-hidden='true')
+              br
+              span.info за 2 суток для 2х гостей
+            // /.price
+            span.choose-button__text Выбрать
+            i.fa.fa-chevron-right(aria-hidden='true')
+          // /.choose-button
+        // /.wrap
+        p.extra-info + ещё 3 варианта размещения
+      // /.column2
+    // /.item.owl
   // /.hotels
 // /.content

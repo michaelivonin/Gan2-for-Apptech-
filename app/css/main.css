@@ -42,22 +42,22 @@ body {
   body * a:focus {
     text-decoration: none; }
 
-.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .content .settings2 .search-form .city .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button, .workspace .content .calc-content .btn-show, .workspace .content .calc-content__button, .workspace .content .steps .item-tickets .item__button-delete, .workspace .content .settings2 .search-form .map-button, .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
+.header .bell__button, .header .cart__button, .header .heart__button, .header .entrance__button, .workspace .settings .search-form .city .button-reset, .workspace .settings .search-form .place .button-reset, .workspace .content .settings2 .search-form .city .button-reset, .workspace .settings__button-hide, .workspace .settings .calculator__button, .workspace .settings .filters__button, .workspace .content .calc-content .btn-show, .workspace .content .calc-content__button, .workspace .content .steps .item-tickets .item__button-delete, .workspace .content .settings2 .search-form .map-button, .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button, .workspace .content .hotels .item.ibis .column2 .wrap .like-button, .workspace .content .hotels .item.owl .column2 .wrap .like-button, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button, .workspace .content .hotels .item.owl .column2 .wrap .choose-button {
   background: none;
   border: none;
   outline: none;
   padding: 0; }
-  .header .bell__button:active, .header .cart__button:active, .header .heart__button:active, .header .entrance__button:active, .workspace .settings .search-form .city .button-reset:active, .workspace .settings .search-form .place .button-reset:active, .workspace .content .settings2 .search-form .city .button-reset:active, .workspace .settings__button-hide:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .calc-content .btn-show:active, .workspace .content .calc-content__button:active, .workspace .content .steps .item-tickets .item__button-delete:active, .workspace .content .settings2 .search-form .map-button:active, .workspace .content .settings2 .search-form .filter-button:active, .workspace .content .settings2 .search-form .sort-button:active {
+  .header .bell__button:active, .header .cart__button:active, .header .heart__button:active, .header .entrance__button:active, .workspace .settings .search-form .city .button-reset:active, .workspace .settings .search-form .place .button-reset:active, .workspace .content .settings2 .search-form .city .button-reset:active, .workspace .settings__button-hide:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .calc-content .btn-show:active, .workspace .content .calc-content__button:active, .workspace .content .steps .item-tickets .item__button-delete:active, .workspace .content .settings2 .search-form .map-button:active, .workspace .content .settings2 .search-form .filter-button:active, .workspace .content .settings2 .search-form .sort-button:active, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:active, .workspace .content .hotels .item.owl .column2 .wrap .like-button:active, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:active, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:active {
     position: relative;
     left: 0; }
-    .header .bell__button:active span, .header .cart__button:active span, .header .heart__button:active span, .header .entrance__button:active span, .workspace .settings .search-form .city .button-reset:active span, .workspace .settings .search-form .place .button-reset:active span, .workspace .content .settings2 .search-form .city .button-reset:active span, .workspace .settings__button-hide:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .workspace .content .calc-content .btn-show:active span, .workspace .content .calc-content__button:active span, .workspace .content .steps .item-tickets .item__button-delete:active span, .workspace .content .settings2 .search-form .map-button:active span, .workspace .content .settings2 .search-form .filter-button:active span, .workspace .content .settings2 .search-form .sort-button:active span, .header .bell__button:active i, .header .cart__button:active i, .header .heart__button:active i, .header .entrance__button:active i, .workspace .settings .search-form .city .button-reset:active i, .workspace .settings .search-form .place .button-reset:active i, .workspace .content .settings2 .search-form .city .button-reset:active i, .workspace .settings__button-hide:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i, .workspace .content .calc-content .btn-show:active i, .workspace .content .calc-content__button:active i, .workspace .content .steps .item-tickets .item__button-delete:active i, .workspace .content .settings2 .search-form .map-button:active i, .workspace .content .settings2 .search-form .filter-button:active i, .workspace .content .settings2 .search-form .sort-button:active i {
+    .header .bell__button:active span, .header .cart__button:active span, .header .heart__button:active span, .header .entrance__button:active span, .workspace .settings .search-form .city .button-reset:active span, .workspace .settings .search-form .place .button-reset:active span, .workspace .content .settings2 .search-form .city .button-reset:active span, .workspace .settings__button-hide:active span, .workspace .settings .calculator__button:active span, .workspace .settings .filters__button:active span, .workspace .content .calc-content .btn-show:active span, .workspace .content .calc-content__button:active span, .workspace .content .steps .item-tickets .item__button-delete:active span, .workspace .content .settings2 .search-form .map-button:active span, .workspace .content .settings2 .search-form .filter-button:active span, .workspace .content .settings2 .search-form .sort-button:active span, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:active span, .workspace .content .hotels .item.owl .column2 .wrap .like-button:active span, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:active span, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:active span, .header .bell__button:active i, .header .cart__button:active i, .header .heart__button:active i, .header .entrance__button:active i, .workspace .settings .search-form .city .button-reset:active i, .workspace .settings .search-form .place .button-reset:active i, .workspace .content .settings2 .search-form .city .button-reset:active i, .workspace .settings__button-hide:active i, .workspace .settings .calculator__button:active i, .workspace .settings .filters__button:active i, .workspace .content .calc-content .btn-show:active i, .workspace .content .calc-content__button:active i, .workspace .content .steps .item-tickets .item__button-delete:active i, .workspace .content .settings2 .search-form .map-button:active i, .workspace .content .settings2 .search-form .filter-button:active i, .workspace .content .settings2 .search-form .sort-button:active i, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:active i, .workspace .content .hotels .item.owl .column2 .wrap .like-button:active i, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:active i, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:active i {
       position: relative;
       left: 0; }
-  .header .bell__button:focus span, .header .cart__button:focus span, .header .heart__button:focus span, .header .entrance__button:focus span, .workspace .settings .search-form .city .button-reset:focus span, .workspace .settings .search-form .place .button-reset:focus span, .workspace .content .settings2 .search-form .city .button-reset:focus span, .workspace .settings__button-hide:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .workspace .content .calc-content .btn-show:focus span, .workspace .content .calc-content__button:focus span, .workspace .content .steps .item-tickets .item__button-delete:focus span, .workspace .content .settings2 .search-form .map-button:focus span, .workspace .content .settings2 .search-form .filter-button:focus span, .workspace .content .settings2 .search-form .sort-button:focus span, .header .bell__button:focus i, .header .cart__button:focus i, .header .heart__button:focus i, .header .entrance__button:focus i, .workspace .settings .search-form .city .button-reset:focus i, .workspace .settings .search-form .place .button-reset:focus i, .workspace .content .settings2 .search-form .city .button-reset:focus i, .workspace .settings__button-hide:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i, .workspace .content .calc-content .btn-show:focus i, .workspace .content .calc-content__button:focus i, .workspace .content .steps .item-tickets .item__button-delete:focus i, .workspace .content .settings2 .search-form .map-button:focus i, .workspace .content .settings2 .search-form .filter-button:focus i, .workspace .content .settings2 .search-form .sort-button:focus i {
+  .header .bell__button:focus span, .header .cart__button:focus span, .header .heart__button:focus span, .header .entrance__button:focus span, .workspace .settings .search-form .city .button-reset:focus span, .workspace .settings .search-form .place .button-reset:focus span, .workspace .content .settings2 .search-form .city .button-reset:focus span, .workspace .settings__button-hide:focus span, .workspace .settings .calculator__button:focus span, .workspace .settings .filters__button:focus span, .workspace .content .calc-content .btn-show:focus span, .workspace .content .calc-content__button:focus span, .workspace .content .steps .item-tickets .item__button-delete:focus span, .workspace .content .settings2 .search-form .map-button:focus span, .workspace .content .settings2 .search-form .filter-button:focus span, .workspace .content .settings2 .search-form .sort-button:focus span, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:focus span, .workspace .content .hotels .item.owl .column2 .wrap .like-button:focus span, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:focus span, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:focus span, .header .bell__button:focus i, .header .cart__button:focus i, .header .heart__button:focus i, .header .entrance__button:focus i, .workspace .settings .search-form .city .button-reset:focus i, .workspace .settings .search-form .place .button-reset:focus i, .workspace .content .settings2 .search-form .city .button-reset:focus i, .workspace .settings__button-hide:focus i, .workspace .settings .calculator__button:focus i, .workspace .settings .filters__button:focus i, .workspace .content .calc-content .btn-show:focus i, .workspace .content .calc-content__button:focus i, .workspace .content .steps .item-tickets .item__button-delete:focus i, .workspace .content .settings2 .search-form .map-button:focus i, .workspace .content .settings2 .search-form .filter-button:focus i, .workspace .content .settings2 .search-form .sort-button:focus i, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:focus i, .workspace .content .hotels .item.owl .column2 .wrap .like-button:focus i, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:focus i, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:focus i {
     position: relative;
     left: 0; }
 
-.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .content .settings2 .search-form .city .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover, .workspace .content .settings2 .search-form .map-button:hover, .workspace .content .settings2 .search-form .filter-button:hover, .workspace .content .settings2 .search-form .sort-button:hover {
+.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .content .settings2 .search-form .city .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover, .workspace .content .settings2 .search-form .map-button:hover, .workspace .content .settings2 .search-form .filter-button:hover, .workspace .content .settings2 .search-form .sort-button:hover, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:hover, .workspace .content .hotels .item.owl .column2 .wrap .like-button:hover {
   opacity: 0.7; }
 
 .header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .settings2 .search-form .map-button:active, .workspace .content .settings2 .search-form .filter-button:active, .workspace .content .settings2 .search-form .sort-button:active {
@@ -1183,8 +1183,8 @@ body {
     .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
       display: none; }
     .workspace .content .hotels {
-      margin-top: 18px; }
-      .workspace .content .hotels .item {
+      margin-top: 25px; }
+      .workspace .content .hotels .item.ibis, .workspace .content .hotels .item.owl {
         width: 100%;
         background: white;
         padding: 10px 10px;
@@ -1192,65 +1192,200 @@ body {
                 border-radius: 3px;
         -webkit-box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
                 box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
-        display: inline-block; }
-        .workspace .content .hotels .item .item__img {
+        display: inline-block;
+        margin-bottom: 12px; }
+        .workspace .content .hotels .item.ibis .item__img, .workspace .content .hotels .item.owl .item__img {
           float: left; }
-        .workspace .content .hotels .item .column1 {
+        .workspace .content .hotels .item.ibis .column1, .workspace .content .hotels .item.owl .column1 {
           float: left;
           margin-left: 15px; }
-          .workspace .content .hotels .item .column1 .item__heading {
+          .workspace .content .hotels .item.ibis .column1 .item__heading, .workspace .content .hotels .item.owl .column1 .item__heading {
             color: #03a3f0;
             font-size: 1.375rem;
             font-weight: 300;
             margin-top: 7px; }
-          .workspace .content .hotels .item .column1 .item__address {
+          .workspace .content .hotels .item.ibis .column1 .item__address, .workspace .content .hotels .item.owl .column1 .item__address {
             color: #2c2c2c;
             font-size: 0.938rem;
             margin-top: 9px; }
-          .workspace .content .hotels .item .column1 .map {
+          .workspace .content .hotels .item.ibis .column1 .map, .workspace .content .hotels .item.owl .column1 .map {
             margin-top: 13px; }
-            .workspace .content .hotels .item .column1 .map .fa {
+            .workspace .content .hotels .item.ibis .column1 .map .fa, .workspace .content .hotels .item.owl .column1 .map .fa {
               color: #03a3f0;
               font-size: 1.1rem;
               margin-right: 5px;
               position: relative;
               top: 1px; }
-            .workspace .content .hotels .item .column1 .map__text {
+            .workspace .content .hotels .item.ibis .column1 .map__text, .workspace .content .hotels .item.owl .column1 .map__text {
               color: #a1a1a1;
               font-size: 0.625rem;
               text-transform: uppercase; }
-            .workspace .content .hotels .item .column1 .map__link {
+            .workspace .content .hotels .item.ibis .column1 .map__link, .workspace .content .hotels .item.owl .column1 .map__link {
               color: #2c2c2c;
               font-size: 0.75rem;
               text-decoration: underline;
               margin-left: 9px; }
-          .workspace .content .hotels .item .column1 .item__rooms {
+          .workspace .content .hotels .item.ibis .column1 .item__rooms, .workspace .content .hotels .item.owl .column1 .item__rooms {
             margin-top: 25px; }
-            .workspace .content .hotels .item .column1 .item__rooms .fa {
-              margin-right: 9px; }
-            .workspace .content .hotels .item .column1 .item__rooms .text {
+            .workspace .content .hotels .item.ibis .column1 .item__rooms .text, .workspace .content .hotels .item.owl .column1 .item__rooms .text {
               color: #2c2c2c;
               font-size: 0.875rem; }
-          .workspace .content .hotels .item .column1 .warning {
+          .workspace .content .hotels .item.ibis .column1 .warning, .workspace .content .hotels .item.owl .column1 .warning {
             color: #eb2629;
             font-size: 0.813rem;
             font-weight: 700;
-            margin-top: 9px;
-            margin-left: 28px; }
-          .workspace .content .hotels .item .column1 .comfort {
+            margin-top: 9px; }
+          .workspace .content .hotels .item.ibis .column1 .comfort, .workspace .content .hotels .item.owl .column1 .comfort {
             margin-top: 24px; }
-            .workspace .content .hotels .item .column1 .comfort__item {
+            .workspace .content .hotels .item.ibis .column1 .comfort__item, .workspace .content .hotels .item.owl .column1 .comfort__item {
               margin-bottom: 14px; }
-              .workspace .content .hotels .item .column1 .comfort__item .fa {
-                font-size: 0.98rem;
-                margin-right: 10px; }
-              .workspace .content .hotels .item .column1 .comfort__item .icon {
-                margin-right: 12px; }
-              .workspace .content .hotels .item .column1 .comfort__item .text {
+              .workspace .content .hotels .item.ibis .column1 .comfort__item .text, .workspace .content .hotels .item.owl .column1 .comfort__item .text {
                 color: #2c2c2c;
                 font-size: 0.75rem; }
-        .workspace .content .hotels .item .column2 {
-          float: right; }
+        .workspace .content .hotels .item.ibis .column2, .workspace .content .hotels .item.owl .column2 {
+          float: right;
+          position: relative; }
+          .workspace .content .hotels .item.ibis .column2 .rating, .workspace .content .hotels .item.owl .column2 .rating {
+            float: right;
+            color: #2c2c2c;
+            font-weight: 700;
+            margin-top: 11px; }
+            .workspace .content .hotels .item.ibis .column2 .rating .text_strong, .workspace .content .hotels .item.owl .column2 .rating .text_strong {
+              font-size: 1.125rem; }
+          .workspace .content .hotels .item.ibis .column2 .reviews, .workspace .content .hotels .item.owl .column2 .reviews {
+            display: inline-block;
+            float: right;
+            clear: both;
+            margin-top: 12px;
+            color: #03a3f0;
+            font-size: 0.688rem;
+            text-decoration: underline; }
+          .workspace .content .hotels .item.ibis .column2 .wrap, .workspace .content .hotels .item.owl .column2 .wrap {
+            float: right;
+            clear: right; }
+            .workspace .content .hotels .item.ibis .column2 .wrap .like-button, .workspace .content .hotels .item.owl .column2 .wrap .like-button {
+              margin-right: 20px;
+              position: relative;
+              top: 5px; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .like-button .fa-heart-o, .workspace .content .hotels .item.owl .column2 .wrap .like-button .fa-heart-o {
+                color: #bbbbbb;
+                font-size: 1.44rem; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .like-button .fa-heart, .workspace .content .hotels .item.owl .column2 .wrap .like-button .fa-heart {
+                color: #c2c2c2;
+                font-size: 1.44rem;
+                display: none; }
+            .workspace .content .hotels .item.ibis .column2 .wrap .choose-button, .workspace .content .hotels .item.owl .column2 .wrap .choose-button {
+              margin-top: 117px;
+              width: 200px;
+              height: 50px;
+              background: #ffc816;
+              -webkit-border-radius: 3px;
+                      border-radius: 3px;
+              color: white; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button__text, .workspace .content .hotels .item.owl .column2 .wrap .choose-button__text {
+                font-size: 0.813rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.4px; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .fa-chevron-right {
+                font-size: 0.75rem;
+                margin-left: 21px; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:hover, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:hover {
+                background: rgba(255, 200, 22, 0.8); }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:active, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:active {
+                position: static;
+                background: #ffa034; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale-info, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale-info, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price {
+                cursor: default;
+                pointer-events: none; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale {
+                position: absolute;
+                top: 74px;
+                right: -16px;
+                width: 72px;
+                height: 30px;
+                background: #ec4446;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-border-radius: 4px;
+                        border-radius: 4px;
+                -webkit-box-shadow: 0 1px 0 0 rgba(34, 31, 31, 0.54);
+                        box-shadow: 0 1px 0 0 rgba(34, 31, 31, 0.54);
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 700; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale-info, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale-info {
+                position: absolute;
+                top: 120px;
+                right: 124px;
+                color: #eb2629;
+                text-decoration: line-through; }
+                .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale-info .main, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale-info .main {
+                  font-size: 1.129rem;
+                  color: #1e1e1e; }
+                .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale-info .fa-rub, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale-info .fa-rub {
+                  color: #1e1e1e; }
+              .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price {
+                position: absolute;
+                top: 116px;
+                right: 0;
+                color: #1e1e1e;
+                text-align: right; }
+                .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .main {
+                  font-size: 1.125rem;
+                  font-weight: 700; }
+                .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main_strong, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .main_strong {
+                  font-size: 1.875rem;
+                  font-weight: 700; }
+                .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .fa-rub, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .fa-rub {
+                  font-size: 1.73rem; }
+                .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .info, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .info {
+                  color: #2c2c2c;
+                  font-size: 0.813rem; }
+          .workspace .content .hotels .item.ibis .column2 .extra-info, .workspace .content .hotels .item.owl .column2 .extra-info {
+            float: right;
+            clear: both;
+            color: #2c2c2c;
+            font-size: 0.75rem;
+            margin-top: 7px; }
+      .workspace .content .hotels .item.ibis .column1 .item__rooms .fa-bed {
+        margin-right: 9px; }
+      .workspace .content .hotels .item.ibis .column1 .warning {
+        margin-left: 28px;
+        visibility: hidden; }
+      .workspace .content .hotels .item.ibis .column1 .comfort__item .fa-car {
+        font-size: 0.98rem;
+        margin-right: 10px; }
+      .workspace .content .hotels .item.ibis .column1 .comfort__item .comfort__icon-breakfast {
+        margin-left: 1px;
+        margin-right: 11px; }
+      .workspace .content .hotels .item.ibis .column2 .choose-button .sale, .workspace .content .hotels .item.ibis .column2 .choose-button .sale-info {
+        display: none; }
+      .workspace .content .hotels .item.owl .column1 .item__rooms .fa-bed {
+        margin-right: 9px; }
+      .workspace .content .hotels .item.owl .column1 .warning {
+        margin-left: 28px; }
+      .workspace .content .hotels .item.owl .column1 .comfort__item .fa-car {
+        font-size: 0.98rem;
+        margin-right: 10px; }
+      .workspace .content .hotels .item.owl .column1 .comfort__item .fa-wifi {
+        margin-left: 1px;
+        margin-right: 10px; }
+      .workspace .content .hotels .item.owl .column2 .choose-button .sale {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex; }
+      .workspace .content .hotels .item.owl .column2 .choose-button .price .main {
+        display: none; }
+      .workspace .content .hotels .item.owl .column2 .extra-info {
+        display: none; }
 
 .ui-datepicker {
   z-index: 3 !important; }
