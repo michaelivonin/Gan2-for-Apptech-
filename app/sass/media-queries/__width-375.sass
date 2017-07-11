@@ -84,6 +84,7 @@
         margin-top: 0
         margin-left: -15px
         border-radius: 0
+        box-shadow: none
 
         .item-tickets, .item-residence, .item-transfer, .item-service
           height: 67px
@@ -169,12 +170,12 @@
             display: none
 
           .map-button
-            float: none
             margin-top: 7px
             border-radius: 3px
             background: $white
-            width: calc(25% - 3px)
+            width: calc(25% - 5px)
             height: 40px
+            float: left
 
             .fa-map-marker
               font-size: 1.3rem
@@ -212,14 +213,17 @@
               opacity: 0.95
 
           .filter-button
-            width: calc(37.5% - 2px)
+            width: calc(37.5% - 1px)
+            float: left
+            margin-left: 4px
+            margin-right: 4px
 
             .fa-sliders
               transform: rotate(-90deg)
               font-size: 1.3rem
 
           .sort-button
-            width: calc(37.5% - 3px)
+            width: calc(37.5% - 2px)
 
             .fa-sort-amount-asc
               font-size: 1.25rem

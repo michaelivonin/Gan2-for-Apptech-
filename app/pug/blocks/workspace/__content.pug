@@ -118,4 +118,54 @@
       // /.sort-button
     // /.search-form
   // /.settings2
+  .hotels
+    .item
+      img.item__img(src='img/ibis.jpg' alt='Ibis' title='Ибис Сибирь-Омск')
+      .column1
+        h6.item__heading Отель &laquo;Ибис Сибирь-Омск&raquo; 4*
+        p.item__address ул. 10 Лет Октября, 109
+        p.map
+          i.fa.fa-map-marker(aria-hidden='true')
+          span.map__text 400м до нужного адреса.
+          a.map__link(href='#') На карте
+        // /.map
+        p.item__rooms
+          i.fa.fa-bed(aria-hidden='true')
+          span.text 1 комната, 2 кровати
+        p.warning Осталось номеров: 2
+        .comfort
+          p.comfort__item
+            i.fa.fa-car(aria-hidden='true')
+            span.text Трансфер от/до аэропорта
+          p.comfort__item
+            span.icon.comfort__icon-breakfast
+            span.text Завтраки включены
+        // /.comfort
+      // /.column1
+      .column2
+        p.rating
+          span.text Отлично
+          span.text_strong 5.0
+        a.reviews(href='#') 15 отзывов
+        button.like-button(type='button')
+          i.fa.fa-heart-o(aria-hidden='true')
+        button.choose-button(type='button')
+          p.sale -50%
+          p.sale-info
+            span.main 8 567&nbsp;
+            i.fa.fa-rub(aria-hidden='true')
+          p.price
+            span.main от
+            span.main_strong &nbsp;8 567&nbsp;
+            i.fa.fa-rub(aria-hidden='true')
+            br
+            span.info за 2 суток для 2х гостей
+          // /.price
+          span.choose-button__text Выбрать
+          i.fa.fa-chevron-right(aria-hidden='true')
+        // /.choose-button
+        p.extra-info + ещё 3 варианта размещения
+      // /.column2
+    // /.item
+  // /.hotels
 // /.content

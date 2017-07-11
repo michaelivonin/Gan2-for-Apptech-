@@ -1032,17 +1032,17 @@ body {
       .workspace .content .settings2 .search-form .city label, .workspace .content .settings2 .search-form .city br, .workspace .content .settings2 .search-form .date label, .workspace .content .settings2 .search-form .date br, .workspace .content .settings2 .search-form .person label, .workspace .content .settings2 .search-form .person br {
         display: none; }
     .workspace .content .settings2 .search-form .city {
-      width: -webkit-calc(25% - 3px);
-      width: calc(25% - 3px);
+      width: -webkit-calc(25% - 2px);
+      width: calc(25% - 2px);
       height: 48px;
       -webkit-border-radius: 3px 0 0 3px;
               border-radius: 3px 0 0 3px;
       padding: 11px 11px;
-      border-right: 1px solid #e4e4e4;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      float: left; }
       .workspace .content .settings2 .search-form .city__input-text {
         width: 85%;
         font-size: 0.813rem;
@@ -1050,15 +1050,17 @@ body {
       .workspace .content .settings2 .search-form .city .button-reset .fa-times {
         font-size: 0.9rem; }
     .workspace .content .settings2 .search-form .date {
-      width: -webkit-calc(50% + 6px);
-      width: calc(50% + 6px);
+      width: -webkit-calc(50% + 7px);
+      width: calc(50% + 7px);
       background: #f8fafb;
       border-right: 1px solid #e4e4e4;
-      margin-left: -4px;
+      border-left: 1px solid #e4e4e4;
+      margin-left: -2px;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      float: left; }
     .workspace .content .settings2 .search-form .occupancy {
       width: 85px;
       display: -webkit-inline-box;
@@ -1066,7 +1068,7 @@ body {
       display: -ms-inline-flexbox;
       display: inline-flex;
       height: 48px;
-      padding: 11px 11px;
+      padding: 11px 0;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -1079,10 +1081,11 @@ body {
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      margin-right: 6px; }
       .workspace .content .settings2 .search-form .occupancy__input-date {
         font-size: 0.813rem;
-        width: 80px;
+        width: 60px;
         letter-spacing: -1px; }
       .workspace .content .settings2 .search-form .occupancy .icon-calendar {
         margin-right: 10px; }
@@ -1093,21 +1096,21 @@ body {
       display: -ms-inline-flexbox;
       display: inline-flex;
       height: 48px;
-      padding: 11px 11px;
+      padding: 11px 0;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
       .workspace .content .settings2 .search-form .leave__input-date {
         font-size: 0.813rem;
-        width: 80px;
+        width: 60px;
         letter-spacing: -1px; }
       .workspace .content .settings2 .search-form .leave .icon-calendar {
         display: none; }
       .workspace .content .settings2 .search-form .leave:before {
         content: "—";
         position: relative;
-        left: -5px;
+        left: -4px;
         color: #555555; }
     .workspace .content .settings2 .search-form .person {
       width: -webkit-calc(25% - 3px);
@@ -1116,7 +1119,7 @@ body {
       -webkit-border-radius: 0 3px 3px 0;
               border-radius: 0 3px 3px 0;
       padding: 11px 11px;
-      margin-left: -4px; }
+      float: left; }
       .workspace .content .settings2 .search-form .person .person__icon-man {
         color: #ced0da;
         margin-top: 3px;
@@ -1179,6 +1182,75 @@ body {
         margin-left: 9px; }
     .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
       display: none; }
+    .workspace .content .hotels {
+      margin-top: 18px; }
+      .workspace .content .hotels .item {
+        width: 100%;
+        background: white;
+        padding: 10px 10px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        -webkit-box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
+                box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
+        display: inline-block; }
+        .workspace .content .hotels .item .item__img {
+          float: left; }
+        .workspace .content .hotels .item .column1 {
+          float: left;
+          margin-left: 15px; }
+          .workspace .content .hotels .item .column1 .item__heading {
+            color: #03a3f0;
+            font-size: 1.375rem;
+            font-weight: 300;
+            margin-top: 7px; }
+          .workspace .content .hotels .item .column1 .item__address {
+            color: #2c2c2c;
+            font-size: 0.938rem;
+            margin-top: 9px; }
+          .workspace .content .hotels .item .column1 .map {
+            margin-top: 13px; }
+            .workspace .content .hotels .item .column1 .map .fa {
+              color: #03a3f0;
+              font-size: 1.1rem;
+              margin-right: 5px;
+              position: relative;
+              top: 1px; }
+            .workspace .content .hotels .item .column1 .map__text {
+              color: #a1a1a1;
+              font-size: 0.625rem;
+              text-transform: uppercase; }
+            .workspace .content .hotels .item .column1 .map__link {
+              color: #2c2c2c;
+              font-size: 0.75rem;
+              text-decoration: underline;
+              margin-left: 9px; }
+          .workspace .content .hotels .item .column1 .item__rooms {
+            margin-top: 25px; }
+            .workspace .content .hotels .item .column1 .item__rooms .fa {
+              margin-right: 9px; }
+            .workspace .content .hotels .item .column1 .item__rooms .text {
+              color: #2c2c2c;
+              font-size: 0.875rem; }
+          .workspace .content .hotels .item .column1 .warning {
+            color: #eb2629;
+            font-size: 0.813rem;
+            font-weight: 700;
+            margin-top: 9px;
+            margin-left: 28px; }
+          .workspace .content .hotels .item .column1 .comfort {
+            margin-top: 24px; }
+            .workspace .content .hotels .item .column1 .comfort__item {
+              margin-bottom: 14px; }
+              .workspace .content .hotels .item .column1 .comfort__item .fa {
+                font-size: 0.98rem;
+                margin-right: 10px; }
+              .workspace .content .hotels .item .column1 .comfort__item .icon {
+                margin-right: 12px; }
+              .workspace .content .hotels .item .column1 .comfort__item .text {
+                color: #2c2c2c;
+                font-size: 0.75rem; }
+        .workspace .content .hotels .item .column2 {
+          float: right; }
 
 .ui-datepicker {
   z-index: 3 !important; }
@@ -1285,6 +1357,8 @@ body {
     display: none; }
   .workspace .content .steps .item-tickets .item__sum {
     margin-left: 24px; }
+  .workspace .content .steps .item-residence .item__indicator {
+    margin-left: -3px; }
   .workspace .content .steps .item-tickets, .workspace .content .steps .item-residence, .workspace .content .steps .item-transfer, .workspace .content .steps .item-service {
     padding: 0 3px;
     height: 126px; }
@@ -1490,7 +1564,9 @@ body {
       margin-top: 0;
       margin-left: -15px;
       -webkit-border-radius: 0;
-              border-radius: 0; }
+              border-radius: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
       .workspace .content .steps .item-tickets, .workspace .content .steps .item-residence, .workspace .content .steps .item-transfer, .workspace .content .steps .item-service {
         height: 67px;
         padding-top: 6px; }
@@ -1546,14 +1622,14 @@ body {
       .workspace .content .settings2 .search-form .sort {
         display: none; }
       .workspace .content .settings2 .search-form .map-button {
-        float: none;
         margin-top: 7px;
         -webkit-border-radius: 3px;
                 border-radius: 3px;
         background: white;
-        width: -webkit-calc(25% - 3px);
-        width: calc(25% - 3px);
-        height: 40px; }
+        width: -webkit-calc(25% - 5px);
+        width: calc(25% - 5px);
+        height: 40px;
+        float: left; }
         .workspace .content .settings2 .search-form .map-button .fa-map-marker {
           font-size: 1.3rem;
           color: #ffc816; }
@@ -1593,15 +1669,18 @@ body {
         .workspace .content .settings2 .search-form .filter-button:hover, .workspace .content .settings2 .search-form .sort-button:hover {
           opacity: 0.95; }
       .workspace .content .settings2 .search-form .filter-button {
-        width: -webkit-calc(37.5% - 2px);
-        width: calc(37.5% - 2px); }
+        width: -webkit-calc(37.5% - 1px);
+        width: calc(37.5% - 1px);
+        float: left;
+        margin-left: 4px;
+        margin-right: 4px; }
         .workspace .content .settings2 .search-form .filter-button .fa-sliders {
           -webkit-transform: rotate(-90deg);
               -ms-transform: rotate(-90deg);
                   transform: rotate(-90deg);
           font-size: 1.3rem; }
       .workspace .content .settings2 .search-form .sort-button {
-        width: -webkit-calc(37.5% - 3px);
-        width: calc(37.5% - 3px); }
+        width: -webkit-calc(37.5% - 2px);
+        width: calc(37.5% - 2px); }
         .workspace .content .settings2 .search-form .sort-button .fa-sort-amount-asc {
           font-size: 1.25rem; } }
