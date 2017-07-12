@@ -133,12 +133,12 @@ $(function() {
 
   // Show or hide calculator
   $('.calc-content__button').click(function() {
-    if ( /(MSIE|Trident\/|Edge\/)/i.test(navigator.userAgent) && $(window).width() <= (974 + 17) ) {
+    if ( /(MSIE|Trident\/|Edge\/)/i.test(navigator.userAgent) && $(window).width() <= (1182 + 17) ) {
 
       calcCount = 1;
       $('.calculator__button').click();
 
-    } else if ($(window).width() <= 974) {
+    } else if ($(window).width() <= 1182) {
 
       calcCount = 1;
       $('.calculator__button').click();

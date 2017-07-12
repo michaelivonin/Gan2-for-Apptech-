@@ -4,6 +4,7 @@
     &__logo
       margin-top: 12px
       margin-right: 20px
+      margin-left: -5px
 
     .logo__icon
       width: 30px
@@ -15,6 +16,7 @@
 
     .trip
       display: inline-flex
+      margin-right: 66px
 
     .link
       display: none
@@ -46,8 +48,6 @@
       .button-icon_grey
         color: $grey8 !important
 
-
-
       .trip
         height: 57px
         display: none
@@ -69,7 +69,8 @@
         display: block
 
     .content
-      width: calc(100% - 54px)
+      width: calc(100% - 35px)
+      padding-right: 0
 
       .calc-content
         display: none
@@ -79,6 +80,9 @@
 
         .input
           margin-top: 15px
+
+        .fa-long-arrow-right, .calc-content__link
+          display: none
 
         &__button
           margin-top: 22px
@@ -180,3 +184,18 @@
             &__text
               font-size: 0.75rem
               margin-left: 7px
+
+      .hotels
+
+        .hotels__item_default_sm
+
+          .images
+            width: 100%
+            display: inline-flex
+            justify-content: space-between
+
+          .item__img
+            display: none
+
+        .item.ibis
+          @extend .hotels__item_default_sm

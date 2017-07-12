@@ -527,6 +527,9 @@
       margin-bottom: 12px
       position: relative
 
+      .images
+        display: none
+
       .notice
         width: 138px
         height: 24px
@@ -611,14 +614,15 @@
               font-size: 0.75rem
 
       .column2
-        float: right
-        position: relative
+        position: absolute
+        top: 10px
+        right: 10px
 
         .rating
           float: right
           color: $grey4
           font-weight: 700
-          margin-top: 11px
+          margin-top: 10px
 
           .text_strong
             font-size: 1.125rem
@@ -627,7 +631,7 @@
           display: inline-block
           float: right
           clear: right
-          margin-top: 12px
+          margin-top: 14px
           color: $blue
           font-size: 0.688rem
           text-decoration: underline
@@ -637,7 +641,7 @@
         .wrap
           float: right
           clear: right
-          margin-top: 117px
+          margin-top: 118px
 
           .like-button
             @extend %btn-default
@@ -696,7 +700,7 @@
 
             .sale
               position: absolute
-              top: 74px
+              top: 72px
               right: -16px
               width: 72px
               height: 30px
@@ -725,7 +729,7 @@
 
             .price
               position: absolute
-              top: 116px
+              top: 114px
               right: 0
               color: $black4
               text-align: right
@@ -853,9 +857,6 @@
               margin-right: 10px
 
       .column2
-        position: absolute
-        top: 10px
-        right: 10px
 
         .wrap
 

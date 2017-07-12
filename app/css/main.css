@@ -442,13 +442,14 @@ body {
       .workspace .settings__button-hide .fa-minus {
         color: #ced0da; }
     .workspace .settings .calculator {
-      display: none; }
+      display: none;
+      margin: 0 -7px; }
       .workspace .settings .calculator__indicator {
         visibility: hidden;
         width: 4px;
         height: 60px;
         background: #ffc816;
-        margin-left: -20px;
+        margin-left: -13px;
         float: left; }
       .workspace .settings .calculator__button {
         margin-top: 21px;
@@ -458,13 +459,14 @@ body {
           color: #7fb1d8;
           margin-left: 1px; }
       .workspace .settings .calculator__line {
-        margin: 0 -20px;
-        width: 63px;
+        margin: 0 -13px;
+        width: 49px;
         border-top-color: #e4e4e4; }
     .workspace .settings .filters {
       display: none;
       float: left;
-      clear: both; }
+      clear: both;
+      margin: 0 -7px; }
       .workspace .settings .filters__button {
         margin-top: 19px; }
         .workspace .settings .filters__button .fa-sliders {
@@ -1198,6 +1200,8 @@ body {
         display: inline-block;
         margin-bottom: 12px;
         position: relative; }
+        .workspace .content .hotels .item.ibis .images, .workspace .content .hotels .item.owl .images, .workspace .content .hotels .item.alfa .images, .workspace .content .hotels .item.ibis2 .images, .workspace .content .hotels .item.dostoyevsky .images {
+          display: none; }
         .workspace .content .hotels .item.ibis .notice, .workspace .content .hotels .item.owl .notice, .workspace .content .hotels .item.alfa .notice, .workspace .content .hotels .item.ibis2 .notice, .workspace .content .hotels .item.dostoyevsky .notice {
           width: 138px;
           height: 24px;
@@ -1273,27 +1277,28 @@ body {
                 color: #2c2c2c;
                 font-size: 0.75rem; }
         .workspace .content .hotels .item.ibis .column2, .workspace .content .hotels .item.owl .column2, .workspace .content .hotels .item.alfa .column2, .workspace .content .hotels .item.ibis2 .column2, .workspace .content .hotels .item.dostoyevsky .column2 {
-          float: right;
-          position: relative; }
+          position: absolute;
+          top: 10px;
+          right: 10px; }
           .workspace .content .hotels .item.ibis .column2 .rating, .workspace .content .hotels .item.owl .column2 .rating, .workspace .content .hotels .item.alfa .column2 .rating, .workspace .content .hotels .item.ibis2 .column2 .rating, .workspace .content .hotels .item.dostoyevsky .column2 .rating {
             float: right;
             color: #2c2c2c;
             font-weight: 700;
-            margin-top: 11px; }
+            margin-top: 10px; }
             .workspace .content .hotels .item.ibis .column2 .rating .text_strong, .workspace .content .hotels .item.owl .column2 .rating .text_strong, .workspace .content .hotels .item.alfa .column2 .rating .text_strong, .workspace .content .hotels .item.ibis2 .column2 .rating .text_strong, .workspace .content .hotels .item.dostoyevsky .column2 .rating .text_strong {
               font-size: 1.125rem; }
           .workspace .content .hotels .item.ibis .column2 .reviews, .workspace .content .hotels .item.owl .column2 .reviews, .workspace .content .hotels .item.alfa .column2 .reviews, .workspace .content .hotels .item.ibis2 .column2 .reviews, .workspace .content .hotels .item.dostoyevsky .column2 .reviews {
             display: inline-block;
             float: right;
             clear: right;
-            margin-top: 12px;
+            margin-top: 14px;
             color: #03a3f0;
             font-size: 0.688rem;
             text-decoration: underline; }
           .workspace .content .hotels .item.ibis .column2 .wrap, .workspace .content .hotels .item.owl .column2 .wrap, .workspace .content .hotels .item.alfa .column2 .wrap, .workspace .content .hotels .item.ibis2 .column2 .wrap, .workspace .content .hotels .item.dostoyevsky .column2 .wrap {
             float: right;
             clear: right;
-            margin-top: 117px; }
+            margin-top: 118px; }
             .workspace .content .hotels .item.ibis .column2 .wrap .like-button, .workspace .content .hotels .item.owl .column2 .wrap .like-button, .workspace .content .hotels .item.alfa .column2 .wrap .like-button, .workspace .content .hotels .item.ibis2 .column2 .wrap .like-button, .workspace .content .hotels .item.dostoyevsky .column2 .wrap .like-button {
               margin-right: 20px;
               position: relative;
@@ -1334,7 +1339,7 @@ body {
                 pointer-events: none; }
               .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.ibis2 .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.dostoyevsky .column2 .wrap .choose-button .sale {
                 position: absolute;
-                top: 74px;
+                top: 72px;
                 right: -16px;
                 width: 72px;
                 height: 30px;
@@ -1367,7 +1372,7 @@ body {
                   color: #1e1e1e; }
               .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .price, .workspace .content .hotels .item.ibis2 .column2 .wrap .choose-button .price, .workspace .content .hotels .item.dostoyevsky .column2 .wrap .choose-button .price {
                 position: absolute;
-                top: 116px;
+                top: 114px;
                 right: 0;
                 color: #1e1e1e;
                 text-align: right; }
@@ -1428,14 +1433,10 @@ body {
       .workspace .content .hotels .item.alfa .column1 .comfort__item .fa-car {
         font-size: 0.98rem;
         margin-right: 10px; }
-      .workspace .content .hotels .item.alfa .column2 {
-        position: absolute;
-        top: 10px;
-        right: 10px; }
-        .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .sale-info {
-          display: none; }
-        .workspace .content .hotels .item.alfa .column2 .extra-info {
-          display: none; }
+      .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .sale-info {
+        display: none; }
+      .workspace .content .hotels .item.alfa .column2 .extra-info {
+        display: none; }
       .workspace .content .hotels .item.ibis2 .notice {
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
@@ -1567,36 +1568,62 @@ body {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .header__logo {
-    margin-right: 262px; }
+    margin-left: -11px;
+    margin-right: 273px; }
   .workspace .settings {
-    margin-left: -5px; }
-  .workspace .content .calc-content .btn-show {
-    left: 48.8%; }
-    .workspace .content .calc-content .btn-show:active {
-      left: 48.8%; }
-  .workspace .content .calc-content__link, .workspace .content .calc-content .fa-long-arrow-right {
-    display: none; }
-  .workspace .content .steps .item-tickets .item__sum {
-    margin-left: 24px; }
-  .workspace .content .steps .item-residence .item__indicator {
-    margin-left: -3px; }
-  .workspace .content .steps .item-tickets, .workspace .content .steps .item-residence, .workspace .content .steps .item-transfer, .workspace .content .steps .item-service {
-    padding: 0 3px;
-    height: 126px; }
-  .workspace .content .settings2 .search-form .sort__item {
-    font-size: 0.75rem; }
-  .workspace .content .settings2 .search-form .map-button {
-    width: 70px; }
-    .workspace .content .settings2 .search-form .map-button .fa-map-marker {
-      font-size: 1.6rem; }
-    .workspace .content .settings2 .search-form .map-button__text {
-      font-size: 0.75rem;
-      margin-left: 6px; } }
+    margin-left: 0; }
+    .workspace .settings .calculator, .workspace .settings .filters {
+      display: block; }
+    .workspace .settings .calculator__indicator_visible {
+      visibility: visible; }
+    .workspace .settings .button-icon_grey {
+      color: #b7b7b7 !important; }
+    .workspace .settings .trip {
+      height: 57px;
+      display: none;
+      visibility: hidden; }
+    .workspace .settings__line {
+      display: none; }
+    .workspace .settings .search-form {
+      display: none; }
+    .workspace .settings .hide-elem {
+      display: none; }
+    .workspace .settings .trip_visible {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+    .workspace .settings .show-elem {
+      display: block; }
+  .workspace .content {
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px); }
+    .workspace .content .calc-content {
+      display: none; }
+      .workspace .content .calc-content .btn-show {
+        display: none; }
+      .workspace .content .calc-content .input {
+        margin-top: 15px; }
+      .workspace .content .calc-content__button {
+        margin-top: 22px; }
+        .workspace .content .calc-content__button .fa-chevron-up {
+          -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+          position: relative;
+          top: 1px; }
+      .workspace .content .calc-content__line {
+        margin: 12px 0 0 -21px; }
+    .workspace .content .show-elem {
+      display: block !important; }
+    .workspace .content .show-elem_inline {
+      display: inline-block !important; } }
 
 @media (min-width: 760px) and (max-width: 991px) {
   .header__logo {
     margin-top: 12px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-left: -5px; }
   .header .logo__icon {
     width: 30px;
     height: 30px;
@@ -1607,7 +1634,8 @@ body {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
-    display: inline-flex; }
+    display: inline-flex;
+    margin-right: 66px; }
   .header .link {
     display: none; }
   .header .bell {
@@ -1648,14 +1676,17 @@ body {
     .workspace .settings .show-elem {
       display: block; }
   .workspace .content {
-    width: -webkit-calc(100% - 54px);
-    width: calc(100% - 54px); }
+    width: -webkit-calc(100% - 35px);
+    width: calc(100% - 35px);
+    padding-right: 0; }
     .workspace .content .calc-content {
       display: none; }
       .workspace .content .calc-content .btn-show {
         display: none; }
       .workspace .content .calc-content .input {
         margin-top: 15px; }
+      .workspace .content .calc-content .fa-long-arrow-right, .workspace .content .calc-content .calc-content__link {
+        display: none; }
       .workspace .content .calc-content__button {
         margin-top: 22px; }
         .workspace .content .calc-content__button .btn-text {
@@ -1716,7 +1747,19 @@ body {
         display: inline !important; }
       .workspace .content .settings2 .search-form .map-button__text {
         font-size: 0.75rem;
-        margin-left: 7px; } }
+        margin-left: 7px; }
+    .workspace .content .hotels .hotels__item_default_sm .images, .workspace .content .hotels .item.ibis .images {
+      width: 100%;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .workspace .content .hotels .hotels__item_default_sm .item__img, .workspace .content .hotels .item.ibis .item__img {
+      display: none; } }
 
 @media (max-width: 759px) {
   body {

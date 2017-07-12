@@ -2,57 +2,68 @@
   .header
 
     &__logo
-      margin-right: 262px
+      margin-left: -11px
+      margin-right: 273px
 
   .workspace
 
     .settings
-      margin-left: -5px
+      margin-left: 0
+
+      .calculator, .filters
+        display: block
+
+      .calculator__indicator_visible
+        visibility: visible
+
+      .button-icon_grey
+        color: $grey8 !important
+
+      .trip
+        height: 57px
+        display: none
+        visibility: hidden
+
+      &__line
+        display: none
+
+      .search-form
+        display: none
+
+      .hide-elem
+        display: none
+
+      .trip_visible
+        display: inline-flex
+
+      .show-elem
+        display: block
 
     .content
+      width: calc(100% - 40px)
 
       .calc-content
+        display: none
 
         .btn-show
-          left: 48.8%
-
-          &:active
-            left: 48.8%
-
-        &__link, .fa-long-arrow-right
           display: none
 
-      .steps
+        .input
+          margin-top: 15px
 
-        .item-tickets
+        &__button
+          margin-top: 22px
 
-          .item__sum
-            margin-left: 24px
+          .fa-chevron-up
+            transform: rotate(-90deg)
+            position: relative
+            top: 1px
 
-        .item-residence
+        &__line
+          margin: 12px 0 0 -21px
 
-          .item__indicator
-            margin-left: -3px
+      .show-elem
+        display: block !important
 
-        .item-tickets, .item-residence, .item-transfer, .item-service
-          padding: 0 3px
-          height: 126px
-
-      .settings2
-
-        .search-form
-
-          .sort
-
-            &__item
-              font-size: 0.75rem
-
-          .map-button
-            width: 70px
-
-            .fa-map-marker
-              font-size: 1.6rem
-
-            &__text
-              font-size: 0.75rem
-              margin-left: 6px
+      .show-elem_inline
+        display: inline-block !important

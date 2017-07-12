@@ -105,8 +105,8 @@
       // /.sort
       button.map-button(type='button')
         i.fa.fa-map-marker(aria-hidden='true')
-        span.map-button__text.visible-lg Показать на карте
-        span.map-button__text.hidden-lg Карта
+        span.map-button__text.visible-lg.visible-md Показать на карте
+        span.map-button__text.hidden-lg.hidden-md Карта
       // /.map-button
       button.filter-button(type='button')
         i.fa.fa-sliders(aria-hidden='true')
@@ -120,6 +120,12 @@
   // /.settings2
   .hotels
     .item.ibis
+      .images
+        img.img-responsive.img(src='img/ibis2.jpg' alt='Ibis' title='Ибис Сибирь-Омск')
+        img.img-responsive.img(src='img/ibis3.jpg' alt='Ibis' title='Ибис Сибирь-Омск')
+        img.img-responsive.img(src='img/ibis4.jpg' alt='Ibis' title='Ибис Сибирь-Омск')
+        img.img-responsive.img(src='img/ibis5.jpg' alt='Ibis' title='Ибис Сибирь-Омск')
+      // /.images
       p.notice Завтрак включен
       img.item__img(src='img/ibis.jpg' alt='Ibis' title='Ибис Сибирь-Омск')
       .column1
@@ -274,7 +280,7 @@
     // /.item.alfa
     .item.ibis2
       p.notice Завтрак включен
-      img.item__img(src='img/ibis2.jpg' alt='Ibis2' title='Ибис Сибирь-Омск')
+      img.item__img(src='img/ibis6.jpg' alt='Ibis2' title='Ибис Сибирь-Омск')
       .column1
         h6.item__heading Отель &laquo;Ибис Сибирь-Омск&raquo; 4*
         p.item__address ул. 10 Лет Октября, 109
