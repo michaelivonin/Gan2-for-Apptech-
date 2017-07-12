@@ -2,7 +2,6 @@
   width: calc(100% - 299px)
   padding: 0 15px
   float: right
-  height: 1500px
 
   .calc-content
     position: relative
@@ -526,6 +525,26 @@
       box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3)
       display: inline-block
       margin-bottom: 12px
+      position: relative
+
+      .notice
+        width: 138px
+        height: 24px
+        background: $green2
+        border-radius: 4px
+        box-shadow: 0 1px 0 0 rgba(34, 31, 31, 0.54)
+        font-family: 'ProximaNova', sans-serif
+        color: $white
+        font-size: 0.688rem
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.85px
+        display: none
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: 20px
+        left: -11px
 
       .item__img
         float: left
@@ -566,6 +585,8 @@
             text-decoration: underline
             margin-left: 9px
 
+            @extend %btn-opacity
+
         .item__rooms
           margin-top: 25px
 
@@ -605,15 +626,18 @@
         .reviews
           display: inline-block
           float: right
-          clear: both
+          clear: right
           margin-top: 12px
           color: $blue
           font-size: 0.688rem
           text-decoration: underline
 
+          @extend %btn-opacity
+
         .wrap
           float: right
           clear: right
+          margin-top: 117px
 
           .like-button
             @extend %btn-default
@@ -621,7 +645,7 @@
 
             margin-right: 20px
             position: relative
-            top: 5px
+            top: 4px
 
             .fa-heart-o
               color: $grey13
@@ -632,11 +656,17 @@
               font-size: 1.44rem
               display: none
 
+          .like-button_checked
+
+            .fa-heart-o
+              display: none
+
+            .fa-heart
+              display: inline-block
 
           .choose-button
             @extend %btn-default
 
-            margin-top: 117px
             width: 200px
             height: 50px
             background: $yellow
@@ -718,7 +748,7 @@
 
         .extra-info
           float: right
-          clear: both
+          clear: right
           color: $grey4
           font-size: 0.75rem
           margin-top: 7px
@@ -751,10 +781,12 @@
 
       .column2
 
-        .choose-button
+        .wrap
 
-          .sale, .sale-info
-            display: none
+          .choose-button
+
+            .sale, .sale-info
+              display: none
 
     .item.owl
       @extend %hotels__item_default
@@ -783,14 +815,136 @@
 
       .column2
 
-        .choose-button
+        .wrap
 
-          .sale
-            display: inline-flex
+          .choose-button
 
-          .price
+            .sale
+              display: inline-flex
 
-            .main
+            .price
+
+              .main
+                display: none
+
+        .extra-info
+          display: none
+
+    .item.alfa
+      @extend %hotels__item_default
+
+      .column1
+
+        .item__rooms
+
+          .fa-bed
+            margin-right: 9px
+
+        .warning
+          margin-left: 28px
+          visibility: hidden
+
+        .comfort
+
+          &__item
+
+            .fa-car
+              font-size: 0.98rem
+              margin-right: 10px
+
+      .column2
+        position: absolute
+        top: 10px
+        right: 10px
+
+        .wrap
+
+          .choose-button
+
+            .sale, .sale-info
+              display: none
+
+        .extra-info
+          display: none
+
+    .item.ibis2
+      @extend %hotels__item_default
+
+      .notice
+        display: inline-flex
+
+      .column1
+
+        .item__rooms
+
+          .fa-bed
+            margin-right: 9px
+
+        .warning
+          margin-left: 28px
+
+        .comfort
+
+          &__item
+
+            .fa-car
+              font-size: 0.98rem
+              margin-right: 10px
+
+            .comfort__icon-breakfast
+              margin-left: 1px
+              margin-right: 11px
+
+      .column2
+
+        .wrap
+
+          .choose-button
+
+            .sale, .sale-info
+              display: none
+
+            .price
+
+              .main
+                display: none
+
+        .extra-info
+          display: none
+
+    .item.dostoyevsky
+      @extend %hotels__item_default
+
+      .column1
+
+        .item__rooms
+
+          .fa-bed
+            margin-right: 9px
+
+        .warning
+          margin-left: 28px
+          visibility: hidden
+
+        .comfort
+
+          &__item
+
+            .fa-car
+              font-size: 0.98rem
+              margin-right: 8px
+
+            .comfort__icon-fitness
+              margin-left: 1px
+              margin-right: 9px
+
+      .column2
+
+        .wrap
+
+          .choose-button
+
+            .sale, .sale-info
               display: none
 
         .extra-info

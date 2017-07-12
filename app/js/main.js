@@ -179,15 +179,22 @@ $(function() {
 
   // Likes
   var likeCount = 0;
-  $('.like-button')/*.each()*/.click(function() {
-    if (likeCount === 0) {
-      $(this).children('.fa-heart-o').hide();
-      $(this).children('.fa-heart').show();
+  $('.like-button').click(function() {
+    if (!$(this).hasClass('like-button_checked')) {
+
+      $(this).addClass('like-button_checked');
       ++likeCount;
+      $('.heart__button').children('.button__number').text(likeCount).addClass('button__number_visible');
+
     } else {
-      $(this).children('.fa-heart-o').show();
-      $(this).children('.fa-heart').hide();
+      $(this).removeClass('like-button_checked');
       --likeCount;
+
+      if (likeCount === 0) {
+        $('.heart__button').children('.button__number').removeClass('button__number_visible');
+      } else {
+        $('.heart__button').children('.button__number').text(likeCount);
+      }
     }
   });
 });
