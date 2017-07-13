@@ -950,3 +950,49 @@
 
         .extra-info
           display: none
+
+  .pages
+    text-align: center
+    margin-top: 28px
+
+    .pages__info
+      color: $grey16
+      font-size: 0.875rem
+
+    .pagination
+      width: 263px
+      display: inline-flex
+      justify-content: space-between
+      margin-top: 13px
+      margin-bottom: 0
+
+      .item
+
+        .link-direction, .link-page
+          padding: 0
+          border-color: $white2
+          border-radius: 3px
+          width: 38px
+          height: 38px
+          display: inline-flex
+          align-items: center
+          justify-content: center
+
+        .link-direction
+          color: $grey7
+
+        .link-page
+          color: $grey17
+          font-size: 0.911rem
+
+      .active>a
+        background: $white
+        color: $blue !important
+        font-weight: 700
+
+    &__line
+      margin: 85px 0 0 -28px
+      width: 100vw
+      border-top-color: $white4
+
+  @import '../footer/footer'

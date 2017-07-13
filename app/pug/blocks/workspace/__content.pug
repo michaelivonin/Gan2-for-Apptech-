@@ -178,6 +178,12 @@
       // /.column2
     // /.item.ibis
     .item.owl
+      .images
+        img.img-responsive.img(src='img/owl2.jpg' alt='Sova' title='Мини-Отель "Sova"')
+        img.img-responsive.img(src='img/owl3.jpg' alt='Sova' title='Мини-Отель "Sova"')
+        img.img-responsive.img(src='img/owl4.jpg' alt='Sova' title='Мини-Отель "Sova"')
+        img.img-responsive.img(src='img/owl5.jpg' alt='Sova' title='Мини-Отель "Sova"')
+      // /.images
       p.notice Завтрак включен
       img.item__img(src='img/owl.jpg' alt='Sova' title='Мини-Отель "Sova"')
       .column1
@@ -230,6 +236,12 @@
       // /.column2
     // /.item.owl
     .item.alfa
+      .images
+        img.img-responsive.img(src='img/alfa2.jpg' alt='Alfa' title='Апартаменты "Альфа на Маркса"')
+        img.img-responsive.img(src='img/alfa3.jpg' alt='Alfa' title='Апартаменты "Альфа на Маркса"')
+        img.img-responsive.img(src='img/alfa4.jpg' alt='Alfa' title='Апартаменты "Альфа на Маркса"')
+        img.img-responsive.img(src='img/alfa5.jpg' alt='Alfa' title='Апартаменты "Альфа на Маркса"')
+      // /.images
       p.notice Завтрак включен
       img.item__img(src='img/alfa.jpg' alt='Alfa' title='Апартаменты "Альфа на Маркса"')
       .column1
@@ -383,4 +395,25 @@
       // /.column2
     // /.item.dostoyevsky
   // /.hotels
+  .pages
+    p.pages__info 1 - 18 из 115 вариантов
+    ul.pagination
+      li.item
+        a.link-direction(href="#")
+          i.fa.fa-caret-left(aria-hidden='true')
+      li.item
+        a.link-page(href="#") 1
+      li.item
+        a.link-page(href="#") ...
+      li.item.active
+        a.link-page(href="#") 6
+      li.item
+        a.link-page(href="#") 7
+      li.item
+        a.link-direction(href="#")
+          i.fa.fa-caret-right(aria-hidden='true')
+    // /.pagination
+    hr.pages__line
+  // /.pages
+  include ../footer/_footer
 // /.content

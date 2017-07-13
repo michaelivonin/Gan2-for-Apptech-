@@ -1472,6 +1472,112 @@ body {
         display: none; }
       .workspace .content .hotels .item.dostoyevsky .column2 .extra-info {
         display: none; }
+    .workspace .content .pages {
+      text-align: center;
+      margin-top: 28px; }
+      .workspace .content .pages .pages__info {
+        color: #a1a1a1;
+        font-size: 0.875rem; }
+      .workspace .content .pages .pagination {
+        width: 263px;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-top: 13px;
+        margin-bottom: 0; }
+        .workspace .content .pages .pagination .item .link-direction, .workspace .content .pages .pagination .item .link-page {
+          padding: 0;
+          border-color: #ebebeb;
+          -webkit-border-radius: 3px;
+                  border-radius: 3px;
+          width: 38px;
+          height: 38px;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+        .workspace .content .pages .pagination .item .link-direction {
+          color: #ced0da; }
+        .workspace .content .pages .pagination .item .link-page {
+          color: #8a909b;
+          font-size: 0.911rem; }
+        .workspace .content .pages .pagination .active > a {
+          background: white;
+          color: #03a3f0 !important;
+          font-weight: 700; }
+      .workspace .content .pages__line {
+        margin: 85px 0 0 -28px;
+        width: 100vw;
+        border-top-color: #e4e4e4; }
+    .workspace .content .footer {
+      padding-top: 45px; }
+      .workspace .content .footer .top .from-header {
+        display: none; }
+      .workspace .content .footer .top .item {
+        float: left;
+        margin-bottom: 32px; }
+        .workspace .content .footer .top .item:nth-child(2) {
+          margin-right: 103px; }
+        .workspace .content .footer .top .item:nth-child(3) {
+          margin-right: 68px; }
+        .workspace .content .footer .top .item:nth-child(4) {
+          margin-right: 76px; }
+        .workspace .content .footer .top .item .list__item {
+          margin-bottom: 21px; }
+        .workspace .content .footer .top .item .list__link {
+          font-size: 0.813rem;
+          font-weight: 300;
+          color: #2c2c2c; }
+          .workspace .content .footer .top .item .list__link:hover {
+            color: #7fb1d8; }
+        .workspace .content .footer .top .item__heading {
+          font-size: 0.688rem;
+          font-weight: 700;
+          color: #1e1e1e;
+          text-transform: uppercase;
+          margin-bottom: 26px; }
+      .workspace .content .footer__line {
+        margin: 0 0 0 -28px;
+        width: 100vw;
+        border-top-color: #e4e4e4; }
+      .workspace .content .footer .bottom {
+        padding: 28px 0;
+        text-align: center; }
+        .workspace .content .footer .bottom__text {
+          font-size: 0.813rem;
+          font-weight: 300;
+          color: #2c2c2c; }
+          .workspace .content .footer .bottom__text:nth-child(1) {
+            float: left; }
+          .workspace .content .footer .bottom__text:nth-child(3) {
+            float: right; }
+        .workspace .content .footer .bottom__socials {
+          width: 147px;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .workspace .content .footer .bottom__socials .wrapper:hover {
+            opacity: 0.8; }
+          .workspace .content .footer .bottom__socials .wrapper .fa {
+            color: #949494; }
 
 .ui-datepicker {
   z-index: 3 !important; }
@@ -1793,9 +1899,9 @@ body {
         margin-left: 7px; }
     .workspace .content .hotels {
       margin-top: 18px; }
-      .workspace .content .hotels .hotels__item_default_sm, .workspace .content .hotels .item.ibis {
+      .workspace .content .hotels .hotels__item_default_sm, .workspace .content .hotels .item.ibis, .workspace .content .hotels .item.owl, .workspace .content .hotels .item.alfa {
         margin-bottom: 11px; }
-        .workspace .content .hotels .hotels__item_default_sm .images, .workspace .content .hotels .item.ibis .images {
+        .workspace .content .hotels .hotels__item_default_sm .images, .workspace .content .hotels .item.ibis .images, .workspace .content .hotels .item.owl .images, .workspace .content .hotels .item.alfa .images {
           width: 100%;
           display: -webkit-inline-box;
           display: -webkit-inline-flex;
@@ -1806,33 +1912,33 @@ body {
               -ms-flex-pack: justify;
                   justify-content: space-between;
           margin-bottom: 14px; }
-        .workspace .content .hotels .hotels__item_default_sm .item__img, .workspace .content .hotels .item.ibis .item__img {
+        .workspace .content .hotels .hotels__item_default_sm .item__img, .workspace .content .hotels .item.ibis .item__img, .workspace .content .hotels .item.owl .item__img, .workspace .content .hotels .item.alfa .item__img {
           display: none; }
-        .workspace .content .hotels .hotels__item_default_sm .column1, .workspace .content .hotels .item.ibis .column1 {
+        .workspace .content .hotels .hotels__item_default_sm .column1, .workspace .content .hotels .item.ibis .column1, .workspace .content .hotels .item.owl .column1, .workspace .content .hotels .item.alfa .column1 {
           margin-left: 0;
           float: none; }
-          .workspace .content .hotels .hotels__item_default_sm .column1 .item__heading, .workspace .content .hotels .item.ibis .column1 .item__heading {
+          .workspace .content .hotels .hotels__item_default_sm .column1 .item__heading, .workspace .content .hotels .item.ibis .column1 .item__heading, .workspace .content .hotels .item.owl .column1 .item__heading, .workspace .content .hotels .item.alfa .column1 .item__heading {
             margin-top: 0;
             font-size: 1.25rem;
             color: #7fb1d8; }
-          .workspace .content .hotels .hotels__item_default_sm .column1 .item__address, .workspace .content .hotels .item.ibis .column1 .item__address {
+          .workspace .content .hotels .hotels__item_default_sm .column1 .item__address, .workspace .content .hotels .item.ibis .column1 .item__address, .workspace .content .hotels .item.owl .column1 .item__address, .workspace .content .hotels .item.alfa .column1 .item__address {
             margin-bottom: 13px; }
-          .workspace .content .hotels .hotels__item_default_sm .column1 .map, .workspace .content .hotels .item.ibis .column1 .map {
+          .workspace .content .hotels .hotels__item_default_sm .column1 .map, .workspace .content .hotels .item.ibis .column1 .map, .workspace .content .hotels .item.owl .column1 .map, .workspace .content .hotels .item.alfa .column1 .map {
             margin-top: 0;
             float: left; }
-            .workspace .content .hotels .hotels__item_default_sm .column1 .map .map__link, .workspace .content .hotels .item.ibis .column1 .map .map__link {
+            .workspace .content .hotels .hotels__item_default_sm .column1 .map .map__link, .workspace .content .hotels .item.ibis .column1 .map .map__link, .workspace .content .hotels .item.owl .column1 .map .map__link, .workspace .content .hotels .item.alfa .column1 .map .map__link {
               font-size: 0.688rem;
               color: #7fb1d8;
               text-transform: uppercase;
               position: relative;
               z-index: 2; }
-          .workspace .content .hotels .hotels__item_default_sm .column1 .item__rooms, .workspace .content .hotels .item.ibis .column1 .item__rooms {
+          .workspace .content .hotels .hotels__item_default_sm .column1 .item__rooms, .workspace .content .hotels .item.ibis .column1 .item__rooms, .workspace .content .hotels .item.owl .column1 .item__rooms, .workspace .content .hotels .item.alfa .column1 .item__rooms {
             display: none; }
-          .workspace .content .hotels .hotels__item_default_sm .column1 .warning, .workspace .content .hotels .item.ibis .column1 .warning {
+          .workspace .content .hotels .hotels__item_default_sm .column1 .warning, .workspace .content .hotels .item.ibis .column1 .warning, .workspace .content .hotels .item.owl .column1 .warning, .workspace .content .hotels .item.alfa .column1 .warning {
             margin-left: 0;
             float: right;
             margin-top: 96px; }
-          .workspace .content .hotels .hotels__item_default_sm .column1 .comfort, .workspace .content .hotels .item.ibis .column1 .comfort {
+          .workspace .content .hotels .hotels__item_default_sm .column1 .comfort, .workspace .content .hotels .item.ibis .column1 .comfort, .workspace .content .hotels .item.owl .column1 .comfort, .workspace .content .hotels .item.alfa .column1 .comfort {
             position: absolute;
             right: 0;
             margin: 0;
@@ -1844,63 +1950,93 @@ body {
             -webkit-align-items: center;
                 -ms-flex-align: center;
                     align-items: center; }
-            .workspace .content .hotels .hotels__item_default_sm .column1 .comfort .comfort__item, .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item {
+            .workspace .content .hotels .hotels__item_default_sm .column1 .comfort .comfort__item, .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item, .workspace .content .hotels .item.owl .column1 .comfort .comfort__item, .workspace .content .hotels .item.alfa .column1 .comfort .comfort__item {
               margin: 0; }
-              .workspace .content .hotels .hotels__item_default_sm .column1 .comfort .comfort__item .text, .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item .text {
+              .workspace .content .hotels .hotels__item_default_sm .column1 .comfort .comfort__item .text, .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item .text, .workspace .content .hotels .item.owl .column1 .comfort .comfort__item .text, .workspace .content .hotels .item.alfa .column1 .comfort .comfort__item .text {
                 display: none; }
-        .workspace .content .hotels .hotels__item_default_sm .column2, .workspace .content .hotels .item.ibis .column2 {
+        .workspace .content .hotels .hotels__item_default_sm .column2, .workspace .content .hotels .item.ibis .column2, .workspace .content .hotels .item.owl .column2, .workspace .content .hotels .item.alfa .column2 {
           top: 140px;
           width: -webkit-calc(100% - 20px);
           width: calc(100% - 20px); }
-          .workspace .content .hotels .hotels__item_default_sm .column2 .rating, .workspace .content .hotels .item.ibis .column2 .rating {
+          .workspace .content .hotels .hotels__item_default_sm .column2 .rating, .workspace .content .hotels .item.ibis .column2 .rating, .workspace .content .hotels .item.owl .column2 .rating, .workspace .content .hotels .item.alfa .column2 .rating {
             margin-top: 0; }
-          .workspace .content .hotels .hotels__item_default_sm .column2 .reviews, .workspace .content .hotels .item.ibis .column2 .reviews {
+          .workspace .content .hotels .hotels__item_default_sm .column2 .reviews, .workspace .content .hotels .item.ibis .column2 .reviews, .workspace .content .hotels .item.owl .column2 .reviews, .workspace .content .hotels .item.alfa .column2 .reviews {
             color: #7fb1d8;
             font-weight: 500; }
-          .workspace .content .hotels .hotels__item_default_sm .column2 .wrap, .workspace .content .hotels .item.ibis .column2 .wrap {
+          .workspace .content .hotels .hotels__item_default_sm .column2 .wrap, .workspace .content .hotels .item.ibis .column2 .wrap, .workspace .content .hotels .item.owl .column2 .wrap, .workspace .content .hotels .item.alfa .column2 .wrap {
             margin-top: 52px;
             width: 100%; }
-            .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .like-button, .workspace .content .hotels .item.ibis .column2 .wrap .like-button {
+            .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .like-button, .workspace .content .hotels .item.ibis .column2 .wrap .like-button, .workspace .content .hotels .item.owl .column2 .wrap .like-button, .workspace .content .hotels .item.alfa .column2 .wrap .like-button {
               margin-right: 0;
               position: absolute;
               top: 0;
               right: 109px; }
-              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .like-button:active, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:active {
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .like-button:active, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:active, .workspace .content .hotels .item.owl .column2 .wrap .like-button:active, .workspace .content .hotels .item.alfa .column2 .wrap .like-button:active {
                 position: absolute;
                 left: inherit; }
-            .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button {
-              width: 100%; }
-              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price {
+            .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button, .workspace .content .hotels .item.owl .column2 .wrap .choose-button, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button {
+              width: 100%;
+              display: -webkit-inline-box;
+              display: -webkit-inline-flex;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .sale {
+                top: 105px;
+                right: auto;
+                left: -10px; }
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .sale-info, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .sale-info, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .sale-info, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .sale-info {
+                top: 112px;
+                right: auto;
+                left: 159px; }
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .price {
                 position: static;
                 text-align: center;
                 display: inline-block;
                 margin-left: 240px;
                 margin-right: 30px; }
-                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .main, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main {
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .main, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .main, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .price .main {
                   color: #2c2c2c;
                   font-size: 1rem;
                   font-weight: 400; }
-                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .main_strong, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main_strong {
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .main_strong, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main_strong, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .main_strong, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .price .main_strong {
                   color: #2c2c2c;
                   font-size: 1.75rem; }
-                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .fa-rub, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .fa-rub {
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .fa-rub, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .fa-rub, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .fa-rub, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .price .fa-rub {
                   font-size: 1.55rem; }
-                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price br, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price br {
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price br, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price br, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price br, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .price br {
                   display: none; }
-                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .info, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .info {
-                  vertical-align: text-top;
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .info, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .info, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .price .info, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .price .info {
+                  position: relative;
+                  top: -6px;
                   margin-left: 7px; }
-              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .fa-chevron-right {
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .fa-chevron-right {
                 vertical-align: text-top; }
-              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .fa-chevron-right {
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.owl .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button .fa-chevron-right {
                 margin-left: 7px;
                 margin-top: 1px; }
-          .workspace .content .hotels .hotels__item_default_sm .column2 .extra-info, .workspace .content .hotels .item.ibis .column2 .extra-info {
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button:active .price, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button:active .price, .workspace .content .hotels .item.owl .column2 .wrap .choose-button:active .price, .workspace .content .hotels .item.alfa .column2 .wrap .choose-button:active .price {
+                position: relative;
+                top: auto;
+                left: auto; }
+          .workspace .content .hotels .hotels__item_default_sm .column2 .extra-info, .workspace .content .hotels .item.ibis .column2 .extra-info, .workspace .content .hotels .item.owl .column2 .extra-info, .workspace .content .hotels .item.alfa .column2 .extra-info {
             font-size: 0.813rem;
-            color: #a1a1a1; }
+            color: #a1a1a1;
+            margin-top: 9px; }
       .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item .comfort__icon-breakfast {
         position: relative;
-        top: -2px; } }
+        top: -2px; }
+      .workspace .content .hotels .item.owl .column2 .wrap .like-button {
+        right: 133px; }
+      .workspace .content .hotels .item.alfa .column1 .warning {
+        margin-top: 74px; }
+      .workspace .content .hotels .item.ibis2 {
+        display: none; }
+      .workspace .content .hotels .item.dostoyevsky {
+        display: none; } }
 
 @media (max-width: 759px) {
   body {

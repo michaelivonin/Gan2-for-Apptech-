@@ -279,6 +279,18 @@
 
               .choose-button
                 width: 100%
+                display: inline-flex
+                align-items: center
+
+                .sale
+                  top: 105px
+                  right: auto
+                  left: -10px
+
+                .sale-info
+                  top: 112px
+                  right: auto
+                  left: 159px
 
                 .price
                   position: static
@@ -303,7 +315,8 @@
                     display: none
 
                   .info
-                    vertical-align: text-top
+                    position: relative
+                    top: -6px
                     margin-left: 7px
 
                 .choose-button__text, .fa-chevron-right
@@ -313,9 +326,17 @@
                   margin-left: 7px
                   margin-top: 1px
 
+                &:active
+
+                  .price
+                    position: relative
+                    top: auto
+                    left: auto
+
             .extra-info
               font-size: 0.813rem
               color: $grey16
+              margin-top: 9px
 
         .item.ibis
           @extend .hotels__item_default_sm
@@ -329,3 +350,25 @@
                 .comfort__icon-breakfast
                   position: relative
                   top: -2px
+
+        .item.owl
+          @extend .hotels__item_default_sm
+
+          .column2
+            .wrap
+              .like-button
+                right: 133px
+
+        .item.alfa
+          @extend .hotels__item_default_sm
+
+          .column1
+
+            .warning
+              margin-top: 74px
+
+        .item.ibis2
+          display: none
+
+        .item.dostoyevsky
+          display: none
