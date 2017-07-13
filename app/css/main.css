@@ -111,7 +111,8 @@ body {
   visibility: visible !important; }
 
 .navbar-collapse {
-  padding: 0; }
+  padding: 0;
+  margin-right: -10px !important; }
 
 .header {
   background: white;
@@ -119,10 +120,10 @@ body {
   -webkit-box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
           box-shadow: 0 1px 9px 0 rgba(34, 31, 31, 0.19);
   position: relative;
-  z-index: 3; }
+  z-index: 4; }
   .header__logo {
     margin-top: 10px;
-    margin-right: 396px; }
+    margin-right: 406px; }
   .header .logo {
     height: inherit;
     padding: 0;
@@ -434,7 +435,7 @@ body {
     left: 0;
     top: 0;
     height: 100%;
-    z-index: 2; }
+    z-index: 3; }
     .workspace .settings__button-hide {
       float: right;
       margin-top: 10px;
@@ -442,8 +443,7 @@ body {
       .workspace .settings__button-hide .fa-minus {
         color: #ced0da; }
     .workspace .settings .calculator {
-      display: none;
-      margin: 0 -7px; }
+      display: none; }
       .workspace .settings .calculator__indicator {
         visibility: hidden;
         width: 4px;
@@ -465,8 +465,7 @@ body {
     .workspace .settings .filters {
       display: none;
       float: left;
-      clear: both;
-      margin: 0 -7px; }
+      clear: both; }
       .workspace .settings .filters__button {
         margin-top: 19px; }
         .workspace .settings .filters__button .fa-sliders {
@@ -1188,7 +1187,7 @@ body {
     .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
       display: none; }
     .workspace .content .hotels {
-      margin-top: 25px; }
+      margin-top: 20px; }
       .workspace .content .hotels .item.ibis, .workspace .content .hotels .item.owl, .workspace .content .hotels .item.alfa, .workspace .content .hotels .item.ibis2, .workspace .content .hotels .item.dostoyevsky {
         width: 100%;
         background: white;
@@ -1198,7 +1197,7 @@ body {
         -webkit-box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
                 box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
         display: inline-block;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         position: relative; }
         .workspace .content .hotels .item.ibis .images, .workspace .content .hotels .item.owl .images, .workspace .content .hotels .item.alfa .images, .workspace .content .hotels .item.ibis2 .images, .workspace .content .hotels .item.dostoyevsky .images {
           display: none; }
@@ -1562,16 +1561,49 @@ body {
 
 @media (min-width: 1200px) and (max-width: 1279px) {
   .header__logo {
-    margin-right: 296px; }
+    margin-right: 317px; }
+  .header .navbar-collapse {
+    margin-right: -21px !important; }
   .workspace .settings {
-    margin-left: -5px; } }
+    margin-left: -5px; }
+  .workspace .content {
+    padding-right: 5px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .header__logo {
+    margin-top: 14px;
     margin-left: -11px;
-    margin-right: 273px; }
+    margin-right: 25px; }
+  .header .navbar-collapse {
+    margin-right: -16px !important; }
+    .header .navbar-collapse .trip {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      height: 71px;
+      margin-right: 230px; }
+      .header .navbar-collapse .trip .wrap {
+        width: 38px;
+        height: 38px;
+        margin-right: 11px; }
+        .header .navbar-collapse .trip .wrap .fa-briefcase {
+          font-size: 1rem; }
+      .header .navbar-collapse .trip__text {
+        font-size: 0.938rem;
+        letter-spacing: 1.16px;
+        margin-top: 4px; }
+    .header .navbar-collapse .link {
+      display: none; }
+    .header .navbar-collapse .bell {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
   .workspace .settings {
-    margin-left: 0; }
+    margin-left: 0;
+    padding-left: 13px;
+    padding-right: 12px; }
     .workspace .settings .calculator, .workspace .settings .filters {
       display: block; }
     .workspace .settings .calculator__indicator_visible {
@@ -1595,9 +1627,12 @@ body {
       display: inline-flex; }
     .workspace .settings .show-elem {
       display: block; }
+  .workspace .settings_padding {
+    padding: 0 20px; }
   .workspace .content {
     width: -webkit-calc(100% - 40px);
-    width: calc(100% - 40px); }
+    width: calc(100% - 40px);
+    padding-right: 0; }
     .workspace .content .calc-content {
       display: none; }
       .workspace .content .calc-content .btn-show {
@@ -1635,7 +1670,7 @@ body {
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    margin-right: 66px; }
+    margin-right: 73px; }
   .header .link {
     display: none; }
   .header .bell {
@@ -1647,11 +1682,14 @@ body {
     height: 55px; }
   .header .collapse {
     display: block;
-    border-top: 0; }
+    border-top: 0;
+    margin-right: -14px !important; }
   .header__button {
     display: none; }
   .workspace .settings {
-    margin-left: 0; }
+    margin-left: 0;
+    padding-left: 13px;
+    padding-right: 12px; }
     .workspace .settings .calculator, .workspace .settings .filters {
       display: block; }
     .workspace .settings .calculator__indicator_visible {
@@ -1675,6 +1713,8 @@ body {
       display: inline-flex; }
     .workspace .settings .show-elem {
       display: block; }
+  .workspace .settings_padding {
+    padding: 0 20px; }
   .workspace .content {
     width: -webkit-calc(100% - 35px);
     width: calc(100% - 35px);
@@ -1735,11 +1775,14 @@ body {
     .workspace .content .settings2 .search-form .btn.active, .workspace .content .settings2 .search-form .btn:active {
       outline: none !important;
       background: #7fb1d8; }
-    .workspace .content .settings2 .search-form .sort__item {
-      font-size: 0.77rem;
-      padding: 6px 7px; }
+    .workspace .content .settings2 .search-form .sort {
+      margin-top: 35px; }
+      .workspace .content .settings2 .search-form .sort__item {
+        font-size: 0.77rem;
+        padding: 6px 7px; }
     .workspace .content .settings2 .search-form .map-button {
-      width: 90px; }
+      width: 90px;
+      margin-top: 24px; }
       .workspace .content .settings2 .search-form .map-button .fa-map-marker {
         color: #7fb1d8;
         font-size: 1.6rem; }
@@ -1748,18 +1791,116 @@ body {
       .workspace .content .settings2 .search-form .map-button__text {
         font-size: 0.75rem;
         margin-left: 7px; }
-    .workspace .content .hotels .hotels__item_default_sm .images, .workspace .content .hotels .item.ibis .images {
-      width: 100%;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .workspace .content .hotels .hotels__item_default_sm .item__img, .workspace .content .hotels .item.ibis .item__img {
-      display: none; } }
+    .workspace .content .hotels {
+      margin-top: 18px; }
+      .workspace .content .hotels .hotels__item_default_sm, .workspace .content .hotels .item.ibis {
+        margin-bottom: 11px; }
+        .workspace .content .hotels .hotels__item_default_sm .images, .workspace .content .hotels .item.ibis .images {
+          width: 100%;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 14px; }
+        .workspace .content .hotels .hotels__item_default_sm .item__img, .workspace .content .hotels .item.ibis .item__img {
+          display: none; }
+        .workspace .content .hotels .hotels__item_default_sm .column1, .workspace .content .hotels .item.ibis .column1 {
+          margin-left: 0;
+          float: none; }
+          .workspace .content .hotels .hotels__item_default_sm .column1 .item__heading, .workspace .content .hotels .item.ibis .column1 .item__heading {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #7fb1d8; }
+          .workspace .content .hotels .hotels__item_default_sm .column1 .item__address, .workspace .content .hotels .item.ibis .column1 .item__address {
+            margin-bottom: 13px; }
+          .workspace .content .hotels .hotels__item_default_sm .column1 .map, .workspace .content .hotels .item.ibis .column1 .map {
+            margin-top: 0;
+            float: left; }
+            .workspace .content .hotels .hotels__item_default_sm .column1 .map .map__link, .workspace .content .hotels .item.ibis .column1 .map .map__link {
+              font-size: 0.688rem;
+              color: #7fb1d8;
+              text-transform: uppercase;
+              position: relative;
+              z-index: 2; }
+          .workspace .content .hotels .hotels__item_default_sm .column1 .item__rooms, .workspace .content .hotels .item.ibis .column1 .item__rooms {
+            display: none; }
+          .workspace .content .hotels .hotels__item_default_sm .column1 .warning, .workspace .content .hotels .item.ibis .column1 .warning {
+            margin-left: 0;
+            float: right;
+            margin-top: 96px; }
+          .workspace .content .hotels .hotels__item_default_sm .column1 .comfort, .workspace .content .hotels .item.ibis .column1 .comfort {
+            position: absolute;
+            right: 0;
+            margin: 0;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .workspace .content .hotels .hotels__item_default_sm .column1 .comfort .comfort__item, .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item {
+              margin: 0; }
+              .workspace .content .hotels .hotels__item_default_sm .column1 .comfort .comfort__item .text, .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item .text {
+                display: none; }
+        .workspace .content .hotels .hotels__item_default_sm .column2, .workspace .content .hotels .item.ibis .column2 {
+          top: 140px;
+          width: -webkit-calc(100% - 20px);
+          width: calc(100% - 20px); }
+          .workspace .content .hotels .hotels__item_default_sm .column2 .rating, .workspace .content .hotels .item.ibis .column2 .rating {
+            margin-top: 0; }
+          .workspace .content .hotels .hotels__item_default_sm .column2 .reviews, .workspace .content .hotels .item.ibis .column2 .reviews {
+            color: #7fb1d8;
+            font-weight: 500; }
+          .workspace .content .hotels .hotels__item_default_sm .column2 .wrap, .workspace .content .hotels .item.ibis .column2 .wrap {
+            margin-top: 52px;
+            width: 100%; }
+            .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .like-button, .workspace .content .hotels .item.ibis .column2 .wrap .like-button {
+              margin-right: 0;
+              position: absolute;
+              top: 0;
+              right: 109px; }
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .like-button:active, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:active {
+                position: absolute;
+                left: inherit; }
+            .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button {
+              width: 100%; }
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price {
+                position: static;
+                text-align: center;
+                display: inline-block;
+                margin-left: 240px;
+                margin-right: 30px; }
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .main, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main {
+                  color: #2c2c2c;
+                  font-size: 1rem;
+                  font-weight: 400; }
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .main_strong, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .main_strong {
+                  color: #2c2c2c;
+                  font-size: 1.75rem; }
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .fa-rub, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .fa-rub {
+                  font-size: 1.55rem; }
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price br, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price br {
+                  display: none; }
+                .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .price .info, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .price .info {
+                  vertical-align: text-top;
+                  margin-left: 7px; }
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .choose-button__text, .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .fa-chevron-right {
+                vertical-align: text-top; }
+              .workspace .content .hotels .hotels__item_default_sm .column2 .wrap .choose-button .fa-chevron-right, .workspace .content .hotels .item.ibis .column2 .wrap .choose-button .fa-chevron-right {
+                margin-left: 7px;
+                margin-top: 1px; }
+          .workspace .content .hotels .hotels__item_default_sm .column2 .extra-info, .workspace .content .hotels .item.ibis .column2 .extra-info {
+            font-size: 0.813rem;
+            color: #a1a1a1; }
+      .workspace .content .hotels .item.ibis .column1 .comfort .comfort__item .comfort__icon-breakfast {
+        position: relative;
+        top: -2px; } }
 
 @media (max-width: 759px) {
   body {

@@ -121,6 +121,7 @@ $(function() {
   // Show or hide filters
   $('.filters__button').click(function() {
     $('.calculator, .filters').addClass('hide-elem');
+    $(this).parent().parent().addClass('settings_padding');
     $(this).parent().siblings('.trip').addClass('trip_visible');
     $('.search-form, .settings__button-hide').addClass('show-elem');
   });
@@ -128,6 +129,7 @@ $(function() {
   $('.settings__button-hide').click(function() {
     $('.settings__button-hide, .search-form').removeClass('show-elem');
     $(this).siblings('.trip').removeClass('trip_visible');
+    $(this).parent().removeClass('settings_padding');
     $('.calculator, .filters').removeClass('hide-elem');
   });
 
