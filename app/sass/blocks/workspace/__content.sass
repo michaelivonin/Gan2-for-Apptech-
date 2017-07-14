@@ -478,11 +478,10 @@
           border: none
 
           &:hover
-            opacity: 0.8
+            box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3)
 
       .map-button
         @extend %btn-default
-        @extend %btn-opacity
         @extend %btn-animation
 
         width: 200px
@@ -506,6 +505,9 @@
           color: $grey4
           text-transform: uppercase
           margin-left: 9px
+
+        &:hover
+          box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3)
 
       .filter-button, .sort-button
         @extend %btn-default

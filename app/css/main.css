@@ -57,10 +57,10 @@ body {
     position: relative;
     left: 0; }
 
-.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .content .settings2 .search-form .city .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover, .workspace .content .settings2 .search-form .map-button:hover, .workspace .content .settings2 .search-form .filter-button:hover, .workspace .content .settings2 .search-form .sort-button:hover, .workspace .content .hotels .item.ibis .column1 .map__link:hover, .workspace .content .hotels .item.owl .column1 .map__link:hover, .workspace .content .hotels .item.alfa .column1 .map__link:hover, .workspace .content .hotels .item.ibis2 .column1 .map__link:hover, .workspace .content .hotels .item.dostoyevsky .column1 .map__link:hover, .workspace .content .hotels .item.ibis .column2 .reviews:hover, .workspace .content .hotels .item.owl .column2 .reviews:hover, .workspace .content .hotels .item.alfa .column2 .reviews:hover, .workspace .content .hotels .item.ibis2 .column2 .reviews:hover, .workspace .content .hotels .item.dostoyevsky .column2 .reviews:hover, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:hover, .workspace .content .hotels .item.owl .column2 .wrap .like-button:hover, .workspace .content .hotels .item.alfa .column2 .wrap .like-button:hover, .workspace .content .hotels .item.ibis2 .column2 .wrap .like-button:hover, .workspace .content .hotels .item.dostoyevsky .column2 .wrap .like-button:hover {
+.header .bell__button:hover, .header .cart__button:hover, .header .heart__button:hover, .header .entrance__button:hover, .workspace .settings .search-form .city .button-reset:hover, .workspace .settings .search-form .place .button-reset:hover, .workspace .content .settings2 .search-form .city .button-reset:hover, .workspace .settings__button-hide:hover, .workspace .content .calc-content .btn-show:hover, .workspace .content .calc-content__button:hover, .workspace .content .steps .item-tickets .item__button-delete:hover, .workspace .content .settings2 .search-form .filter-button:hover, .workspace .content .settings2 .search-form .sort-button:hover, .workspace .content .hotels .item.ibis .column1 .map__link:hover, .workspace .content .hotels .item.owl .column1 .map__link:hover, .workspace .content .hotels .item.alfa .column1 .map__link:hover, .workspace .content .hotels .item.ibis2 .column1 .map__link:hover, .workspace .content .hotels .item.dostoyevsky .column1 .map__link:hover, .workspace .content .hotels .item.ibis .column2 .reviews:hover, .workspace .content .hotels .item.owl .column2 .reviews:hover, .workspace .content .hotels .item.alfa .column2 .reviews:hover, .workspace .content .hotels .item.ibis2 .column2 .reviews:hover, .workspace .content .hotels .item.dostoyevsky .column2 .reviews:hover, .workspace .content .hotels .item.ibis .column2 .wrap .like-button:hover, .workspace .content .hotels .item.owl .column2 .wrap .like-button:hover, .workspace .content .hotels .item.alfa .column2 .wrap .like-button:hover, .workspace .content .hotels .item.ibis2 .column2 .wrap .like-button:hover, .workspace .content .hotels .item.dostoyevsky .column2 .wrap .like-button:hover {
   opacity: 0.7; }
 
-.header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .settings2 .search-form .map-button:active, .workspace .content .settings2 .search-form .filter-button:active, .workspace .content .settings2 .search-form .sort-button:active {
+.header .link:active, .workspace .settings .calculator__button:active, .workspace .settings .filters__button:active, .workspace .content .settings2 .search-form .map-button:active, .workspace .content .settings2 .search-form .filter-button:active, .workspace .content .settings2 .search-form .sort-button:active, .workspace .content .footer .top .from-header .link:active {
   position: relative;
   top: 2px; }
 
@@ -227,7 +227,7 @@ body {
       color: #2c2c2c;
       border-color: #ebebeb; }
   .header .info {
-    display: inline-block;
+    display: none;
     float: left;
     margin-top: 22px;
     margin-right: 20px; }
@@ -1152,7 +1152,8 @@ body {
         background: #deedf4;
         border: none; }
         .workspace .content .settings2 .search-form .sort__item:hover {
-          opacity: 0.8; }
+          -webkit-box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
+                  box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3); }
     .workspace .content .settings2 .search-form .map-button {
       width: 200px;
       height: 45px;
@@ -1184,6 +1185,9 @@ body {
         color: #2c2c2c;
         text-transform: uppercase;
         margin-left: 9px; }
+      .workspace .content .settings2 .search-form .map-button:hover {
+        -webkit-box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3);
+                box-shadow: 0 1px 3px 0 rgba(34, 31, 31, 0.3); }
     .workspace .content .settings2 .search-form .filter-button, .workspace .content .settings2 .search-form .sort-button {
       display: none; }
     .workspace .content .hotels {
@@ -1526,6 +1530,58 @@ body {
       padding-top: 45px; }
       .workspace .content .footer .top .from-header {
         display: none; }
+        .workspace .content .footer .top .from-header .link {
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          float: left;
+          width: 221px;
+          height: 35px;
+          border: 1px solid #03a3f0;
+          -webkit-border-radius: 16px 16px;
+                  border-radius: 16px 16px;
+          text-transform: uppercase;
+          color: #03a3f0;
+          font-size: 0.625rem;
+          font-weight: 500;
+          margin-top: 17px;
+          margin-right: 25px; }
+          .workspace .content .footer .top .from-header .link:hover {
+            cursor: pointer;
+            color: #2c2c2c;
+            border-color: #ebebeb; }
+        .workspace .content .footer .top .from-header .info {
+          display: none;
+          float: left;
+          margin-top: 22px;
+          margin-right: 20px; }
+          .workspace .content .footer .top .from-header .info__icon-phone {
+            margin-right: 4px;
+            color: #949494;
+            font-size: 0.96rem; }
+          .workspace .content .footer .top .from-header .info__number {
+            display: inline-block;
+            font-size: 1rem;
+            color: #2c2c2c;
+            font-weight: 500;
+            margin-bottom: 6px;
+            letter-spacing: 0.62px; }
+          .workspace .content .footer .top .from-header .info__text {
+            font-size: 0.563rem;
+            color: #949494;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.9px;
+            margin-left: 21px; }
       .workspace .content .footer .top .item {
         float: left;
         margin-bottom: 32px; }
@@ -1663,13 +1719,17 @@ body {
 @media (min-width: 1280px) {
   .container {
     width: 1240px;
-    padding: 0; } }
+    padding: 0; }
+  .header .info {
+    display: inline-block; } }
 
 @media (min-width: 1200px) and (max-width: 1279px) {
   .header__logo {
     margin-right: 317px; }
   .header .navbar-collapse {
     margin-right: -21px !important; }
+    .header .navbar-collapse .info {
+      display: inline-block; }
   .workspace .settings {
     margin-left: -5px; }
   .workspace .content {
