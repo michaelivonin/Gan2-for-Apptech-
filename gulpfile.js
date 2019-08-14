@@ -15,8 +15,8 @@ const gulp = require('gulp'),
   rename = require('gulp-rename'),
   svgSprite = require('gulp-svg-sprites'),
   del = require('del'),
-  imagemin = require('gulp-imagemin'),
-  pngquant = require('imagemin-pngquant'),
+  //imagemin = require('gulp-imagemin'),
+  //pngquant = require('imagemin-pngquant'),
   cache = require('gulp-cache'),
   autoprefixer = require('gulp-autoprefixer');
 

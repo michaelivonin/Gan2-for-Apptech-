@@ -1157,7 +1157,7 @@ body {
     .workspace .content .settings2 .search-form .map-button {
       width: 200px;
       height: 45px;
-      background: url(../../../img/map-button_bg.jpg);
+      background: url(../img/map-button_bg.jpg);
       -webkit-background-size: cover;
               background-size: cover;
       -webkit-border-radius: 5px;
